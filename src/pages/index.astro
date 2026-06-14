@@ -10,9 +10,9 @@ import Layout from '../layouts/Layout.astro';
       <img src="/images/GXP Tours 3.png" alt="GXP Tours Las Vegas" height="46"/>
     </a>
     <nav>
+      <a href="#perfect-for">Who It's For</a>
       <a href="#packages">Packages</a>
       <a href="#clubs">Club Finder</a>
-      <a href="#gallery">Gallery</a>
       <a href="#reviews">Reviews</a>
       <a href="#faq">FAQ</a>
     </nav>
@@ -20,12 +20,12 @@ import Layout from '../layouts/Layout.astro';
       <a href="tel:+17024830463" class="nav-tel">📞 (702) 483-0463</a>
       <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="nav-book">Book Now</a>
     </div>
-    <button id="burger">☰</button>
+    <button id="burger" aria-label="Menu">☰</button>
   </div>
   <div id="mob-nav">
+    <a href="#perfect-for">Who It's For</a>
     <a href="#packages">Packages</a>
     <a href="#clubs">Club Finder</a>
-    <a href="#gallery">Gallery</a>
     <a href="#reviews">Reviews</a>
     <a href="#faq">FAQ</a>
     <a href="tel:+17024830463">📞 (702) 483-0463</a>
@@ -36,26 +36,29 @@ import Layout from '../layouts/Layout.astro';
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg">
-    <img src="/images/MXZ08018-Enhanced-NR.jpg" alt="GXP Tours Las Vegas" fetchpriority="high"/>
+    <video autoplay muted loop playsinline poster="/images/MXZ08018-Enhanced-NR.jpg" class="hero-vid">
+      <source src="/images/hero.mp4" type="video/mp4"/>
+    </video>
+    <img src="/images/MXZ08018-Enhanced-NR.jpg" alt="GXP Tours Nightclub on Wheels Las Vegas" class="hero-fallback" fetchpriority="high"/>
     <div class="hero-shade"></div>
     <div class="blob blob-l"></div>
     <div class="blob blob-r"></div>
   </div>
   <div class="hero-body">
     <div class="badge"><span class="stars">★★★★★</span> 4.9 Stars · 278 Verified Google Reviews · 17 Years in Vegas</div>
-    <h1>Vegas's #1<br/><span class="grad">Nightclub on Wheels</span></h1>
-    <p class="sub">Private party bus + open bar + Las Vegas Sign photo + VIP nightclub entry.<br/>All-inclusive from <strong>$99/person</strong>. Zero hidden fees.</p>
-    <div class="press">As seen in &nbsp;·&nbsp; <b>Daily Mail</b> &nbsp;·&nbsp; <b>ITV UK</b> &nbsp;·&nbsp; <b>Bold Journey</b></div>
+    <h1>Your Private<br/><span class="grad">Nightclub on Wheels</span></h1>
+    <p class="sub">Party bus + open bar + Las Vegas Sign photo stop + VIP nightclub entry — all in one night.<br/>All-inclusive from <strong>$99/person</strong>. Zero hidden fees. Zero strangers.</p>
+    <div class="press-strip">As seen in &nbsp;<b>Daily Mail</b>&nbsp;·&nbsp;<b>ITV UK</b>&nbsp;·&nbsp;<b>Bold Journey</b></div>
     <div class="hero-btns">
-      <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="btn-p">Check Availability &amp; Book →</a>
-      <a href="tel:+17024830463" class="btn-g">📞 Call Us Now</a>
+      <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="btn-p btn-xl">Check Availability &amp; Book →</a>
+      <a href="tel:+17024830463" class="btn-g btn-xl">📞 (702) 483-0463</a>
     </div>
     <div class="hero-nums">
       <div class="hn"><strong>$99</strong><span>from / person</span></div>
       <div class="hdiv"></div>
       <div class="hn"><strong>4–100+</strong><span>group size</span></div>
       <div class="hdiv"></div>
-      <div class="hn"><strong>4–6 hrs</strong><span>total experience</span></div>
+      <div class="hn"><strong>4–6 hrs</strong><span>total night</span></div>
       <div class="hdiv"></div>
       <div class="hn"><strong>$0</strong><span>hidden fees</span></div>
     </div>
@@ -65,22 +68,67 @@ import Layout from '../layouts/Layout.astro';
 <!-- TICKER -->
 <div class="ticker-wrap">
   <div class="ticker">
-    <span>✓ Private Group Only</span><span>✓ Champagne Included</span><span>✓ Las Vegas Sign Stop</span><span>✓ VIP Nightclub Entry</span><span>✓ BYOB Friendly</span><span>✓ Gratuity Included</span><span>✓ Groups of 4–100+</span><span>✓ No Hidden Fees</span>
-    <span>✓ Private Group Only</span><span>✓ Champagne Included</span><span>✓ Las Vegas Sign Stop</span><span>✓ VIP Nightclub Entry</span><span>✓ BYOB Friendly</span><span>✓ Gratuity Included</span><span>✓ Groups of 4–100+</span><span>✓ No Hidden Fees</span>
+    <span>✓ 100% Private Group</span><span>✓ Champagne Included</span><span>✓ Las Vegas Sign Stop</span><span>✓ VIP Nightclub Entry</span><span>✓ BYOB Friendly</span><span>✓ Gratuity Included</span><span>✓ Groups of 4–100+</span><span>✓ No Hidden Fees</span><span>✓ 17 Years in Vegas</span>
+    <span>✓ 100% Private Group</span><span>✓ Champagne Included</span><span>✓ Las Vegas Sign Stop</span><span>✓ VIP Nightclub Entry</span><span>✓ BYOB Friendly</span><span>✓ Gratuity Included</span><span>✓ Groups of 4–100+</span><span>✓ No Hidden Fees</span><span>✓ 17 Years in Vegas</span>
   </div>
 </div>
+
+<!-- PERFECT FOR -->
+<section id="perfect-for" class="section pf-section">
+  <div class="container">
+    <div class="slabel">Who Books This</div>
+    <h2>Made For Every <span class="grad">Group in Vegas</span></h2>
+    <p class="sdesc">Bachelorettes. Birthdays. Corporate teams. First-timers. If your group wants an epic Vegas night with zero stress — this is it.</p>
+    <div class="pf-grid">
+      <div class="pf-card">
+        <div class="pf-img"><img src="/images/GXP-Avery-8.jpg" alt="Bachelorette party Las Vegas"/></div>
+        <div class="pf-body">
+          <div class="pf-icon">💍</div>
+          <h3>Bachelorette &amp; Bachelor</h3>
+          <p>Vegas's most iconic night for the bride or groom-to-be. Private bus, champagne, Las Vegas Sign photos, skip the nightclub line. We've done hundreds of these — it shows.</p>
+          <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="pf-btn">Plan the Party →</a>
+        </div>
+      </div>
+      <div class="pf-card">
+        <div class="pf-img"><img src="/images/Dutch Bros Bus Party-031.jpg" alt="Birthday party Las Vegas party bus"/></div>
+        <div class="pf-body">
+          <div class="pf-icon">🎂</div>
+          <h3>Birthday Celebration</h3>
+          <p>Make it a birthday they'll talk about forever. Your own bus, your music, your crew. VIP entry guaranteed — no begging at the door.</p>
+          <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="pf-btn">Plan the Party →</a>
+        </div>
+      </div>
+      <div class="pf-card">
+        <div class="pf-img"><img src="/images/GXP Amanda Photos-16.jpg" alt="Corporate team outing Las Vegas"/></div>
+        <div class="pf-body">
+          <div class="pf-icon">👔</div>
+          <h3>Corporate &amp; Team Outings</h3>
+          <p>Rewarding your team in Vegas? We handle groups up to 100+. All logistics managed. Everyone gets home happy. Invoicing available.</p>
+          <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="pf-btn">Plan the Event →</a>
+        </div>
+      </div>
+      <div class="pf-card">
+        <div class="pf-img"><img src="/images/20251004Rachel-09.jpg" alt="Girls night out Las Vegas"/></div>
+        <div class="pf-body">
+          <div class="pf-icon">🎉</div>
+          <h3>Girls/Guys Night Out</h3>
+          <p>You don't need a reason. Best friends, a private bus, champagne, and one of Vegas's biggest clubs. You'll be planning the next one before this one ends.</p>
+          <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="pf-btn">Plan the Night →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- BENTO GALLERY -->
 <section id="gallery" class="bento">
   <div class="bento-grid">
-    <div class="b b1"><img src="/images/Remi Cruz _ Nightclub on Wheels.jpg" alt="Party bus experience"/><div class="b-label">The Bus 🥂</div></div>
-    <div class="b b2"><img src="/images/GXP-Avery-8.jpg" alt="Las Vegas Sign bachelorette"/><div class="b-label">Las Vegas Sign ✨</div></div>
-    <div class="b b3"><img src="/images/_X1A8841.jpg" alt="Party bus vibes"/><div class="b-label">Pure Vibes 🔥</div></div>
-    <div class="b b4"><img src="/images/20251004Rachel-09.jpg" alt="Bachelorette party Las Vegas"/><div class="b-label">Bachelorette 👰</div></div>
-    <div class="b b5"><img src="/images/GXP Amanda Photos-16.jpg" alt="Group at nightclub"/><div class="b-label">VIP Entry 🚪</div></div>
-    <div class="b b6"><img src="/images/Dutch Bros Bus Party-031.jpg" alt="Group on party bus"/><div class="b-label">Your Crew 🎉</div></div>
-    <div class="b b7"><img src="/images/MXZ08012-Enhanced-NR.jpg" alt="Night at the sign"/><div class="b-label">Night Mode 🌙</div></div>
-    <div class="b b8"><img src="/images/GXP-Tour-Hauson-17.jpg" alt="Group celebration"/><div class="b-label">Every Group 🙌</div></div>
+    <div class="b b1"><img src="/images/Remi Cruz _ Nightclub on Wheels.jpg" alt="Influencer party bus Las Vegas" loading="lazy"/><div class="b-label">The Bus 🥂</div></div>
+    <div class="b b2"><img src="/images/_X1A8841.jpg" alt="Neon party bus interior" loading="lazy"/><div class="b-label">Pure Vibes 🔥</div></div>
+    <div class="b b3"><img src="/images/MXZ08012-Enhanced-NR.jpg" alt="Las Vegas Sign night group" loading="lazy"/><div class="b-label">Night Mode 🌙</div></div>
+    <div class="b b4"><img src="/images/Dutch Bros Bus Party-089.jpg" alt="Large group on party bus" loading="lazy"/><div class="b-label">Your Crew 🎉</div></div>
+    <div class="b b5"><img src="/images/MXZ01849-Enhanced-NR.jpg" alt="GXP Tours Las Vegas group" loading="lazy"/><div class="b-label">VIP Life ✨</div></div>
+    <div class="b b6"><img src="/images/_X1A8893.jpg" alt="Group celebration Las Vegas" loading="lazy"/><div class="b-label">Every Night 🎊</div></div>
   </div>
   <div class="bento-cta">
     <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="btn-p">I Want This Experience →</a>
@@ -92,12 +140,11 @@ import Layout from '../layouts/Layout.astro';
   <div class="container">
     <div class="slabel">Pricing</div>
     <h2>All-Inclusive Packages</h2>
-    <p class="sdesc">Every package: private bus · champagne · Las Vegas Sign stop · VIP nightclub entry · gratuity. Zero extras.</p>
+    <p class="sdesc">Every package includes: private bus · champagne · Las Vegas Sign stop · VIP nightclub entry · gratuity. Zero hidden charges.</p>
     <div class="pkgs">
 
-      <!-- Package 1: Ghost Bar -->
       <div class="pkg">
-        <img src="/images/Ghostbar 1.jpg" alt="Ghost Bar Las Vegas" class="pkg-img"/>
+        <img src="/images/Ghostbar 1.jpg" alt="Ghost Bar Las Vegas" class="pkg-img" loading="lazy"/>
         <div class="pkg-body">
           <div class="pkg-name">Ghost Bar Meetup</div>
           <div class="pkg-dur">1-Hour Party Bus</div>
@@ -110,15 +157,14 @@ import Layout from '../layouts/Layout.astro';
             <li>VIP nightclub entry</li>
             <li>Gratuity included</li>
           </ul>
-          <div class="pkg-note">Nightclub options vary by night — see Club Finder below</div>
-          <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="pkg-btn">Book This</a>
+          <div class="pkg-note">Nightclub options vary by night — use Club Finder below</div>
+          <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="pkg-btn">Book This Package</a>
         </div>
       </div>
 
-      <!-- Package 2: Coyote Ugly 1-Hour — OMNIA/LIV ACCESS -->
       <div class="pkg pkg-hot">
         <div class="pkg-pop">⭐ Most Popular</div>
-        <img src="/images/Remi Cruz _ Nightclub on Wheels.jpg" alt="Coyote Ugly Meetup" class="pkg-img"/>
+        <img src="/images/_X1A1145.jpg" alt="Coyote Ugly Meetup party bus" class="pkg-img" loading="lazy"/>
         <div class="pkg-body">
           <div class="pkg-name">Coyote Ugly Meetup</div>
           <div class="pkg-dur">1-Hour Party Bus</div>
@@ -132,16 +178,15 @@ import Layout from '../layouts/Layout.astro';
             <li>Gratuity included</li>
           </ul>
           <div class="pkg-omnia">
-            <span class="omnia-badge">🔑 EXCLUSIVE</span>
-            <strong>Only package with access to Omnia &amp; LIV</strong> — Vegas's two most requested clubs. No other package qualifies.
+            <span class="omnia-badge">🔑 EXCLUSIVE ACCESS</span>
+            <strong>The only package that unlocks Omnia at Caesars &amp; LIV at Fontainebleau</strong> — Vegas's two most-requested clubs. No other package qualifies for these venues.
           </div>
-          <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="pkg-btn pkg-btn-hot">Book This — Get Omnia/LIV →</a>
+          <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="pkg-btn pkg-btn-hot">Book This — Omnia/LIV Access →</a>
         </div>
       </div>
 
-      <!-- Package 3: Coyote Ugly 2-Hour -->
       <div class="pkg">
-        <img src="/images/GXP-Avery-8.jpg" alt="Coyote Ugly 2-Hour" class="pkg-img"/>
+        <img src="/images/Dutch Bros Bus Party-137.jpg" alt="Coyote Ugly 2-hour package" class="pkg-img" loading="lazy"/>
         <div class="pkg-body">
           <div class="pkg-name">Coyote Ugly</div>
           <div class="pkg-dur">2-Hour Party Bus</div>
@@ -154,8 +199,8 @@ import Layout from '../layouts/Layout.astro';
             <li>VIP nightclub entry</li>
             <li>Gratuity included</li>
           </ul>
-          <div class="pkg-note">⚠️ Does not include Omnia or LIV access — choose the 1-hour Meetup above for those clubs</div>
-          <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="pkg-btn">Book This</a>
+          <div class="pkg-note">⚠️ Does not include Omnia or LIV — choose the Meetup above for those two venues</div>
+          <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="pkg-btn">Book This Package</a>
         </div>
       </div>
 
@@ -163,63 +208,60 @@ import Layout from '../layouts/Layout.astro';
   </div>
 </section>
 
-<!-- ADD-ONS / FREE PROMO -->
-<section class="section addons-section">
+<!-- FREE PHOTOGRAPHER PROMO -->
+<section class="section promo-section">
   <div class="container">
-    <!-- FREE PROMO HERO BANNER -->
     <div class="promo-banner">
       <div class="promo-glow"></div>
       <div class="promo-content">
         <div class="promo-left">
-          <div class="promo-tag">🎁 FREE FOR GROUPS OF 17+</div>
-          <h2 class="promo-title">Bring 17+ People &amp; Get a<br/><span class="grad">Free Photographer &amp; Videographer</span></h2>
-          <p class="promo-desc">We send a professional content creator with your group at no extra charge. You leave with a <strong>30-second highlight reel</strong> — shot in 4K, color-graded, formatted and optimized for Instagram Reels and TikTok. Ready to post the morning after.</p>
+          <div class="promo-tag">🎁 AUTOMATIC · NO CODE NEEDED</div>
+          <h2 class="promo-title">Book 17+ People &amp; Get a<br/><span class="grad">Free Photographer/Videographer</span></h2>
+          <p class="promo-desc">One professional brings their camera and their drone controller — they shoot photos <em>and</em> film video all night. When your group hits 17 people, we send them with you at <strong>absolutely zero cost</strong>.</p>
           <ul class="promo-list">
-            <li>📸 Dedicated photographer for your whole night</li>
-            <li>🎬 30-second 4K highlight video, fully edited</li>
-            <li>📱 Formatted for Instagram Reels &amp; TikTok</li>
+            <li>📸 Hi-res photos of your entire night</li>
+            <li>🎬 30-second 4K highlight reel, fully edited</li>
+            <li>📱 Formatted for Instagram Reels &amp; TikTok — ready to post</li>
             <li>⚡ Delivered within 24 hours</li>
-            <li>💰 $0 added cost — free with 17+ guests</li>
+            <li>💰 $349 value — yours free at 17+ people</li>
           </ul>
-          <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="btn-p">Book 17+ &amp; Claim Your Free Content →</a>
+          <div class="promo-compare">
+            <div class="pc-item pc-no"><span>Under 17 people</span><strong>$349 add-on</strong></div>
+            <div class="pc-arr">→</div>
+            <div class="pc-item pc-yes"><span>17+ people</span><strong>FREE 🎉</strong></div>
+          </div>
+          <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="btn-p">Book 17+ &amp; Get It Free →</a>
         </div>
         <div class="promo-right">
-          <img src="/images/Dutch Bros Bus Party-089.jpg" alt="Group photo on party bus Las Vegas"/>
-          <div class="promo-pill">17+ people = $0 photographer</div>
+          <img src="/images/GXP Amanda Photos-5.jpg" alt="Professional photographer at Las Vegas party bus event" loading="lazy"/>
+          <div class="promo-pill">$349 value · FREE at 17+</div>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <!-- ADD-ON CARDS -->
-    <div class="slabel" style="margin-top:3.5rem">Optional Add-Ons</div>
-    <h3 class="addon-h">Upgrade Your Night</h3>
-    <div class="addon-grid addon-grid-4">
+<!-- ADD-ONS -->
+<section class="section addons-section">
+  <div class="container">
+    <div class="slabel">Optional Add-Ons</div>
+    <h2>Upgrade Your Night</h2>
+    <div class="addon-grid">
 
       <div class="addon-card">
         <div class="addon-icon">📸</div>
-        <h4>Photographer &amp; Videographer</h4>
-        <p>Professional content creator captures every moment on the bus. Includes hi-res photos <em>and</em> an expertly edited HD highlight reel — perfect for social media. <strong>Free for groups of 17+.</strong></p>
+        <h4>Photographer/Videographer</h4>
+        <p>One professional, two jobs. They capture photos <em>and</em> film your night — fully edited HD highlight reel included, perfect for social media.</p>
         <div class="addon-price-block">
-          <span class="addon-was">Groups under 17:</span>
           <span class="addon-cost">$349</span>
-        </div>
-      </div>
-
-      <div class="addon-card addon-card-free">
-        <div class="addon-free-tag">FREE with 17+ guests</div>
-        <div class="addon-icon">🎬</div>
-        <h4>FREE Content Package</h4>
-        <p>Same professional photographer/videographer, same HD highlight reel — automatically included at $0 when your group hits 17 people. One of the best deals in Vegas.</p>
-        <div class="addon-price-block">
-          <span class="addon-cost addon-cost-free">$0.00</span>
-          <span class="addon-was">for 17+ people</span>
+          <span class="addon-was">groups under 17 · FREE at 17+</span>
         </div>
       </div>
 
       <div class="addon-card">
         <div class="addon-icon">🚐</div>
         <h4>Vehicle Tier Upgrade</h4>
-        <p>Upgrade to the next best available vehicle — XL Sprinter, Stretch Hummer, or Party Bus. Required per hour of your tour (2-hour tour = 2 upgrades).</p>
+        <p>Step up to an XL Sprinter, Stretch Hummer, or full Party Bus. Must be purchased per hour of your tour — a 2-hour package needs 2 upgrades.</p>
         <div class="addon-price-block">
           <span class="addon-cost">$99</span>
           <span class="addon-was">per hour of tour</span>
@@ -229,81 +271,88 @@ import Layout from '../layouts/Layout.astro';
       <div class="addon-card">
         <div class="addon-icon">🛡️</div>
         <h4>Trip Insurance</h4>
-        <p>Cancel up to 48 hours before for a full refund. Reschedule once for free. Without insurance: 70% refund only if cancelled 7+ days out. <strong>67% of guests add this.</strong></p>
+        <p>Cancel up to 48 hrs before for a full refund. Reschedule once free. Without it: 70% refund only if cancelled 7+ days out. <strong>67% of guests add this.</strong></p>
         <div class="addon-price-block">
           <span class="addon-cost">$20</span>
-          <span class="addon-was">per person · one-time offer at checkout</span>
+          <span class="addon-was">per person · only available at checkout</span>
         </div>
       </div>
 
     </div>
-    <p class="addon-note">All add-ons are selected at checkout on the booking page · Questions? Call <a href="tel:+17024830463">(702) 483-0463</a></p>
+    <p class="addon-note">All add-ons selected at checkout · Questions? <a href="tel:+17024830463">(702) 483-0463</a></p>
   </div>
 </section>
 
 <!-- CLUB FINDER -->
 <section id="clubs" class="section s-dark">
   <div class="container">
-    <div class="slabel">Interactive</div>
-    <h2>What's Open <span class="grad">On Your Night?</span></h2>
-    <p class="sdesc">Pick your date — see exactly which Vegas clubs are typically available. We lock in the best one for your group.</p>
-    <div class="finder">
-      <div class="finder-top">
-        <label for="eDate">Select Your Date</label>
-        <input type="date" id="eDate"/>
-        <p class="f-hint">Pick a date to see your club options</p>
+    <div class="slabel">Interactive Tool</div>
+    <h2>Which Clubs Are Open <span class="grad">On Your Night?</span></h2>
+    <p class="sdesc">Vegas clubs rotate by day. Pick your date and see exactly which ones we can get your group into — then we lock it in for you.</p>
+
+    <div class="finder-layout">
+      <div class="finder">
+        <div class="finder-top">
+          <label for="eDate">Select Your Date</label>
+          <input type="date" id="eDate"/>
+          <p class="f-hint">Choose a date to see available clubs</p>
+        </div>
+        <div id="fResults" class="f-results hidden">
+          <div class="f-header">
+            <div id="fDay" class="f-day"></div>
+            <div id="fCount" class="f-count"></div>
+          </div>
+          <div id="fGrid" class="f-grid"></div>
+          <div id="fBlackout" class="f-blackout hidden">
+            ⚠️ <strong>Heads up:</strong> Major DJs (Calvin Harris, John Summit, Martin Garrix) may reduce availability this night. <a href="mailto:info@gxptours.com">Email us to confirm →</a>
+          </div>
+          <div class="f-btns">
+            <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="btn-p">Book for This Date →</a>
+            <a href="tel:+17024830463" class="btn-g">📞 Call to Confirm</a>
+          </div>
+        </div>
       </div>
-      <div id="fResults" class="f-results hidden">
-        <div class="f-header">
-          <div id="fDay" class="f-day"></div>
-          <div id="fCount" class="f-count"></div>
-        </div>
-        <div id="fGrid" class="f-grid"></div>
-        <div id="fBlackout" class="f-blackout hidden">
-          ⚠️ <strong>Heads up:</strong> Major artists (Calvin Harris, John Summit, Martin Garrix) on this night may limit options. <a href="mailto:info@gxptours.com">Email us to confirm →</a>
-        </div>
-        <div class="f-btns">
-          <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="btn-p">Book for This Date →</a>
-          <a href="tel:+17024830463" class="btn-g">📞 Call to Confirm</a>
-        </div>
+      <div class="club-chart">
+        <div class="cc-label">Typical nightly schedule at a glance:</div>
+        <img src="/images/Daily Nightclub Options (NCOW) PNG.png" alt="Las Vegas nightclub schedule by night" loading="lazy"/>
       </div>
     </div>
   </div>
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="section">
+<section class="section hiw-section">
   <div class="container">
     <div class="slabel">The Experience</div>
-    <h2>How It Works</h2>
-    <p class="sdesc">We handle everything. You show up and have the best night of your life.</p>
+    <h2>One Booking. Zero Stress. <span class="grad">Best Night of Your Life.</span></h2>
+    <p class="sdesc">We've spent 17 years perfecting this. You show up — we handle everything else.</p>
     <div class="steps">
       <div class="step">
         <div class="sn">01</div>
-        <img src="/images/20251004Rachel-29.jpg" alt="Book your date"/>
-        <h3>Book Your Date</h3>
-        <p>Choose your package, lock in your group (4–100+). Your group stays 100% private — no strangers, ever.</p>
+        <img src="/images/20251004Rachel-29.jpg" alt="Book your date online" loading="lazy"/>
+        <h3>Book Online in Minutes</h3>
+        <p>Pick your package, choose your date, lock in your group size. Takes 3 minutes. Your whole group stays 100% private.</p>
       </div>
       <div class="sarr">→</div>
       <div class="step">
         <div class="sn">02</div>
-        <img src="/images/Dutch Bros Bus Party-099.jpg" alt="We handle everything"/>
+        <img src="/images/Party Bus Interior.JPG" alt="GXP handles all logistics" loading="lazy"/>
         <h3>We Handle Everything</h3>
-        <p>We schedule the lounge, arrange nightclub entry, coordinate your driver, manage all timing.</p>
+        <p>We confirm the lounge, book your nightclub entry, coordinate the driver. You get an itinerary — just show up.</p>
       </div>
       <div class="sarr">→</div>
       <div class="step">
         <div class="sn">03</div>
-        <img src="/images/_X1A8841.jpg" alt="Party bus picks you up"/>
+        <img src="/images/Step 3 Reference.png" alt="Party bus picks you up" loading="lazy"/>
         <h3>Your Bus Arrives</h3>
-        <p>Private party bus picks you up. Champagne flowing, your music on, Las Vegas Sign stop included.</p>
+        <p>Private party bus picks your group up. Champagne is flowing, your playlist is on, Las Vegas Sign stop is locked in.</p>
       </div>
       <div class="sarr">→</div>
       <div class="step">
         <div class="sn">04</div>
-        <img src="/images/GXP Amanda Photos-16.jpg" alt="VIP nightclub"/>
-        <h3>VIP Nightclub Entry</h3>
-        <p>Skip the line. Walk straight in. One of Vegas's best clubs — already arranged, already paid.</p>
+        <img src="/images/GXP Amanda Photos-7.jpg" alt="VIP nightclub entry Las Vegas" loading="lazy"/>
+        <h3>Walk Straight Into the Club</h3>
+        <p>Skip the line. Walk in like you own it. One of Vegas's best clubs — already arranged, already paid. Enjoy.</p>
       </div>
     </div>
   </div>
@@ -311,33 +360,50 @@ import Layout from '../layouts/Layout.astro';
 
 <!-- PHOTO ROW -->
 <div class="photo-row">
-  <img src="/images/Dutch Bros Bus Party-089.jpg" alt="Party bus Las Vegas"/>
-  <img src="/images/MXZ01849-Enhanced-NR.jpg" alt="GXP Tours event"/>
-  <img src="/images/Remi Cruz _ Nightclub on Wheels 2.jpg" alt="Nightclub on wheels"/>
-  <img src="/images/_X1A8893.jpg" alt="Group celebration Vegas"/>
-  <img src="/images/Dutch Bros Bus Party-134.jpg" alt="Party bus group"/>
-  <img src="/images/MXZ01762-Enhanced-NR.jpg" alt="GXP Tours night"/>
+  <img src="/images/Remi Cruz _ Nightclub on Wheels 2.jpg" alt="Party bus Las Vegas" loading="lazy"/>
+  <img src="/images/Dutch Bros Bus Party-099.jpg" alt="Group on party bus" loading="lazy"/>
+  <img src="/images/MXZ01762-Enhanced-NR.jpg" alt="GXP Tours night" loading="lazy"/>
+  <img src="/images/_X1A1072.jpg" alt="Las Vegas party group" loading="lazy"/>
+  <img src="/images/Dutch Bros Bus Party-134.jpg" alt="Party bus group photo" loading="lazy"/>
+  <img src="/images/MXZ01901-Enhanced-NR.jpg" alt="Las Vegas group night out" loading="lazy"/>
 </div>
 
-<!-- URGENCY -->
-<section class="section urgency">
+<!-- WHY GXP -->
+<section class="section why-section">
   <div class="container">
-    <div class="urg-grid">
-      <div class="urg-left">
-        <div class="slabel">Book Early</div>
-        <h2>🔥 These Dates Sell Out</h2>
-        <p>The best clubs and vehicles go to groups that book early. Don't wait.</p>
-        <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="btn-p">Check Availability →</a>
+    <div class="slabel">Why GXP Tours</div>
+    <h2>We Do One Thing. <span class="grad">We Do It Better Than Anyone.</span></h2>
+    <p class="sdesc">17 years. 500+ nights. 278 five-star reviews. Here's what separates us from every other option in Vegas.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-num">100%</div>
+        <h4>Always Private</h4>
+        <p>Your group, your bus, your night. We never pair you with strangers or sell individual tickets. This is exclusively yours.</p>
       </div>
-      <div class="urg-dates">
-        <div class="ud"><span>EDC</span><em>May 15–17</em></div>
-        <div class="ud"><span>Memorial Day</span><em>May 22–25</em></div>
-        <div class="ud"><span>EVO 2026</span><em>June 26–27</em></div>
-        <div class="ud"><span>4th of July</span><em>July 3–4</em></div>
-        <div class="ud"><span>Labor Day</span><em>Sept 4–6</em></div>
-        <div class="ud"><span>G2E Conference</span><em>Oct 2–3</em></div>
-        <div class="ud"><span>SEMA</span><em>Nov 6–7</em></div>
-        <div class="ud"><span>New Year's Eve</span><em>Dec 31</em></div>
+      <div class="why-card">
+        <div class="why-num">$0</div>
+        <h4>Hidden Fees</h4>
+        <p>The price you see is the price you pay. Champagne, entry, gratuity — all included. No surprises at the end of the night.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">17</div>
+        <h4>Years in Vegas</h4>
+        <p>We know every bouncer, every lounge host, every club manager. That's why your group walks in when others wait outside.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">4.9★</div>
+        <h4>Google Rating</h4>
+        <p>278 verified reviews. 91% are 5 stars. As featured in Daily Mail, ITV UK, and Bold Journey Magazine.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">4–100+</div>
+        <h4>Any Group Size</h4>
+        <p>Small friend group or massive corporate event — we scale. Multiple buses, coordinated logistics, everyone moves together.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">24/7</div>
+        <h4>Communication</h4>
+        <p>Direct line to us before, during, and after your event. No call centers, no bots. Real people who care about your night.</p>
       </div>
     </div>
   </div>
@@ -349,100 +415,145 @@ import Layout from '../layouts/Layout.astro';
     <div class="slabel">Social Proof</div>
     <h2>Don't Take Our Word For It.</h2>
 
-    <!-- BIG RATING HERO -->
     <div class="review-hero">
-      <div class="rh-score">
+      <div class="rh-left">
         <div class="rh-num">4.9</div>
         <div class="rh-stars">★★★★★</div>
         <div class="rh-g">Google Rating</div>
+        <a href="https://www.google.com/maps/search/GXP+Tours+Las+Vegas" target="_blank" class="rh-link">Read all reviews →</a>
       </div>
       <div class="rh-divider"></div>
-      <div class="rh-count">
+      <div class="rh-center">
         <div class="rh-big">278</div>
         <div class="rh-label">Verified Google Reviews</div>
         <div class="rh-sub">17 years in Las Vegas · 500+ nights completed</div>
       </div>
       <div class="rh-divider"></div>
       <div class="rh-bars">
-        <div class="rh-bar"><span>5 ★</span><div class="bar-track"><div class="bar-fill" style="width:91%"></div></div><span>91%</span></div>
-        <div class="rh-bar"><span>4 ★</span><div class="bar-track"><div class="bar-fill bf2" style="width:6%"></div></div><span>6%</span></div>
-        <div class="rh-bar"><span>3 ★</span><div class="bar-track"><div class="bar-fill bf3" style="width:2%"></div></div><span>2%</span></div>
-        <div class="rh-bar"><span>2 ★</span><div class="bar-track"><div class="bar-fill bf3" style="width:1%"></div></div><span>1%</span></div>
-        <div class="rh-bar"><span>1 ★</span><div class="bar-track"><div class="bar-fill bf3" style="width:0%"></div></div><span>0%</span></div>
+        <div class="rh-bar"><span class="rb-star">5★</span><div class="bar-track"><div class="bar-fill" style="width:91%"></div></div><span class="rb-pct">91%</span></div>
+        <div class="rh-bar"><span class="rb-star">4★</span><div class="bar-track"><div class="bar-fill bf2" style="width:6%"></div></div><span class="rb-pct">6%</span></div>
+        <div class="rh-bar"><span class="rb-star">3★</span><div class="bar-track"><div class="bar-fill bf3" style="width:2%"></div></div><span class="rb-pct">2%</span></div>
+        <div class="rh-bar"><span class="rb-star">2★</span><div class="bar-track"><div class="bar-fill bf3" style="width:1%"></div></div><span class="rb-pct">1%</span></div>
+        <div class="rh-bar"><span class="rb-star">1★</span><div class="bar-track"><div class="bar-fill bf3" style="width:0%"></div></div><span class="rb-pct">0%</span></div>
       </div>
     </div>
 
-    <!-- REAL GOOGLE REVIEW SCREENSHOTS -->
-    <div class="rev-label">Real screenshots from Google:</div>
-    <div class="review-grid">
-      <div class="rev-photo"><img src="/images/GXP Review 1.jpg" alt="5 star Google review"/></div>
-      <div class="rev-photo"><img src="/images/GXP Review 2.jpg" alt="5 star Google review"/></div>
-      <div class="rev-photo"><img src="/images/GXP Review 3.jpg" alt="5 star Google review"/></div>
-      <div class="rev-photo"><img src="/images/GXP Review 4.jpg" alt="5 star Google review"/></div>
-      <div class="rev-photo"><img src="/images/GXP Review 5.jpg" alt="5 star Google review"/></div>
-    </div>
-
+    <!-- TESTIMONIAL CARDS -->
     <div class="testimonials">
       <div class="t-card">
-        <div class="t-stars">★★★★★</div>
-        <p>"Aaron never disappoints. My sister has used GXP for her Vegas trips multiple times — seamless coordination every single time."</p>
-        <cite>— Christine Young</cite>
+        <div class="t-top">
+          <div class="t-avatar">CY</div>
+          <div><div class="t-name">Christine Young</div><div class="t-stars">★★★★★</div></div>
+          <div class="t-g">Google</div>
+        </div>
+        <p>"Aaron never disappoints. My sister has used GXP for her Vegas trips multiple times — seamless coordination every single time. Worth every penny."</p>
       </div>
       <div class="t-card">
-        <div class="t-stars">★★★★★</div>
+        <div class="t-top">
+          <div class="t-avatar">SM</div>
+          <div><div class="t-name">Sarah M.</div><div class="t-stars">★★★★★</div></div>
+          <div class="t-g">Google</div>
+        </div>
         <p>"Best bachelorette experience we could have asked for. Everything was taken care of — we just showed up and had the time of our lives."</p>
-        <cite>— Sarah M.</cite>
       </div>
       <div class="t-card">
-        <div class="t-stars">★★★★★</div>
-        <p>"Group of 30 and GXP handled every detail. Skipped every line, champagne the whole ride, walked straight into the club. 10/10."</p>
-        <cite>— Marcus T.</cite>
+        <div class="t-top">
+          <div class="t-avatar">MT</div>
+          <div><div class="t-name">Marcus T.</div><div class="t-stars">★★★★★</div></div>
+          <div class="t-g">Google</div>
+        </div>
+        <p>"Group of 30 and GXP handled every detail. Skipped every line, champagne the whole ride, walked straight into the club. 10/10 would do again."</p>
       </div>
       <div class="t-card">
-        <div class="t-stars">★★★★★</div>
-        <p>"No stress, no hidden costs. They make you feel like a celebrity. I've done Vegas many times — this is the ONLY way to do it."</p>
-        <cite>— Jessica R.</cite>
+        <div class="t-top">
+          <div class="t-avatar">JR</div>
+          <div><div class="t-name">Jessica R.</div><div class="t-stars">★★★★★</div></div>
+          <div class="t-g">Google</div>
+        </div>
+        <p>"No stress, no hidden costs. They make you feel like a celebrity. I've done Vegas many times — this is the ONLY way to do it right."</p>
       </div>
+    </div>
+
+    <!-- REAL GOOGLE SCREENSHOTS -->
+    <div class="rev-label">Real screenshots from Google Reviews:</div>
+    <div class="review-grid">
+      <div class="rev-photo"><img src="/images/GXP Review 1.jpg" alt="5 star Google review GXP Tours" loading="lazy"/></div>
+      <div class="rev-photo"><img src="/images/GXP Review 2.jpg" alt="5 star Google review GXP Tours" loading="lazy"/></div>
+      <div class="rev-photo"><img src="/images/GXP Review 3.jpg" alt="5 star Google review GXP Tours" loading="lazy"/></div>
+      <div class="rev-photo"><img src="/images/GXP Review 4.jpg" alt="5 star Google review GXP Tours" loading="lazy"/></div>
+      <div class="rev-photo"><img src="/images/GXP Review 5.jpg" alt="5 star Google review GXP Tours" loading="lazy"/></div>
     </div>
 
     <div class="press-row">
       <span class="press-l">As Featured In</span>
-      <span>Daily Mail Online</span><span>ITV UK / Channel 5</span><span>Bold Journey Magazine</span>
+      <span class="press-pub">Daily Mail Online</span>
+      <span class="press-dot">·</span>
+      <span class="press-pub">ITV UK / Channel 5</span>
+      <span class="press-dot">·</span>
+      <span class="press-pub">Bold Journey Magazine</span>
     </div>
   </div>
 </section>
 
-<!-- WHAT'S INCLUDED -->
+<!-- INCLUSIONS -->
 <section class="section">
   <div class="container">
     <div class="slabel">All-Inclusive</div>
     <h2>Everything Included. <span class="grad">Zero Surprises.</span></h2>
-    <p class="sdesc">Others charge separately for gratuity, beverages, and entry. We include it all.</p>
+    <p class="sdesc">Other companies charge extra for gratuity, beverages, and entry. We bundle everything so the price you book is the price you pay.</p>
     <div class="inc-grid">
-      <div class="inc"><div class="ii">🥂</div><h4>Champagne &amp; Bar</h4><p>Complimentary champagne from the moment you board. Mixers, ice, cups included.</p></div>
-      <div class="inc"><div class="ii">🎵</div><h4>Your Playlist</h4><p>Bluetooth audio — play whatever gets your group hyped on the ride.</p></div>
-      <div class="inc"><div class="ii">📸</div><h4>Las Vegas Sign Stop</h4><p>The iconic photo every Vegas visitor needs. We stop so your whole group gets the shot.</p></div>
-      <div class="inc"><div class="ii">🚪</div><h4>VIP Nightclub Entry</h4><p>Skip the line entirely. Walk straight into one of Vegas's top clubs.</p></div>
-      <div class="inc"><div class="ii">🍺</div><h4>BYOB Welcome</h4><p>Bring your own drinks — BYOB always welcome on the bus.</p></div>
-      <div class="inc"><div class="ii">💰</div><h4>Gratuity Included</h4><p>No awkward tipping at the end. Driver gratuity is built in.</p></div>
+      <div class="inc"><div class="ii">🥂</div><h4>Champagne &amp; Bar Setup</h4><p>Complimentary champagne from the moment you board. Mixers, ice, cups, napkins — all stocked.</p></div>
+      <div class="inc"><div class="ii">🎵</div><h4>Your Playlist</h4><p>Bluetooth audio on the bus — play whatever gets your group hyped for the night ahead.</p></div>
+      <div class="inc"><div class="ii">📍</div><h4>Las Vegas Sign Stop</h4><p>The iconic photo every Vegas visitor needs. We time it perfectly so your whole group gets the shot.</p></div>
+      <div class="inc"><div class="ii">🚪</div><h4>VIP Nightclub Entry</h4><p>Skip the line entirely. Walk straight into one of Vegas's top clubs — already arranged and pre-paid.</p></div>
+      <div class="inc"><div class="ii">🍺</div><h4>BYOB Friendly</h4><p>Bring your own drinks on the bus — always welcome. We provide the ice and setup.</p></div>
+      <div class="inc"><div class="ii">💰</div><h4>Gratuity Included</h4><p>Driver gratuity is built into your price. No awkward tipping calculation at the end of the night.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY -->
+<section class="section urgency s-dark">
+  <div class="container">
+    <div class="urg-grid">
+      <div class="urg-left">
+        <div class="slabel">Book Early</div>
+        <h2>🔥 These Dates Are Already Filling</h2>
+        <p>The best clubs, the best vehicles, and the best time slots go to groups that book first. Once they're gone, they're gone.</p>
+        <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="btn-p">Check Availability Now →</a>
+      </div>
+      <div class="urg-dates">
+        <div class="ud"><span>EVO 2026</span><em>June 26–27</em></div>
+        <div class="ud"><span>4th of July</span><em>July 3–4</em></div>
+        <div class="ud"><span>Labor Day</span><em>Sept 4–6</em></div>
+        <div class="ud"><span>G2E Conference</span><em>Oct 2–3</em></div>
+        <div class="ud"><span>SEMA 2026</span><em>Nov 6–7</em></div>
+        <div class="ud"><span>Thanksgiving</span><em>Nov 26–27</em></div>
+        <div class="ud"><span>New Year's Eve</span><em>Dec 31</em></div>
+        <div class="ud ud-hot"><span>NYE — Almost Full</span><em>Dec 31, 2026</em></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- FAQ -->
-<section id="faq" class="section s-dark">
+<section id="faq" class="section">
   <div class="container">
     <div class="slabel">Questions</div>
     <h2>Frequently Asked Questions</h2>
-    <div class="faq">
-      <details><summary>What's the dress code?</summary><div>Dress to impress for the nightclub. No flip-flops, sports jerseys, workout clothes, baseball caps, or offensive imagery. Smart casual or club attire works. No dress code to board the bus.</div></details>
-      <details><summary>Is our group kept completely private?</summary><div>100%. Your group is never paired with strangers. Private bus, private lounge, private nightclub entry — the entire night is exclusively yours.</div></details>
-      <details><summary>Can we bring our own drinks (BYOB)?</summary><div>Yes — BYOB friendly on the bus. We also provide complimentary champagne, mixers, cups, straws, napkins, and fresh ice. Drink responsibly.</div></details>
-      <details><summary>What if someone is under 21?</summary><div>All participants must be 21+ with valid ID, checked at three points. Exception: 21st birthday guests welcome if the reservation starts at midnight or later.</div></details>
-      <details><summary>How far in advance should we book?</summary><div>1–2 weeks for regular weekends. For major events (EDC, Memorial Day, 4th of July, NYE) book 4–6 weeks ahead — those dates sell out fast.</div></details>
-      <details><summary>Can we choose which nightclub?</summary><div>You can express a preference and we'll do our best. Clubs rotate by day. Use the Club Finder above to see what's typically open on your date.</div></details>
-      <details><summary>Where do you pick us up?</summary><div>Hotels, lounges, and event locations across Las Vegas, Henderson, Summerlin, and North Las Vegas. Off-Strip and Airbnb pickups accommodated.</div></details>
-      <details><summary>Can we split the payment?</summary><div>Yes — payment splits up to 3 ways. Contact us for custom arrangements for larger groups.</div></details>
+    <div class="faq-grid">
+      <div class="faq">
+        <details><summary>What's the dress code?</summary><div>Dress to impress — the clubs require it. No flip-flops, sports jerseys, workout clothes, baseball caps, or offensive graphics. Smart casual or club attire. No dress code to board the bus itself.</div></details>
+        <details><summary>Is our group 100% private?</summary><div>Absolutely. Your group is never paired with strangers and we never sell individual tickets. Private bus, private lounge, private nightclub entry — the entire experience is exclusively yours from start to finish.</div></details>
+        <details><summary>Can we bring our own drinks?</summary><div>Yes — BYOB is fully welcome on the bus. We also include complimentary champagne, mixers, ice, cups, straws, and napkins. Drink responsibly — all guests must be 21+.</div></details>
+        <details><summary>What if someone in our group is under 21?</summary><div>All guests must be 21+ with valid ID, verified at multiple checkpoints. The only exception: 21st birthday guests are welcome if the reservation begins at midnight or later.</div></details>
+      </div>
+      <div class="faq">
+        <details><summary>How far in advance should we book?</summary><div>1–2 weeks for regular weekends. For major events (EDC, Memorial Day, 4th of July, NYE, SEMA, G2E) book 4–6 weeks ahead — those fill extremely fast.</div></details>
+        <details><summary>Can we choose our nightclub?</summary><div>You can express a preference — we'll do our best. Availability rotates by night. Use the Club Finder above to see what's typically available on your specific date, then call us to confirm.</div></details>
+        <details><summary>Where do you pick us up?</summary><div>Hotels, lounges, and venues across Las Vegas, Henderson, Summerlin, and North Las Vegas. Off-Strip pickups and Airbnb pickups are fully accommodated.</div></details>
+        <details><summary>Can we split payment across our group?</summary><div>Yes — payment can be split up to 3 ways. For large corporate groups requiring invoicing, contact us directly at info@gxptours.com.</div></details>
+      </div>
     </div>
   </div>
 </section>
@@ -450,20 +561,21 @@ import Layout from '../layouts/Layout.astro';
 <!-- FINAL CTA -->
 <section class="fcta">
   <div class="fcta-bg">
-    <img src="/images/MXZ08012-Enhanced-NR.jpg" alt="GXP Tours Las Vegas"/>
+    <img src="/images/MXZ02009-Enhanced-NR.jpg" alt="GXP Tours Las Vegas nightclub" loading="lazy"/>
     <div class="fcta-shade"></div>
     <div class="blob blob-l"></div>
     <div class="blob blob-r"></div>
   </div>
   <div class="container fcta-body">
     <img src="/images/GXP Tours 3.png" alt="GXP Tours" class="fcta-logo"/>
+    <div class="fcta-badge">★★★★★ 278 Five-Star Google Reviews</div>
     <h2>Ready for the Best Night in Vegas?</h2>
-    <p>Private · All-Inclusive · Groups of 4–100+ · From $99/person · Gratuity Included</p>
+    <p>Private · All-Inclusive · 4–100+ People · From $99/person · Gratuity Always Included</p>
     <div class="fcta-btns">
       <a href="https://gxptours.rezdy.com/catalog/530827/nightclub-on-wheels" target="_blank" class="btn-p btn-xl">Book Your Night Now →</a>
       <a href="tel:+17024830463" class="btn-g btn-xl">📞 (702) 483-0463</a>
     </div>
-    <p class="fcta-note">Mon–Fri 10am–5pm PST · info@gxptours.com · Las Vegas, NV</p>
+    <p class="fcta-note">info@gxptours.com · Las Vegas, NV · Available 7 days a week</p>
   </div>
 </section>
 
@@ -477,21 +589,21 @@ import Layout from '../layouts/Layout.astro';
     </div>
     <div>
       <h5>Navigation</h5>
-      <a href="https://gxptours.com">Home</a>
+      <a href="https://gxptours.com">GXP Tours Home</a>
       <a href="https://gxptours.com/packages/nightclub-on-wheels/">Nightclub on Wheels</a>
       <a href="https://gxptours.com/hourly-rentals/">Hourly Rentals</a>
       <a href="https://gxptours.com/dress-code/">Dress Code</a>
-      <a href="https://gxptours.com/faq/">FAQ</a>
-      <a href="https://gxptours.com/contact/">Contact</a>
+      <a href="https://gxptours.com/faq/">Full FAQ</a>
+      <a href="https://gxptours.com/contact/">Contact Us</a>
     </div>
     <div>
-      <h5>Follow Us</h5>
+      <h5>Follow the Party</h5>
       <a href="https://tiktok.com/@gxptours" target="_blank">TikTok @gxptours</a>
       <a href="https://instagram.com/gxptours" target="_blank">Instagram @gxptours</a>
       <a href="https://youtube.com/@gxptours" target="_blank">YouTube @gxptours</a>
     </div>
   </div>
-  <div class="foot-bottom"><div class="container">© {new Date().getFullYear()} GXP Tours. All rights reserved.</div></div>
+  <div class="foot-bottom"><div class="container">© {new Date().getFullYear()} GXP Tours Las Vegas. All rights reserved.</div></div>
 </footer>
 
 </Layout>
@@ -512,16 +624,16 @@ h1,h2,h3,h4{line-height:1.15;font-weight:800}
 .grad{background:linear-gradient(90deg,var(--pk2),var(--pu2),var(--cy));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 
 /* BUTTONS */
-.btn-p{display:inline-flex;align-items:center;gap:.35rem;background:var(--grad);color:#fff;font-weight:700;font-size:.95rem;padding:.9rem 2rem;border-radius:8px;box-shadow:0 0 28px rgba(233,30,204,.4);transition:opacity .2s,transform .15s,box-shadow .2s;white-space:nowrap}
-.btn-p:hover{opacity:.88;transform:translateY(-2px);box-shadow:0 0 44px rgba(233,30,204,.6)}
-.btn-g{display:inline-flex;align-items:center;gap:.35rem;background:transparent;color:var(--wh);font-weight:600;font-size:.95rem;padding:.9rem 2rem;border-radius:8px;border:2px solid rgba(255,255,255,.2);transition:border-color .2s,color .2s;white-space:nowrap}
+.btn-p{display:inline-flex;align-items:center;gap:.4rem;background:var(--grad);color:#fff;font-weight:700;font-size:.95rem;padding:.9rem 2rem;border-radius:8px;box-shadow:0 0 28px rgba(233,30,204,.4);transition:opacity .2s,transform .15s,box-shadow .2s;white-space:nowrap}
+.btn-p:hover{opacity:.88;transform:translateY(-2px);box-shadow:0 0 44px rgba(233,30,204,.65)}
+.btn-g{display:inline-flex;align-items:center;gap:.4rem;background:transparent;color:var(--wh);font-weight:600;font-size:.95rem;padding:.9rem 2rem;border-radius:8px;border:2px solid rgba(255,255,255,.2);transition:border-color .2s,color .2s;white-space:nowrap}
 .btn-g:hover{border-color:var(--cy);color:var(--cy)}
 .btn-xl{padding:1.15rem 2.75rem;font-size:1.08rem}
 
 /* NAV */
-#nav{position:sticky;top:0;z-index:300;background:rgba(6,6,8,.95);backdrop-filter:blur(18px);border-bottom:1px solid rgba(233,30,204,.18)}
+#nav{position:sticky;top:0;z-index:300;background:rgba(6,6,8,.95);backdrop-filter:blur(18px);border-bottom:1px solid rgba(233,30,204,.15)}
 .nav-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;height:70px;display:flex;align-items:center;gap:2rem}
-.logo img{height:46px;width:auto;filter:drop-shadow(0 0 10px rgba(233,30,204,.45))}
+.logo img{height:46px;width:auto;filter:drop-shadow(0 0 10px rgba(233,30,204,.4))}
 nav{display:flex;gap:1.5rem;flex:1}
 nav a{font-size:.875rem;color:var(--mt);font-weight:500;transition:color .2s}
 nav a:hover{color:var(--wh)}
@@ -529,9 +641,9 @@ nav a:hover{color:var(--wh)}
 .nav-tel{font-size:.875rem;color:var(--cy);font-weight:700;white-space:nowrap}
 .nav-book{background:var(--grad);color:#fff;font-weight:700;padding:.55rem 1.35rem;border-radius:7px;font-size:.875rem;box-shadow:0 0 16px rgba(233,30,204,.3);transition:opacity .2s;white-space:nowrap}
 .nav-book:hover{opacity:.85}
-#burger{display:none;background:none;border:none;color:var(--wh);font-size:1.5rem;cursor:pointer;margin-left:auto}
+#burger{display:none;background:none;border:none;color:var(--wh);font-size:1.5rem;cursor:pointer;margin-left:auto;padding:.25rem}
 #mob-nav{display:none;flex-direction:column;gap:.5rem;padding:1rem 1.5rem 1.5rem;border-top:1px solid rgba(255,255,255,.06)}
-#mob-nav a{padding:.5rem 0;color:var(--mt);border-bottom:1px solid rgba(255,255,255,.05)}
+#mob-nav a{padding:.55rem 0;color:var(--mt);border-bottom:1px solid rgba(255,255,255,.05)}
 .mob-book{background:var(--grad)!important;color:#fff!important;font-weight:700;padding:.75rem!important;border-radius:8px;text-align:center;margin-top:.5rem;border:none!important;box-shadow:0 0 16px rgba(233,30,204,.3)}
 #mob-nav.open{display:flex}
 @media(max-width:900px){nav,.nav-tel{display:none}#burger{display:block}.nav-book{display:none}}
@@ -539,19 +651,20 @@ nav a:hover{color:var(--wh)}
 /* HERO */
 .hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .hero-bg{position:absolute;inset:0}
-.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center top}
-.hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,6,8,.35) 0%,rgba(6,6,8,.65) 50%,rgba(6,6,8,.97) 100%)}
-.blob{position:absolute;border-radius:50%;pointer-events:none;filter:blur(80px);opacity:.6}
-.blob-l{width:600px;height:600px;top:5%;left:-15%;background:radial-gradient(circle,rgba(233,30,204,.25),transparent 70%)}
-.blob-r{width:500px;height:500px;bottom:5%;right:-12%;background:radial-gradient(circle,rgba(0,229,255,.18),transparent 70%)}
-.hero-body{position:relative;z-index:2;text-align:center;padding:5rem 1.5rem 3rem;max-width:900px}
-.badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(233,30,204,.13);border:1px solid rgba(233,30,204,.38);color:var(--pk2);padding:.4rem 1.1rem;border-radius:999px;font-size:.78rem;font-weight:600;letter-spacing:.04em;margin-bottom:1.75rem}
+.hero-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-fallback{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,6,8,.25) 0%,rgba(6,6,8,.6) 50%,rgba(6,6,8,.97) 100%);z-index:1}
+.blob{position:absolute;border-radius:50%;pointer-events:none;filter:blur(80px);z-index:1}
+.blob-l{width:600px;height:600px;top:5%;left:-15%;background:radial-gradient(circle,rgba(233,30,204,.22),transparent 70%);opacity:.7}
+.blob-r{width:500px;height:500px;bottom:5%;right:-12%;background:radial-gradient(circle,rgba(0,229,255,.16),transparent 70%);opacity:.7}
+.hero-body{position:relative;z-index:2;text-align:center;padding:5rem 1.5rem 3rem;max-width:900px;width:100%}
+.badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(233,30,204,.12);border:1px solid rgba(233,30,204,.35);color:var(--pk2);padding:.4rem 1.1rem;border-radius:999px;font-size:.78rem;font-weight:600;letter-spacing:.04em;margin-bottom:1.75rem}
 .stars{letter-spacing:.05em}
 h1{font-size:clamp(2.6rem,7.5vw,5.5rem);font-weight:900;color:var(--wh);margin-bottom:1.25rem}
 .sub{font-size:clamp(1rem,2.5vw,1.2rem);color:rgba(237,232,248,.78);max-width:640px;margin:0 auto 1rem}
 .sub strong{color:var(--wh)}
-.press{font-size:.78rem;color:var(--mt);margin-bottom:2.25rem}
-.press b{color:rgba(237,232,248,.6)}
+.press-strip{font-size:.78rem;color:var(--mt);margin-bottom:2.25rem}
+.press-strip b{color:rgba(237,232,248,.55)}
 .hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:3rem}
 .hero-nums{display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:1.25rem 2rem;max-width:600px;margin:0 auto}
 .hn{display:flex;flex-direction:column;text-align:center}
@@ -560,38 +673,10 @@ h1{font-size:clamp(2.6rem,7.5vw,5.5rem);font-weight:900;color:var(--wh);margin-b
 .hdiv{width:1px;height:40px;background:rgba(255,255,255,.1)}
 
 /* TICKER */
-.ticker-wrap{background:var(--d2);border-top:1px solid rgba(233,30,204,.2);border-bottom:1px solid rgba(0,229,255,.12);padding:.8rem 0;overflow:hidden}
-.ticker{display:flex;gap:2.5rem;white-space:nowrap;animation:tick 28s linear infinite}
+.ticker-wrap{background:var(--d2);border-top:1px solid rgba(233,30,204,.18);border-bottom:1px solid rgba(0,229,255,.1);padding:.85rem 0;overflow:hidden}
+.ticker{display:flex;gap:3rem;white-space:nowrap;animation:tick 32s linear infinite}
 .ticker span{font-size:.8rem;font-weight:700;color:var(--tx)}
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
-/* BENTO GALLERY */
-.bento{padding:0;background:var(--d1)}
-.bento-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:280px 280px;gap:3px}
-.b{position:relative;overflow:hidden;cursor:pointer}
-.b img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.b:hover img{transform:scale(1.07)}
-.b::before{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(6,6,8,.85) 0%,transparent 55%);z-index:1;opacity:0;transition:opacity .3s}
-.b:hover::before{opacity:1}
-.b-label{position:absolute;bottom:.9rem;left:1rem;z-index:2;font-size:.85rem;font-weight:700;color:#fff;opacity:0;transform:translateY(6px);transition:opacity .3s,transform .3s}
-.b:hover .b-label{opacity:1;transform:translateY(0)}
-.b1{grid-column:1/3;grid-row:1/2}
-.b2{grid-column:3/4;grid-row:1/2}
-.b3{grid-column:4/5;grid-row:1/2}
-.b4{grid-column:1/2;grid-row:2/3}
-.b5{grid-column:2/4;grid-row:2/3}
-.b6{grid-column:4/5;grid-row:2/3}
-.b7{display:none}
-.b8{display:none}
-.bento-cta{text-align:center;padding:2.5rem 1.5rem;background:var(--d1)}
-@media(max-width:768px){
-  .bento-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 200px}
-  .b1{grid-column:1/3;grid-row:1/2}
-  .b2{grid-column:1/2;grid-row:2/3}
-  .b3{grid-column:2/3;grid-row:2/3}
-  .b4{grid-column:1/2;grid-row:3/4}
-  .b5{grid-column:2/3;grid-row:3/4}
-}
 
 /* SECTIONS */
 .section{padding:5.5rem 1.5rem}
@@ -599,180 +684,246 @@ h1{font-size:clamp(2.6rem,7.5vw,5.5rem);font-weight:900;color:var(--wh);margin-b
 .container{max-width:1100px;margin:0 auto}
 .slabel{font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--pk);margin-bottom:.75rem}
 h2{font-size:clamp(1.8rem,4vw,2.75rem);color:var(--wh);margin-bottom:.85rem}
-.sdesc{color:var(--mt);font-size:1rem;max-width:600px;margin-bottom:3rem}
+.sdesc{color:var(--mt);font-size:1rem;max-width:640px;margin-bottom:3rem}
+
+/* PERFECT FOR */
+.pf-section{background:var(--d1)}
+.pf-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+@media(max-width:900px){.pf-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.pf-grid{grid-template-columns:1fr}}
+.pf-card{background:var(--d2);border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .25s,transform .25s,box-shadow .25s}
+.pf-card:hover{border-color:rgba(233,30,204,.3);transform:translateY(-4px);box-shadow:0 16px 48px rgba(233,30,204,.1)}
+.pf-img{height:200px;overflow:hidden}
+.pf-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.pf-card:hover .pf-img img{transform:scale(1.06)}
+.pf-body{padding:1.5rem;display:flex;flex-direction:column;gap:.75rem;flex:1}
+.pf-icon{font-size:1.75rem}
+.pf-body h3{font-size:1rem;font-weight:800;color:var(--wh)}
+.pf-body p{font-size:.85rem;color:var(--mt);line-height:1.7;flex:1}
+.pf-btn{font-size:.82rem;font-weight:700;color:var(--pk2);border:1px solid rgba(233,30,204,.3);padding:.5rem 1rem;border-radius:6px;text-align:center;transition:background .2s,color .2s;display:block}
+.pf-btn:hover{background:rgba(233,30,204,.12);color:var(--wh)}
+
+/* BENTO */
+.bento{padding:0;background:var(--d1)}
+.bento-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:280px 280px;gap:3px}
+.b{position:relative;overflow:hidden;cursor:pointer}
+.b img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.b:hover img{transform:scale(1.07)}
+.b::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(6,6,8,.8) 0%,transparent 50%);opacity:0;transition:opacity .3s}
+.b:hover::after{opacity:1}
+.b-label{position:absolute;bottom:.9rem;left:1rem;z-index:2;font-size:.85rem;font-weight:700;color:#fff;opacity:0;transform:translateY(6px);transition:opacity .3s,transform .3s}
+.b:hover .b-label{opacity:1;transform:translateY(0)}
+.b1{grid-column:1/2;grid-row:1/3}
+.b2{grid-column:2/3;grid-row:1/2}
+.b3{grid-column:3/4;grid-row:1/2}
+.b4{grid-column:2/3;grid-row:2/3}
+.b5{grid-column:3/4;grid-row:2/3}
+.b6{display:none}
+.bento-cta{text-align:center;padding:2.5rem 1.5rem;background:var(--d1)}
+@media(max-width:700px){
+  .bento-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 220px 220px}
+  .b1{grid-column:1/3;grid-row:1/2}
+  .b2{grid-column:1/2;grid-row:2/3}
+  .b3{grid-column:2/3;grid-row:2/3}
+  .b4{grid-column:1/2;grid-row:3/4}
+  .b5{grid-column:2/3;grid-row:3/4}
+}
 
 /* PACKAGES */
-.pkgs{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:2rem}
-@media(max-width:860px){.pkgs{grid-template-columns:1fr;max-width:420px}}
+.pkgs{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+@media(max-width:860px){.pkgs{grid-template-columns:1fr;max-width:440px}}
 .pkg{background:var(--d2);border:1px solid rgba(255,255,255,.07);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;position:relative}
-.pkg-hot{border-color:rgba(233,30,204,.5);box-shadow:0 0 50px rgba(233,30,204,.1)}
+.pkg-hot{border-color:rgba(233,30,204,.45);box-shadow:0 0 60px rgba(233,30,204,.1)}
 .pkg-pop{position:absolute;top:12px;right:12px;z-index:2;background:var(--grad);color:#fff;padding:.25rem .9rem;border-radius:999px;font-size:.72rem;font-weight:800;box-shadow:0 0 16px rgba(233,30,204,.5)}
-.pkg-img{width:100%;height:180px;object-fit:cover}
-.pkg-body{padding:1.5rem;display:flex;flex-direction:column;gap:1rem;flex:1}
+.pkg-img{width:100%;height:190px;object-fit:cover}
+.pkg-body{padding:1.5rem;display:flex;flex-direction:column;gap:.9rem;flex:1}
 .pkg-name{font-size:1.1rem;font-weight:800;color:var(--wh)}
-.pkg-dur{font-size:.78rem;color:var(--cy);font-weight:600}
-.pkg-price{display:flex;align-items:flex-start;line-height:1}
-.pkg-price sup{font-size:1.3rem;font-weight:800;color:var(--pk);margin-top:.3rem}
-.pkg-price{font-size:3.2rem;font-weight:900;color:var(--pk)}
+.pkg-dur{font-size:.78rem;color:var(--cy);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.pkg-price{display:flex;align-items:flex-start;line-height:1;font-size:3.2rem;font-weight:900;color:var(--pk)}
+.pkg-price sup{font-size:1.3rem;margin-top:.3rem}
 .pkg-price em{font-size:.82rem;font-style:normal;color:var(--mt);align-self:flex-end;margin-bottom:.3rem;margin-left:.15rem}
 .pkg ul{list-style:none;display:flex;flex-direction:column;gap:.5rem;flex:1}
-.pkg li{font-size:.88rem;color:var(--tx);padding-left:1.25rem;position:relative}
+.pkg li{font-size:.875rem;color:var(--tx);padding-left:1.35rem;position:relative}
 .pkg li::before{content:'✓';position:absolute;left:0;color:var(--cy);font-weight:700}
+.pkg-note{font-size:.78rem;color:var(--mt);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:6px;padding:.6rem .85rem;line-height:1.55}
+.pkg-omnia{background:linear-gradient(135deg,rgba(233,30,204,.12),rgba(0,229,255,.06));border:1px solid rgba(233,30,204,.38);border-radius:8px;padding:.9rem 1rem;font-size:.84rem;color:var(--tx);line-height:1.65}
+.pkg-omnia strong{color:var(--wh)}
+.omnia-badge{display:inline-block;background:var(--grad);color:#fff;font-size:.65rem;font-weight:800;letter-spacing:.1em;padding:.2rem .65rem;border-radius:999px;margin-bottom:.4rem;box-shadow:0 0 12px rgba(233,30,204,.4)}
 .pkg-btn{display:block;text-align:center;background:rgba(255,255,255,.07);color:var(--wh);font-weight:700;font-size:.9rem;padding:.85rem;border-radius:8px;border:1px solid rgba(255,255,255,.1);transition:background .2s}
 .pkg-btn:hover{background:rgba(255,255,255,.13)}
-.pkg-btn-hot{background:var(--grad);border-color:transparent;box-shadow:0 0 20px rgba(233,30,204,.35)}
-.pkg-btn-hot:hover{opacity:.9;background:var(--grad)}
-/* PKG EXTRAS */
-.pkg-note{font-size:.78rem;color:var(--mt);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:6px;padding:.6rem .85rem;line-height:1.5}
-.pkg-omnia{background:linear-gradient(135deg,rgba(233,30,204,.12),rgba(0,229,255,.07));border:1px solid rgba(233,30,204,.4);border-radius:8px;padding:.85rem 1rem;font-size:.85rem;color:var(--tx);line-height:1.6}
-.pkg-omnia strong{color:var(--wh)}
-.omnia-badge{display:inline-block;background:var(--grad);color:#fff;font-size:.65rem;font-weight:800;letter-spacing:.1em;padding:.2rem .65rem;border-radius:999px;margin-bottom:.4rem}
+.pkg-btn-hot{background:var(--grad);border-color:transparent;box-shadow:0 0 24px rgba(233,30,204,.4)}
+.pkg-btn-hot:hover{opacity:.88}
 
-/* ADD-ONS SECTION */
-.addons-section{background:var(--d1)}
-.promo-banner{position:relative;background:linear-gradient(135deg,rgba(123,47,190,.18) 0%,rgba(0,229,255,.08) 100%);border:1px solid rgba(233,30,204,.35);border-radius:20px;overflow:hidden;padding:3rem;box-shadow:0 0 80px rgba(233,30,204,.08)}
-.promo-glow{position:absolute;top:-80px;right:-80px;width:400px;height:400px;background:radial-gradient(circle,rgba(233,30,204,.2),transparent 70%);pointer-events:none}
-.promo-content{display:grid;grid-template-columns:1fr 400px;gap:3rem;align-items:center;position:relative;z-index:1}
-@media(max-width:900px){.promo-content{grid-template-columns:1fr}.promo-right{display:none}}
-.promo-tag{display:inline-block;background:var(--grad);color:#fff;font-size:.75rem;font-weight:800;letter-spacing:.12em;padding:.35rem 1rem;border-radius:999px;margin-bottom:1.25rem;box-shadow:0 0 24px rgba(233,30,204,.45)}
-.promo-title{font-size:clamp(1.6rem,3vw,2.3rem);color:var(--wh);margin-bottom:1rem}
+/* PROMO */
+.promo-section{background:var(--d1)}
+.promo-banner{position:relative;background:linear-gradient(135deg,rgba(123,47,190,.16),rgba(0,229,255,.06));border:1px solid rgba(233,30,204,.3);border-radius:20px;overflow:hidden;padding:3rem;box-shadow:0 0 80px rgba(233,30,204,.07)}
+.promo-glow{position:absolute;top:-100px;right:-80px;width:450px;height:450px;background:radial-gradient(circle,rgba(233,30,204,.18),transparent 70%);pointer-events:none}
+.promo-content{display:grid;grid-template-columns:1fr 380px;gap:3rem;align-items:center;position:relative;z-index:1}
+@media(max-width:860px){.promo-content{grid-template-columns:1fr}.promo-right{display:none}}
+.promo-tag{display:inline-block;background:var(--grad);color:#fff;font-size:.72rem;font-weight:800;letter-spacing:.12em;padding:.35rem 1rem;border-radius:999px;margin-bottom:1.25rem;box-shadow:0 0 24px rgba(233,30,204,.45)}
+.promo-title{font-size:clamp(1.5rem,3vw,2.2rem);color:var(--wh);margin-bottom:1rem}
 .promo-desc{color:rgba(237,232,248,.75);font-size:.95rem;line-height:1.75;margin-bottom:1.5rem}
 .promo-desc strong{color:var(--wh)}
-.promo-list{list-style:none;display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem}
-.promo-list li{font-size:.9rem;color:var(--tx);display:flex;align-items:center;gap:.5rem}
+.promo-desc em{font-style:normal;color:var(--cy)}
+.promo-list{list-style:none;display:flex;flex-direction:column;gap:.6rem;margin-bottom:1.75rem}
+.promo-list li{font-size:.9rem;color:var(--tx)}
+.promo-compare{display:flex;align-items:center;gap:1rem;margin-bottom:2rem;flex-wrap:wrap}
+.pc-item{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:.75rem 1.25rem;text-align:center}
+.pc-item span{display:block;font-size:.72rem;color:var(--mt);margin-bottom:.25rem}
+.pc-item strong{display:block;font-size:1.1rem;font-weight:800;color:var(--tx)}
+.pc-yes{border-color:rgba(233,30,204,.35);background:rgba(233,30,204,.08)}
+.pc-yes strong{color:var(--pk2)}
+.pc-arr{color:var(--pk);font-size:1.5rem;font-weight:300}
 .promo-right{position:relative;border-radius:14px;overflow:hidden}
 .promo-right img{width:100%;height:320px;object-fit:cover;border-radius:14px}
-.promo-pill{position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);background:var(--grad);color:#fff;font-size:.8rem;font-weight:800;padding:.5rem 1.25rem;border-radius:999px;white-space:nowrap;box-shadow:0 0 24px rgba(233,30,204,.5)}
-.addon-h{font-size:1.5rem;color:var(--wh);margin-bottom:1.75rem;margin-top:.5rem}
-.addon-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-bottom:1.5rem}
+.promo-pill{position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);background:var(--grad);color:#fff;font-size:.8rem;font-weight:800;padding:.5rem 1.25rem;border-radius:999px;white-space:nowrap;box-shadow:0 0 24px rgba(233,30,204,.55)}
+
+/* ADD-ONS */
+.addons-section{background:var(--d2)}
+.addon-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-bottom:1.25rem}
 @media(max-width:700px){.addon-grid{grid-template-columns:1fr}}
-.addon-card{background:var(--d2);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:1.75rem;transition:border-color .25s,box-shadow .25s}
-.addon-card:hover{border-color:rgba(233,30,204,.25);box-shadow:0 0 30px rgba(233,30,204,.07)}
-.addon-icon{font-size:2rem;margin-bottom:.85rem}
-.addon-card h4{font-size:1rem;font-weight:700;color:var(--wh);margin-bottom:.5rem}
-.addon-card p{font-size:.875rem;color:var(--mt);line-height:1.7;margin-bottom:.75rem}
+.addon-card{background:var(--d3);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:1.75rem;display:flex;flex-direction:column;gap:.85rem;transition:border-color .25s}
+.addon-card:hover{border-color:rgba(233,30,204,.22)}
+.addon-icon{font-size:2rem}
+.addon-card h4{font-size:1rem;font-weight:700;color:var(--wh)}
+.addon-card p{font-size:.875rem;color:var(--mt);line-height:1.7;flex:1}
 .addon-card strong{color:var(--pk)}
 .addon-card em{font-style:normal;color:var(--tx)}
-.addon-grid-4{grid-template-columns:repeat(4,1fr)}
-@media(max-width:1000px){.addon-grid-4{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.addon-grid-4{grid-template-columns:1fr}}
-.addon-card-free{border-color:rgba(233,30,204,.4);box-shadow:0 0 40px rgba(233,30,204,.08);position:relative}
-.addon-free-tag{position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--grad);color:#fff;font-size:.65rem;font-weight:800;letter-spacing:.08em;padding:.25rem .85rem;border-radius:0 0 8px 8px;white-space:nowrap;box-shadow:0 4px 16px rgba(233,30,204,.4)}
 .addon-price-block{display:flex;flex-direction:column;gap:.15rem;margin-top:auto}
-.addon-cost{font-size:1.6rem;font-weight:900;color:var(--cy);line-height:1}
-.addon-cost-free{color:var(--pk)}
+.addon-cost{font-size:1.75rem;font-weight:900;color:var(--cy);line-height:1}
 .addon-was{font-size:.72rem;color:var(--mt)}
-.addon-note{font-size:.85rem;color:var(--mt);text-align:center;margin-top:1rem}
+.addon-note{font-size:.85rem;color:var(--mt);text-align:center}
 .addon-note a{color:var(--pk);text-decoration:underline}
 
-/* REVIEW HERO */
-.review-hero{display:grid;grid-template-columns:auto 1px auto 1px 1fr;gap:2.5rem;align-items:center;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:2.5rem;margin-bottom:2.5rem}
-@media(max-width:800px){.review-hero{grid-template-columns:1fr;gap:1.5rem}.rh-divider{display:none}}
-.rh-num{font-size:5.5rem;font-weight:900;line-height:1;background:linear-gradient(135deg,var(--pk),var(--pu2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.rh-stars{color:#FBBF24;font-size:1.4rem;letter-spacing:.1em;margin:.2rem 0}
-.rh-g{font-size:.72rem;color:var(--mt);font-weight:600;text-transform:uppercase;letter-spacing:.1em}
-.rh-divider{width:1px;height:80px;background:rgba(255,255,255,.08);align-self:center}
-.rh-big{font-size:4rem;font-weight:900;line-height:1;color:var(--wh)}
-.rh-label{font-size:.9rem;font-weight:700;color:var(--tx);margin:.3rem 0 .2rem}
-.rh-sub{font-size:.78rem;color:var(--mt)}
-.rh-bars{display:flex;flex-direction:column;gap:.55rem;width:100%}
-.rh-bar{display:flex;align-items:center;gap:.75rem;font-size:.78rem;color:var(--mt)}
-.rh-bar span{min-width:28px}
-.bar-track{flex:1;height:7px;background:rgba(255,255,255,.07);border-radius:999px;overflow:hidden}
-.bar-fill{height:100%;background:linear-gradient(90deg,var(--pk),var(--pu2));border-radius:999px}
-.bf2{background:linear-gradient(90deg,var(--pu2),#6080ff)}
-.bf3{background:rgba(255,255,255,.15)}
-.rev-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--mt);font-weight:700;margin-bottom:.85rem}
-
 /* CLUB FINDER */
-.finder{max-width:780px;margin:0 auto}
-.finder-top{background:var(--d3);border-radius:12px;border:1px solid rgba(233,30,204,.3);padding:2.5rem;margin-bottom:1.5rem;text-align:center;box-shadow:0 0 50px rgba(233,30,204,.07)}
+.finder-layout{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+@media(max-width:800px){.finder-layout{grid-template-columns:1fr}}
+.finder-top{background:var(--d3);border-radius:12px;border:1px solid rgba(233,30,204,.28);padding:2.5rem;margin-bottom:1.25rem;text-align:center;box-shadow:0 0 50px rgba(233,30,204,.06)}
 .finder-top label{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;color:var(--pk);font-weight:700;margin-bottom:1rem}
 #eDate{background:rgba(255,255,255,.07);border:2px solid rgba(233,30,204,.3);color:var(--wh);font-size:1.1rem;font-weight:600;padding:.85rem 1.75rem;border-radius:8px;cursor:pointer;outline:none;color-scheme:dark;width:100%;max-width:300px;transition:border-color .2s}
-#eDate:focus{border-color:var(--pk);box-shadow:0 0 20px rgba(233,30,204,.3)}
+#eDate:focus{border-color:var(--pk);box-shadow:0 0 20px rgba(233,30,204,.25)}
 .f-hint{font-size:.8rem;color:var(--mt);margin-top:.85rem}
-.f-results{background:var(--d3);border-radius:12px;border:1px solid rgba(0,229,255,.2);padding:2rem;box-shadow:0 0 40px rgba(0,229,255,.06)}
+.f-results{background:var(--d3);border-radius:12px;border:1px solid rgba(0,229,255,.18);padding:2rem;box-shadow:0 0 40px rgba(0,229,255,.05)}
 .f-results.hidden{display:none}
-.f-header{margin-bottom:1.5rem}
-.f-day{font-size:1.2rem;font-weight:800;color:var(--wh);margin-bottom:.3rem}
-.f-count{font-size:.85rem;color:var(--cy)}
-.f-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:.7rem;margin-bottom:1.5rem}
-.f-chip{background:rgba(0,229,255,.08);border:1px solid rgba(0,229,255,.25);border-radius:8px;padding:.7rem 1rem;font-size:.875rem;font-weight:600;color:var(--tx);display:flex;align-items:center;gap:.5rem}
+.f-day{font-size:1.15rem;font-weight:800;color:var(--wh);margin-bottom:.3rem}
+.f-count{font-size:.85rem;color:var(--cy);margin-bottom:1.25rem}
+.f-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:.65rem;margin-bottom:1.25rem}
+.f-chip{background:rgba(0,229,255,.07);border:1px solid rgba(0,229,255,.22);border-radius:8px;padding:.65rem .9rem;font-size:.84rem;font-weight:600;color:var(--tx);display:flex;align-items:center;gap:.5rem}
 .f-chip::before{content:'✓';color:var(--cy);font-size:.8rem;flex-shrink:0}
-.f-blackout{background:rgba(255,160,0,.08);border:1px solid rgba(255,160,0,.25);border-radius:8px;padding:1rem 1.25rem;font-size:.85rem;color:rgba(237,232,248,.85);margin-bottom:1.5rem}
+.f-blackout{background:rgba(255,160,0,.07);border:1px solid rgba(255,160,0,.22);border-radius:8px;padding:1rem 1.25rem;font-size:.84rem;color:rgba(237,232,248,.85);margin-bottom:1.25rem}
 .f-blackout.hidden{display:none}
 .f-blackout a{color:var(--pk);text-decoration:underline}
 .f-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.club-chart{background:var(--d3);border:1px solid rgba(255,255,255,.06);border-radius:12px;overflow:hidden}
+.cc-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--mt);font-weight:700;padding:1rem 1.25rem .75rem}
+.club-chart img{width:100%;height:auto}
 
-/* STEPS */
-.steps{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:1rem;align-items:start}
+/* HOW IT WORKS */
+.hiw-section{background:var(--d1)}
+.steps{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:1.25rem;align-items:start}
 @media(max-width:900px){.steps{grid-template-columns:1fr 1fr}.sarr{display:none}}
 @media(max-width:500px){.steps{grid-template-columns:1fr}}
 .step{display:flex;flex-direction:column;gap:.85rem}
-.sn{font-size:2.75rem;font-weight:900;line-height:1;background:linear-gradient(135deg,rgba(233,30,204,.35),rgba(0,229,255,.25));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.sn{font-size:2.75rem;font-weight:900;line-height:1;background:linear-gradient(135deg,rgba(233,30,204,.4),rgba(0,229,255,.3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .step img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,.06)}
-.step h3{font-size:1rem;color:var(--wh)}
-.step p{font-size:.875rem;color:var(--mt)}
-.sarr{font-size:1.5rem;color:var(--pk);padding-top:3rem;opacity:.5}
+.step h3{font-size:.95rem;font-weight:800;color:var(--wh)}
+.step p{font-size:.84rem;color:var(--mt);line-height:1.7}
+.sarr{font-size:1.5rem;color:var(--pk);padding-top:3rem;opacity:.45}
 
 /* PHOTO ROW */
-.photo-row{display:grid;grid-template-columns:repeat(6,1fr);height:260px;gap:3px}
+.photo-row{display:grid;grid-template-columns:repeat(6,1fr);height:240px;gap:3px}
 .photo-row img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
 .photo-row img:hover{transform:scale(1.05);z-index:1;position:relative}
-@media(max-width:700px){.photo-row{grid-template-columns:repeat(3,1fr);height:320px}}
+@media(max-width:700px){.photo-row{grid-template-columns:repeat(3,1fr);height:280px}}
+
+/* WHY GXP */
+.why-section{background:var(--bk)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+@media(max-width:800px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.why-grid{grid-template-columns:1fr}}
+.why-card{background:var(--d2);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:1.75rem;transition:border-color .25s,box-shadow .25s}
+.why-card:hover{border-color:rgba(233,30,204,.22);box-shadow:0 0 32px rgba(233,30,204,.07)}
+.why-num{font-size:2.5rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:.75rem}
+.why-card h4{font-size:.95rem;font-weight:800;color:var(--wh);margin-bottom:.5rem}
+.why-card p{font-size:.85rem;color:var(--mt);line-height:1.7}
+
+/* REVIEWS */
+.review-hero{display:grid;grid-template-columns:auto 1px auto 1px 1fr;gap:2.5rem;align-items:center;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:2.5rem;margin-bottom:2.5rem}
+@media(max-width:800px){.review-hero{grid-template-columns:1fr;gap:1.5rem}.rh-divider{display:none}}
+.rh-left{text-align:center}
+.rh-num{font-size:5.5rem;font-weight:900;line-height:1;background:linear-gradient(135deg,#FBBF24,#F59E0B);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.rh-stars{color:#FBBF24;font-size:1.4rem;letter-spacing:.1em;margin:.25rem 0}
+.rh-g{font-size:.7rem;color:var(--mt);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.5rem}
+.rh-link{font-size:.78rem;color:var(--cy);font-weight:600;text-decoration:underline}
+.rh-divider{width:1px;height:80px;background:rgba(255,255,255,.08);align-self:center}
+.rh-center{text-align:center}
+.rh-big{font-size:4.5rem;font-weight:900;line-height:1;color:var(--wh)}
+.rh-label{font-size:.95rem;font-weight:700;color:var(--tx);margin:.3rem 0 .25rem}
+.rh-sub{font-size:.78rem;color:var(--mt)}
+.rh-bars{display:flex;flex-direction:column;gap:.6rem;width:100%;min-width:200px}
+.rh-bar{display:flex;align-items:center;gap:.75rem}
+.rb-star{font-size:.78rem;color:var(--mt);min-width:22px}
+.bar-track{flex:1;height:8px;background:rgba(255,255,255,.07);border-radius:999px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#FBBF24,#F59E0B);border-radius:999px;transition:width 1s ease}
+.bf2{background:linear-gradient(90deg,#7B2FBE,#9B4FDE)}
+.bf3{background:rgba(255,255,255,.15)}
+.rb-pct{font-size:.75rem;color:var(--mt);min-width:28px;text-align:right}
+.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem;margin-bottom:2.5rem}
+.t-card{background:var(--d3);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:1.5rem;display:flex;flex-direction:column;gap:1rem}
+.t-top{display:flex;align-items:center;gap:.75rem}
+.t-avatar{width:40px;height:40px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:800;color:#fff;flex-shrink:0}
+.t-name{font-size:.875rem;font-weight:700;color:var(--wh)}
+.t-stars{color:#FBBF24;font-size:.8rem;letter-spacing:.05em}
+.t-g{margin-left:auto;font-size:.68rem;color:var(--mt);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);padding:.25rem .6rem;border-radius:4px;white-space:nowrap}
+.t-card p{font-size:.875rem;color:var(--mt);line-height:1.75;font-style:italic}
+.rev-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--mt);font-weight:700;margin-bottom:.85rem}
+.review-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.75rem;margin-bottom:2.5rem}
+.rev-photo{border-radius:8px;overflow:hidden;border:1px solid rgba(255,255,255,.07)}
+.rev-photo img{width:100%;height:auto}
+@media(max-width:700px){.review-grid{grid-template-columns:repeat(3,1fr)}}
+.press-row{display:flex;gap:1.5rem;align-items:center;justify-content:center;flex-wrap:wrap;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.06)}
+.press-l{font-size:.68rem;text-transform:uppercase;letter-spacing:.12em;color:var(--mt)}
+.press-pub{font-weight:700;color:rgba(237,232,248,.45);font-size:.875rem}
+.press-dot{color:var(--mt)}
+
+/* INCLUSIONS */
+.inc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1.25rem}
+.inc{background:var(--d2);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:1.75rem;transition:border-color .25s,box-shadow .25s}
+.inc:hover{border-color:rgba(0,229,255,.2);box-shadow:0 0 28px rgba(0,229,255,.06)}
+.ii{font-size:2rem;margin-bottom:.875rem}
+.inc h4{font-size:.95rem;font-weight:700;color:var(--wh);margin-bottom:.4rem}
+.inc p{font-size:.85rem;color:var(--mt);line-height:1.7}
 
 /* URGENCY */
-.urgency{background:linear-gradient(135deg,#08060E 0%,#100818 100%)}
+.urgency{background:linear-gradient(135deg,rgba(8,4,16,1),rgba(14,6,24,1))}
 .urg-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
 @media(max-width:768px){.urg-grid{grid-template-columns:1fr;gap:2rem}}
-.urg-left .sdesc{margin-bottom:1.5rem}
+.urg-left p{color:var(--mt);margin-bottom:1.5rem}
 .urg-dates{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
 .ud{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:8px;padding:.75rem 1rem}
+.ud-hot{border-color:rgba(233,30,204,.3);background:rgba(233,30,204,.07)}
 .ud span{display:block;font-size:.875rem;font-weight:700;color:var(--wh);margin-bottom:.2rem}
 .ud em{font-size:.75rem;color:var(--pk);font-style:normal}
 
-/* REVIEWS */
-.rating-row{display:flex;align-items:center;gap:1.5rem;margin-bottom:2.5rem}
-.rn{font-size:5rem;font-weight:900;line-height:1;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.rs{color:var(--pk);font-size:1.3rem;letter-spacing:.08em;margin-bottom:.25rem}
-.rc{font-size:.85rem;color:var(--mt)}
-.review-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.75rem;margin-bottom:2.5rem}
-.rev-photo{border-radius:8px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
-.rev-photo img{width:100%;height:auto;object-fit:cover}
-@media(max-width:700px){.review-grid{grid-template-columns:repeat(3,1fr)}}
-.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem;margin-bottom:2.5rem}
-.t-card{background:var(--d3);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:1.5rem}
-.t-stars{color:var(--pk);font-size:.9rem;letter-spacing:.05em;margin-bottom:.75rem}
-.t-card p{font-size:.9rem;font-style:italic;color:var(--tx);margin-bottom:.75rem;line-height:1.75}
-.t-card cite{font-size:.8rem;color:var(--cy);font-weight:700;font-style:normal}
-.press-row{text-align:center;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.06);display:flex;gap:2rem;justify-content:center;align-items:center;flex-wrap:wrap}
-.press-l{font-size:.68rem;text-transform:uppercase;letter-spacing:.12em;color:var(--mt)}
-.press-row span{font-weight:700;color:rgba(237,232,248,.5);font-size:.875rem}
-
-/* INCLUSIONS */
-.inc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem}
-.inc{background:var(--d2);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:1.75rem;transition:border-color .25s,box-shadow .25s}
-.inc:hover{border-color:rgba(233,30,204,.25);box-shadow:0 0 28px rgba(233,30,204,.08)}
-.ii{font-size:2rem;margin-bottom:.875rem}
-.inc h4{font-size:.95rem;font-weight:700;color:var(--wh);margin-bottom:.4rem}
-.inc p{font-size:.85rem;color:var(--mt)}
-
 /* FAQ */
-.faq{max-width:720px;display:flex;flex-direction:column;gap:.4rem}
-.faq details{background:var(--d3);border:1px solid rgba(255,255,255,.06);border-radius:8px;overflow:hidden}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+@media(max-width:700px){.faq-grid{grid-template-columns:1fr}}
+.faq{display:flex;flex-direction:column;gap:.4rem}
+.faq details{background:var(--d2);border:1px solid rgba(255,255,255,.06);border-radius:8px;overflow:hidden}
 .faq summary{padding:1.1rem 1.25rem;font-weight:600;font-size:.95rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:var(--wh)}
 .faq summary::after{content:'+';color:var(--pk);font-size:1.25rem;font-weight:300;flex-shrink:0}
 .faq details[open] summary::after{content:'−'}
-.faq details[open] summary{color:var(--pk)}
-.faq div{padding:0 1.25rem 1.1rem;font-size:.9rem;color:var(--mt);line-height:1.75}
+.faq details[open] summary{color:var(--pk2)}
+.faq div{padding:0 1.25rem 1.1rem;font-size:.875rem;color:var(--mt);line-height:1.8}
 
 /* FINAL CTA */
-.fcta{position:relative;padding:8rem 1.5rem;text-align:center;overflow:hidden}
+.fcta{position:relative;padding:9rem 1.5rem;text-align:center;overflow:hidden}
 .fcta-bg{position:absolute;inset:0}
 .fcta-bg img{width:100%;height:100%;object-fit:cover}
-.fcta-shade{position:absolute;inset:0;background:rgba(6,6,8,.87)}
+.fcta-shade{position:absolute;inset:0;background:rgba(6,6,8,.88)}
 .fcta-body{position:relative;z-index:2}
-.fcta-logo{height:72px;width:auto;margin:0 auto 2rem;filter:drop-shadow(0 0 20px rgba(233,30,204,.55))}
+.fcta-logo{height:72px;width:auto;margin:0 auto 1.5rem;filter:drop-shadow(0 0 20px rgba(233,30,204,.55))}
+.fcta-badge{display:inline-block;background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.3);color:#FBBF24;font-size:.78rem;font-weight:700;padding:.35rem 1rem;border-radius:999px;margin-bottom:1.25rem;letter-spacing:.04em}
 .fcta h2{font-size:clamp(2rem,5vw,3.25rem);color:var(--wh);margin-bottom:.75rem}
 .fcta>div>p{color:var(--mt);font-size:1.05rem;margin-bottom:2rem}
 .fcta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.25rem}
@@ -783,13 +934,11 @@ footer{background:#040406;border-top:1px solid rgba(255,255,255,.05);padding:3.5
 .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
 @media(max-width:640px){.foot-grid{grid-template-columns:1fr;gap:2rem}}
 .foot-grid>div{display:flex;flex-direction:column;gap:.65rem}
-.foot-grid img{filter:drop-shadow(0 0 8px rgba(233,30,204,.3))}
+.foot-grid img{filter:drop-shadow(0 0 8px rgba(233,30,204,.28))}
 .foot-grid p{font-size:.8rem;color:var(--mt);line-height:1.8}
-.foot-grid p a{color:var(--mt);transition:color .2s}
-.foot-grid p a:hover{color:var(--cy)}
+.foot-grid p a,.foot-grid>div>a{font-size:.85rem;color:rgba(237,232,248,.38);transition:color .2s}
+.foot-grid p a:hover,.foot-grid>div>a:hover{color:var(--pk)}
 .foot-grid h5{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--mt);font-weight:700}
-.foot-grid a{font-size:.85rem;color:rgba(237,232,248,.4);transition:color .2s}
-.foot-grid a:hover{color:var(--pk)}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.05);padding:1.25rem 0;font-size:.75rem;color:var(--mt);text-align:center}
 </style>
 
@@ -811,24 +960,24 @@ const schedule: Record<number,{clubs:string[];blackout:boolean}> = {
   6:{clubs:['Jewel at Aria','Marquee at Cosmopolitan','Hakkasan at MGM Grand','Omnia at Caesars Palace','XS at Encore','Zouk at Resorts World','LIV at Fontainebleau','Tao at Venetian','EBC @ Night at Encore','Foundation Room at Mandalay Bay','On The Record at Park MGM'],blackout:true},
 };
 const days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-const input=document.getElementById('eDate') as HTMLInputElement;
-const results=document.getElementById('fResults');
-const fDay=document.getElementById('fDay');
-const fCount=document.getElementById('fCount');
-const fGrid=document.getElementById('fGrid');
-const fBlackout=document.getElementById('fBlackout');
-const now=new Date();
-input.min=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
-input.addEventListener('change',()=>{
-  const [y,m,d]=input.value.split('-').map(Number);
-  if(!y)return;
-  const date=new Date(y,m-1,d);
-  const day=date.getDay();
-  const data=schedule[day];
-  if(fDay)fDay.textContent=`${days[day]}, ${date.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})}`;
-  if(fCount)fCount.textContent=`${data.clubs.length} clubs typically available this night`;
-  if(fGrid)fGrid.innerHTML=data.clubs.map(c=>`<div class="f-chip">${c}</div>`).join('');
+const inp = document.getElementById('eDate') as HTMLInputElement;
+const res = document.getElementById('fResults');
+const now = new Date();
+inp.min = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+inp?.addEventListener('change',()=>{
+  const [y,m,d] = inp.value.split('-').map(Number);
+  if(!y) return;
+  const date = new Date(y,m-1,d);
+  const day = date.getDay();
+  const data = schedule[day];
+  const fDay = document.getElementById('fDay');
+  const fCount = document.getElementById('fCount');
+  const fGrid = document.getElementById('fGrid');
+  const fBlackout = document.getElementById('fBlackout');
+  if(fDay) fDay.textContent = `${days[day]}, ${date.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})}`;
+  if(fCount) fCount.textContent = `${data.clubs.length} clubs typically available`;
+  if(fGrid) fGrid.innerHTML = data.clubs.map(c=>`<div class="f-chip">${c}</div>`).join('');
   fBlackout?.classList.toggle('hidden',!data.blackout);
-  results?.classList.remove('hidden');
+  res?.classList.remove('hidden');
 });
 </script>
