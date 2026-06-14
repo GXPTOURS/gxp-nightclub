@@ -4,3 +4,6 @@ node_modules/
 .env.*
 !.env.example
 .DS_Store
+
+.vercel
+public/images/NCOW 1.mp4
