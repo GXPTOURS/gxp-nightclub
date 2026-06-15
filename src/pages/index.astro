@@ -282,58 +282,77 @@ import Layout from '../layouts/Layout.astro';
   <div class="container">
     <div class="slabel">Fleet</div>
     <h2>Your Vehicle <span class="grad">Scales With Your Group</span></h2>
-    <p class="sdesc">Vehicle is automatically assigned based on your group size and availability. Larger groups can use multiple vehicles. Upgrades are available as add-ons.</p>
+    <p class="sdesc">Vehicle is automatically matched to your group size. We have multiple sizes and colors available — from sleek black stretch limos to pink Hummers. Upgrades are always available.</p>
     <div class="veh-grid">
       <div class="veh-card">
-        <div class="veh-img"><img src="/images/Sprinter Limo Exterior.jpg" alt="Sprinter Limo Las Vegas" loading="lazy"/></div>
+        <div class="veh-imgs">
+          <img src="/images/Tier 1 - Stretch Limo (Exterior).jpg" alt="Stretch Sedan Limo exterior Las Vegas" loading="lazy" class="veh-main"/>
+          <img src="/images/Tier 1 - Stretch Limo (Interior).png" alt="Stretch Sedan Limo interior Las Vegas" loading="lazy" class="veh-int"/>
+        </div>
+        <div class="veh-body">
+          <div class="veh-badge">Tier 1</div>
+          <h3>Stretch Sedan Limo</h3>
+          <div class="veh-cap">👥 Small groups</div>
+          <div class="veh-colors">Available in: black</div>
+        </div>
+      </div>
+      <div class="veh-card">
+        <div class="veh-imgs">
+          <img src="/images/Tier 2 - Sprinter Limo (Exterior).jpg" alt="Sprinter Limo exterior Las Vegas" loading="lazy" class="veh-main"/>
+          <img src="/images/Tier 2 - Sprinter Limo (Interior).jpg" alt="Sprinter Limo interior Las Vegas" loading="lazy" class="veh-int"/>
+        </div>
         <div class="veh-body">
           <div class="veh-badge">Tier 2</div>
           <h3>Sprinter Limo</h3>
           <div class="veh-cap">👥 Up to 8 people</div>
+          <div class="veh-colors">Available in: black, white</div>
         </div>
       </div>
       <div class="veh-card">
-        <div class="veh-img"><img src="/images/Sprinter Limo Interior.jpg" alt="XL Sprinter Limo Las Vegas" loading="lazy"/></div>
+        <div class="veh-imgs">
+          <img src="/images/Tier 3 - Stretch Hummer Limo (Exterior).jpg" alt="Stretch Hummer Limo exterior Las Vegas" loading="lazy" class="veh-main"/>
+          <img src="/images/Tier 3 - Stretch Hummer Limo (Interior).jpg" alt="Stretch Hummer Limo interior Las Vegas" loading="lazy" class="veh-int"/>
+        </div>
         <div class="veh-body">
           <div class="veh-badge">Tier 3</div>
-          <h3>XL Sprinter Limo</h3>
-          <div class="veh-cap">👥 Up to 12 people</div>
-        </div>
-      </div>
-      <div class="veh-card">
-        <div class="veh-img"><img src="/images/Gp;den Knights Stretch Hummer Exterior.JPG" alt="Stretch Hummer Limo Las Vegas" loading="lazy"/></div>
-        <div class="veh-body">
-          <div class="veh-badge">Tier 4</div>
           <h3>Stretch Hummer Limo</h3>
           <div class="veh-cap">👥 Up to 18 people</div>
+          <div class="veh-colors">Available in: black, pink, white</div>
         </div>
       </div>
       <div class="veh-card">
-        <div class="veh-img"><img src="/images/Party Bus Exterior.jpg" alt="Party Bus Las Vegas" loading="lazy"/></div>
+        <div class="veh-imgs">
+          <img src="/images/Tier 4 - Party Bus (Exterior).jpg" alt="Party Bus exterior Las Vegas" loading="lazy" class="veh-main"/>
+          <img src="/images/Tier 4 - Party Bus (Interior).jpg" alt="Party Bus interior Las Vegas" loading="lazy" class="veh-int"/>
+        </div>
         <div class="veh-body">
-          <div class="veh-badge">Tier 5</div>
+          <div class="veh-badge">Tier 4</div>
           <h3>Party Bus</h3>
-          <div class="veh-cap">👥 Up to 25 people</div>
-        </div>
-      </div>
-      <div class="veh-card">
-        <div class="veh-img"><img src="/images/Dutch Bros Bus Party-089.jpg" alt="XL Party Bus Las Vegas" loading="lazy"/></div>
-        <div class="veh-body">
-          <div class="veh-badge">Tier 6</div>
-          <h3>XL Party Bus</h3>
-          <div class="veh-cap">👥 Up to 45 people</div>
-        </div>
-      </div>
-      <div class="veh-card veh-multi">
-        <div class="veh-multi-icon">🚌🚌</div>
-        <div class="veh-body">
-          <h3>Multiple Vehicles</h3>
-          <div class="veh-cap">👥 46–100+ people</div>
-          <p>We coordinate multiple vehicles moving together so your whole group stays together all night.</p>
+          <div class="veh-cap">👥 Up to 40 people</div>
+          <div class="veh-colors">Available in: black</div>
         </div>
       </div>
     </div>
-    <p class="veh-note">Vehicle upgrades available as add-ons · Call <a href="tel:+17024830463">(702) 483-0463</a> to confirm your vehicle</p>
+    <div class="veh-xl">
+      <div class="veh-xl-left">
+        <div class="veh-badge">Tier 4 XL</div>
+        <h3>40-Person Party Bus</h3>
+        <p>Our biggest single vehicle — the full nightclub on wheels experience at scale. Watch it in action below.</p>
+        <div class="veh-cap" style="margin-top:.5rem">👥 Up to 40 people · Available in: black</div>
+      </div>
+      <a href="https://www.tiktok.com/@gxptours/video/7214241497225448747" target="_blank" class="veh-tiktok">
+        <div class="vt-thumb">
+          <img src="/images/Dutch Bros Bus Party-089.jpg" alt="40 person party bus Las Vegas GXP Tours" loading="lazy"/>
+          <div class="vt-play">▶ Watch on TikTok</div>
+        </div>
+      </a>
+    </div>
+    <div class="veh-multi-bar">
+      <span class="veh-badge">100+ people?</span>
+      <span>We run multiple vehicles together — your whole group stays together all night.</span>
+      <a href="mailto:ops@gxptours.com" class="btn-g" style="padding:.6rem 1.25rem;font-size:.85rem">Email ops@gxptours.com →</a>
+    </div>
+    <p class="veh-note">Questions about your vehicle? <a href="sms:+17024830463">Text us at (702) 483-0463</a> or email <a href="mailto:ops@gxptours.com">ops@gxptours.com</a></p>
   </div>
 </section>
 
@@ -1111,22 +1130,36 @@ footer{background:#06060C;border-top:1px solid rgba(233,30,204,.18);padding:4rem
 @media(max-width:1000px){.foot-grid{grid-template-columns:1fr 1fr;gap:2.5rem}}
 @media(max-width:580px){.foot-grid{grid-template-columns:1fr;gap:2rem}}
 /* VEHICLES */
-.veh-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
-@media(max-width:900px){.veh-grid{grid-template-columns:repeat(2,1fr)}}
+.veh-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:1.5rem}
+@media(max-width:1000px){.veh-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:500px){.veh-grid{grid-template-columns:1fr}}
 .veh-card{background:var(--d2);border:1px solid rgba(255,255,255,.07);border-radius:12px;overflow:hidden;transition:border-color .2s,box-shadow .2s}
-.veh-card:hover{border-color:rgba(0,229,255,.3);box-shadow:0 0 30px rgba(0,229,255,.08)}
-.veh-img{height:200px;overflow:hidden}
-.veh-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.veh-card:hover .veh-img img{transform:scale(1.05)}
-.veh-body{padding:1rem 1.25rem}
-.veh-badge{display:inline-block;font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cy);border:1px solid rgba(0,229,255,.3);padding:.2rem .6rem;border-radius:999px;margin-bottom:.5rem}
-.veh-body h3{font-size:1rem;font-weight:800;color:var(--wh);margin-bottom:.35rem}
-.veh-cap{font-size:.85rem;color:var(--mt);font-weight:600}
+.veh-card:hover{border-color:rgba(0,229,255,.3);box-shadow:0 0 24px rgba(0,229,255,.08)}
+.veh-imgs{position:relative;height:160px;overflow:hidden}
+.veh-main{width:100%;height:100%;object-fit:cover;transition:opacity .35s,transform .5s}
+.veh-int{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s}
+.veh-card:hover .veh-main{opacity:0}
+.veh-card:hover .veh-int{opacity:1}
+.veh-card:hover .veh-main{transform:scale(1.04)}
+.veh-body{padding:.85rem 1rem}
+.veh-badge{display:inline-block;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cy);border:1px solid rgba(0,229,255,.3);padding:.15rem .55rem;border-radius:999px;margin-bottom:.4rem}
+.veh-body h3{font-size:.95rem;font-weight:800;color:var(--wh);margin-bottom:.3rem}
+.veh-cap{font-size:.8rem;color:var(--mt);font-weight:600}
+.veh-colors{font-size:.72rem;color:rgba(120,112,160,.7);margin-top:.2rem}
 .veh-body p{font-size:.8rem;color:var(--mt);margin-top:.5rem;line-height:1.6}
-.veh-multi{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:rgba(0,229,255,.04);border-color:rgba(0,229,255,.2);min-height:280px}
-.veh-multi-icon{font-size:2.5rem;margin-bottom:.75rem}
-.veh-note{text-align:center;font-size:.8rem;color:var(--mt);margin-top:2rem}
+.veh-xl{display:flex;gap:2rem;align-items:center;background:var(--d2);border:1px solid rgba(0,229,255,.2);border-radius:14px;padding:1.5rem 2rem;margin-bottom:1.25rem}
+@media(max-width:700px){.veh-xl{flex-direction:column}}
+.veh-xl-left{flex:1}
+.veh-xl-left h3{font-size:1.15rem;font-weight:800;color:var(--wh);margin:.5rem 0 .5rem}
+.veh-xl-left p{font-size:.85rem;color:var(--mt);line-height:1.6}
+.veh-tiktok{flex-shrink:0;width:220px;border-radius:10px;overflow:hidden;border:2px solid rgba(0,229,255,.3);display:block;transition:border-color .2s,box-shadow .2s}
+.veh-tiktok:hover{border-color:var(--cy);box-shadow:0 0 24px rgba(0,229,255,.2)}
+.vt-thumb{position:relative;height:160px;overflow:hidden}
+.vt-thumb img{width:100%;height:100%;object-fit:cover}
+.vt-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.45);color:#fff;font-weight:700;font-size:.85rem;gap:.4rem}
+.veh-multi-bar{display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;background:rgba(0,229,255,.04);border:1px solid rgba(0,229,255,.15);border-radius:10px;padding:1rem 1.5rem;margin-bottom:1rem}
+.veh-multi-bar span{color:var(--mt);font-size:.88rem;flex:1;min-width:200px}
+.veh-note{text-align:center;font-size:.8rem;color:var(--mt);margin-top:.75rem}
 .veh-note a{color:var(--cy)}
 
 .foot-brand{display:flex;flex-direction:column;gap:1rem}
