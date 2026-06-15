@@ -591,6 +591,55 @@ import Layout from '../layouts/Layout.astro';
   </div>
 </section>
 
+<!-- BOOKING POLICY -->
+<section class="section policy-section s-dark">
+  <div class="container">
+    <div class="slabel">Before You Book</div>
+    <h2>Know the <span class="grad">Rules of the Night</span></h2>
+    <div class="policy-grid">
+
+      <div class="policy-card policy-deposit">
+        <div class="policy-icon">💳</div>
+        <h3>Deposit &amp; Payment</h3>
+        <div class="policy-rows">
+          <div class="policy-row policy-row-good">
+            <div class="pr-badge pr-green">7+ Days Out</div>
+            <div class="pr-detail">
+              <strong>Only 30% deposit required today</strong>
+              <span>Remaining balance due closer to your event date</span>
+            </div>
+          </div>
+          <div class="policy-row policy-row-warn">
+            <div class="pr-badge pr-yellow">Under 7 Days</div>
+            <div class="pr-detail">
+              <strong>100% payment required upfront</strong>
+              <span>Full amount collected at time of booking</span>
+            </div>
+          </div>
+        </div>
+        <p class="policy-tip">💡 Book early — lock your date with just 30% down and save the rest for the bar.</p>
+      </div>
+
+      <div class="policy-card policy-id">
+        <div class="policy-icon">🪪</div>
+        <h3>Strictly 21+ · Zero Tolerance</h3>
+        <p class="policy-intro">This is a 21+ experience with no exceptions. Your valid government-issued ID will be checked <strong>four times</strong> throughout the night.</p>
+        <div class="policy-checks">
+          <div class="pc-item"><span class="pc-num">01</span><span>At bus boarding</span></div>
+          <div class="pc-item"><span class="pc-num">02</span><span>At the lounge/meetup venue</span></div>
+          <div class="pc-item"><span class="pc-num">03</span><span>At the Las Vegas Sign stop</span></div>
+          <div class="pc-item"><span class="pc-num">04</span><span>At nightclub entry</span></div>
+        </div>
+        <div class="policy-warning">
+          <span class="pw-icon">⚠️</span>
+          <span><strong>No ID = No Entry. No Exceptions. No Refunds.</strong> Anyone unable to produce valid photo ID at any checkpoint will not be permitted to continue and will not receive a refund. Please ensure every member of your group has their ID before the night begins.</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section id="faq" class="section">
   <div class="container">
@@ -993,6 +1042,35 @@ h2{font-size:clamp(1.8rem,4vw,2.75rem);color:var(--wh);margin-bottom:.85rem}
 .ud-hot{border-color:rgba(233,30,204,.3);background:rgba(233,30,204,.07)}
 .ud span{display:block;font-size:.875rem;font-weight:700;color:var(--wh);margin-bottom:.2rem}
 .ud em{font-size:.75rem;color:var(--pk);font-style:normal}
+
+/* BOOKING POLICY */
+.policy-section{background:var(--d1)}
+.policy-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2rem}
+@media(max-width:860px){.policy-grid{grid-template-columns:1fr}}
+.policy-card{background:var(--d3);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:2rem;display:flex;flex-direction:column;gap:1.25rem}
+.policy-deposit{border-color:rgba(0,229,255,.2);box-shadow:0 0 40px rgba(0,229,255,.04)}
+.policy-id{border-color:rgba(233,30,204,.2);box-shadow:0 0 40px rgba(233,30,204,.04)}
+.policy-icon{font-size:2.25rem}
+.policy-card h3{font-size:1.15rem;font-weight:800;color:var(--wh)}
+.policy-intro{font-size:.9rem;color:var(--mt);line-height:1.75}
+.policy-intro strong{color:var(--wh)}
+.policy-rows{display:flex;flex-direction:column;gap:.75rem}
+.policy-row{display:flex;align-items:flex-start;gap:1rem;padding:1rem;border-radius:10px}
+.policy-row-good{background:rgba(0,229,255,.05);border:1px solid rgba(0,229,255,.18)}
+.policy-row-warn{background:rgba(251,191,36,.05);border:1px solid rgba(251,191,36,.2)}
+.pr-badge{font-size:.65rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .75rem;border-radius:999px;white-space:nowrap;flex-shrink:0;margin-top:.1rem}
+.pr-green{background:rgba(0,229,255,.12);color:var(--cy);border:1px solid rgba(0,229,255,.3)}
+.pr-yellow{background:rgba(251,191,36,.12);color:#FBBF24;border:1px solid rgba(251,191,36,.3)}
+.pr-detail{display:flex;flex-direction:column;gap:.2rem}
+.pr-detail strong{font-size:.9rem;color:var(--wh);font-weight:700}
+.pr-detail span{font-size:.8rem;color:var(--mt)}
+.policy-tip{font-size:.82rem;color:var(--cy);background:rgba(0,229,255,.05);border:1px solid rgba(0,229,255,.12);border-radius:8px;padding:.75rem 1rem;line-height:1.6}
+.policy-checks{display:flex;flex-direction:column;gap:.5rem}
+.pc-item{display:flex;align-items:center;gap:.9rem;padding:.6rem .85rem;background:rgba(233,30,204,.05);border:1px solid rgba(233,30,204,.12);border-radius:8px;font-size:.875rem;color:var(--tx)}
+.pc-num{font-size:.7rem;font-weight:900;color:var(--pk);background:rgba(233,30,204,.12);border:1px solid rgba(233,30,204,.25);border-radius:999px;width:24px;height:24px;display:flex;align-items:center;justify-content:center;flex-shrink:0;text-shadow:0 0 8px rgba(233,30,204,.5)}
+.policy-warning{display:flex;gap:.85rem;align-items:flex-start;background:rgba(233,30,204,.08);border:1px solid rgba(233,30,204,.35);border-radius:10px;padding:1rem 1.1rem;font-size:.85rem;color:var(--tx);line-height:1.7;box-shadow:0 0 20px rgba(233,30,204,.06)}
+.pw-icon{font-size:1.25rem;flex-shrink:0;margin-top:.1rem}
+.policy-warning strong{color:var(--wh)}
 
 /* FAQ */
 .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
