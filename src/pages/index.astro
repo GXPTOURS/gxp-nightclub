@@ -37,6 +37,7 @@ import Layout from '../layouts/Layout.astro';
 <section class="hero">
   <div class="hero-bg">
     <video autoplay muted loop playsinline poster="/images/MXZ08018-Enhanced-NR.jpg" class="hero-vid">
+      <source src="/images/NCOW 1.mp4" type="video/mp4"/>
       <source src="/images/hero.mp4" type="video/mp4"/>
     </video>
     <img src="/images/MXZ08018-Enhanced-NR.jpg" alt="GXP Tours Nightclub on Wheels Las Vegas" class="hero-fallback" fetchpriority="high"/>
@@ -145,12 +146,54 @@ import Layout from '../layouts/Layout.astro';
     <img src="/images/_X1A1072.jpg" alt="Las Vegas party group" loading="lazy"/>
     <img src="/images/Dutch Bros Bus Party-134.jpg" alt="Party bus group photo" loading="lazy"/>
     <img src="/images/MXZ01901-Enhanced-NR.jpg" alt="Las Vegas group night out" loading="lazy"/>
+    <img src="/images/Dutch Bros Bus Party-031.jpg" alt="Party bus Las Vegas" loading="lazy"/>
+    <img src="/images/Dutch Bros Bus Party-099.jpg" alt="Group party bus Las Vegas" loading="lazy"/>
+    <img src="/images/GXP Amanda Photos-5.jpg" alt="GXP Tours Las Vegas" loading="lazy"/>
+    <img src="/images/GXP Amanda Photos-16.jpg" alt="GXP Tours Las Vegas" loading="lazy"/>
+    <img src="/images/GXP-Avery-8.jpg" alt="GXP Tours nightclub experience" loading="lazy"/>
+    <img src="/images/GXP-Tour-Hauson-17.jpg" alt="GXP Tours group night out" loading="lazy"/>
+    <img src="/images/MXZ01767-Enhanced-NR.jpg" alt="Las Vegas nightclub group" loading="lazy"/>
+    <img src="/images/MXZ01801-Enhanced-NR.jpg" alt="GXP Tours Las Vegas" loading="lazy"/>
+    <img src="/images/MXZ01868-Enhanced-NR.jpg" alt="Party bus Las Vegas night" loading="lazy"/>
+    <img src="/images/MXZ01904-Enhanced-NR.jpg" alt="GXP Tours group photo" loading="lazy"/>
+    <img src="/images/MXZ01983-Enhanced-NR.jpg" alt="Las Vegas party group" loading="lazy"/>
+    <img src="/images/MXZ01991-Enhanced-NR.jpg" alt="GXP Tours nightclub" loading="lazy"/>
+    <img src="/images/Remi Cruz _ Nightclub on Wheels 2.jpg" alt="Influencer party bus Las Vegas" loading="lazy"/>
+    <img src="/images/20251004Rachel-09.jpg" alt="GXP Tours Las Vegas" loading="lazy"/>
+    <img src="/images/20251004Rachel-17.jpg" alt="GXP Tours Las Vegas" loading="lazy"/>
+    <img src="/images/Wedding Party Group.jpg" alt="Wedding party Las Vegas" loading="lazy"/>
+    <img src="/images/_X1A8901.jpg" alt="Las Vegas party group" loading="lazy"/>
+    <img src="/images/Bachelorette Party.jpg" alt="Bachelorette party Las Vegas" loading="lazy"/>
+    <img src="/images/Birthday.jpg" alt="Birthday party Las Vegas" loading="lazy"/>
+    <img src="/images/Corporate Outing.jpg" alt="Corporate outing Las Vegas" loading="lazy"/>
+    <img src="/images/25 Passenger Party Bus Interior.JPG" alt="Party bus interior Las Vegas" loading="lazy"/>
     <img src="/images/On The Record.jpg" alt="On The Record at Park MGM Las Vegas" loading="lazy"/>
     <img src="/images/Remi Cruz Bachelorette.jpg" alt="Celebrity bachelorette party bus Las Vegas" loading="lazy"/>
     <img src="/images/MXZ01762-Enhanced-NR.jpg" alt="GXP Tours night" loading="lazy"/>
     <img src="/images/_X1A1072.jpg" alt="Las Vegas party group" loading="lazy"/>
     <img src="/images/Dutch Bros Bus Party-134.jpg" alt="Party bus group photo" loading="lazy"/>
     <img src="/images/MXZ01901-Enhanced-NR.jpg" alt="Las Vegas group night out" loading="lazy"/>
+    <img src="/images/Dutch Bros Bus Party-031.jpg" alt="Party bus Las Vegas" loading="lazy"/>
+    <img src="/images/Dutch Bros Bus Party-099.jpg" alt="Group party bus Las Vegas" loading="lazy"/>
+    <img src="/images/GXP Amanda Photos-5.jpg" alt="GXP Tours Las Vegas" loading="lazy"/>
+    <img src="/images/GXP Amanda Photos-16.jpg" alt="GXP Tours Las Vegas" loading="lazy"/>
+    <img src="/images/GXP-Avery-8.jpg" alt="GXP Tours nightclub experience" loading="lazy"/>
+    <img src="/images/GXP-Tour-Hauson-17.jpg" alt="GXP Tours group night out" loading="lazy"/>
+    <img src="/images/MXZ01767-Enhanced-NR.jpg" alt="Las Vegas nightclub group" loading="lazy"/>
+    <img src="/images/MXZ01801-Enhanced-NR.jpg" alt="GXP Tours Las Vegas" loading="lazy"/>
+    <img src="/images/MXZ01868-Enhanced-NR.jpg" alt="Party bus Las Vegas night" loading="lazy"/>
+    <img src="/images/MXZ01904-Enhanced-NR.jpg" alt="GXP Tours group photo" loading="lazy"/>
+    <img src="/images/MXZ01983-Enhanced-NR.jpg" alt="Las Vegas party group" loading="lazy"/>
+    <img src="/images/MXZ01991-Enhanced-NR.jpg" alt="GXP Tours nightclub" loading="lazy"/>
+    <img src="/images/Remi Cruz _ Nightclub on Wheels 2.jpg" alt="Influencer party bus Las Vegas" loading="lazy"/>
+    <img src="/images/20251004Rachel-09.jpg" alt="GXP Tours Las Vegas" loading="lazy"/>
+    <img src="/images/20251004Rachel-17.jpg" alt="GXP Tours Las Vegas" loading="lazy"/>
+    <img src="/images/Wedding Party Group.jpg" alt="Wedding party Las Vegas" loading="lazy"/>
+    <img src="/images/_X1A8901.jpg" alt="Las Vegas party group" loading="lazy"/>
+    <img src="/images/Bachelorette Party.jpg" alt="Bachelorette party Las Vegas" loading="lazy"/>
+    <img src="/images/Birthday.jpg" alt="Birthday party Las Vegas" loading="lazy"/>
+    <img src="/images/Corporate Outing.jpg" alt="Corporate outing Las Vegas" loading="lazy"/>
+    <img src="/images/25 Passenger Party Bus Interior.JPG" alt="Party bus interior Las Vegas" loading="lazy"/>
   </div>
 </div>
 
@@ -1204,7 +1247,7 @@ h2{font-size:clamp(1.8rem,4vw,2.75rem);color:var(--wh);margin-bottom:.85rem}
 
 /* PHOTO ROW (scrolling) */
 .photo-scroll-wrap{overflow:hidden;height:240px;background:var(--d1)}
-.photo-scroll-track{display:flex;gap:3px;height:100%;animation:photoScroll 28s linear infinite;width:max-content}
+.photo-scroll-track{display:flex;gap:3px;height:100%;animation:photoScroll 80s linear infinite;width:max-content}
 .photo-scroll-track img{height:100%;width:320px;object-fit:cover;flex-shrink:0}
 .photo-scroll-wrap:hover .photo-scroll-track{animation-play-state:paused}
 @keyframes photoScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
