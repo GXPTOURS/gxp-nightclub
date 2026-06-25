@@ -7,7 +7,7 @@ import Layout from '../layouts/Layout.astro';
 <header id="nav">
   <div class="nav-inner">
     <a href="https://gxptours.com" class="logo">
-      <img src="/images/GXP Tours 3.png" alt="GXP Tours Las Vegas" height="46"/>
+      <img src="/images/GXP Tours Logo (Transparent Background).png" alt="GXP Tours Las Vegas" height="46"/>
     </a>
     <nav>
       <a href="#perfect-for">Who It's For</a>
@@ -266,14 +266,32 @@ import Layout from '../layouts/Layout.astro';
     <div class="slabel">All-Inclusive</div>
     <h2>Everything Included. <span class="grad">Zero Surprises.</span></h2>
     <p class="sdesc">Other companies charge extra for gratuity, beverages, and entry. We bundle everything so the price you book is the price you pay.</p>
-    <div class="inc-grid">
-      <div class="inc"><div class="ii">🥂</div><h4>Champagne &amp; Bar Setup</h4><p>Complimentary champagne from the moment you board. Mixers, ice, cups, napkins — all stocked.</p></div>
-      <div class="inc"><div class="ii">🎵</div><h4>Your Playlist</h4><p>Bluetooth audio in the vehicle — play whatever gets your group hyped for the night ahead.</p></div>
-      <div class="inc"><div class="ii">📍</div><h4>Las Vegas Sign Stop</h4><p>The iconic photo every Vegas visitor needs. We time it perfectly so your whole group gets the shot.</p></div>
-      <div class="inc"><div class="ii">🚪</div><h4>VIP Nightclub Entry</h4><p>Skip the line entirely. Walk straight into one of Vegas's top clubs — already arranged and pre-paid.</p></div>
-      <div class="inc"><div class="ii">🍺</div><h4>BYOB Friendly</h4><p>Bring your own drinks on the vehicle — always welcome. We provide the ice and setup.</p></div>
-      <div class="inc"><div class="ii">💰</div><h4>Gratuity Included</h4><p>Driver gratuity is built into your price. No awkward tipping calculation at the end of the night.</p></div>
+    <!-- Featured highlight cards for the biggest differentiators -->
+    <div class="inc-featured">
+      <div class="inc-feat-card">
+        <div class="ifc-icon">🚪</div>
+        <div class="ifc-body">
+          <h4>VIP Nightclub Entry — No Cover Charge</h4>
+          <p>Skip the line entirely. Walk straight into one of Vegas's top clubs — already arranged, pre-paid, and confirmed before you even leave the bus. This isn't a "maybe" — it's guaranteed.</p>
+        </div>
+      </div>
+      <div class="inc-feat-card">
+        <div class="ifc-icon">📍</div>
+        <div class="ifc-body">
+          <h4>Las Vegas Sign Photo Stop</h4>
+          <p>The iconic shot every Vegas visitor needs. We build it into every route — perfectly timed so your whole group gets the photo. No extra charge, no extra planning.</p>
+        </div>
+      </div>
     </div>
+    <!-- Quick-scan checklist for everything else -->
+    <ul class="inc-list">
+      <li class="inc-item"><span class="inc-check">✓</span><div><strong>Champagne &amp; Bar Setup</strong> — complimentary champagne from the moment you board, plus mixers, ice, cups &amp; napkins</div></li>
+      <li class="inc-item"><span class="inc-check">✓</span><div><strong>BYOB Friendly</strong> — bring your own drinks on the vehicle, always welcome</div></li>
+      <li class="inc-item"><span class="inc-check">✓</span><div><strong>Your Playlist</strong> — Bluetooth audio in the vehicle, play whatever gets your group hyped</div></li>
+      <li class="inc-item"><span class="inc-check">✓</span><div><strong>Driver Gratuity Included</strong> — built into your price, no awkward tipping at the end of the night</div></li>
+      <li class="inc-item"><span class="inc-check">✓</span><div><strong>Private Vehicle</strong> — your group only, never paired with strangers</div></li>
+      <li class="inc-item"><span class="inc-check">✓</span><div><strong>Zero Hidden Fees</strong> — the price you book is the price you pay</div></li>
+    </ul>
     <div class="inc-photos">
       <img src="/images/MXZ01868-Enhanced-NR.jpg" alt="Champagne on party bus Las Vegas" loading="lazy"/>
       <img src="/images/MXZ01991-Enhanced-NR.jpg" alt="Las Vegas Sign group photo" loading="lazy"/>
@@ -341,7 +359,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="veh-body">
           <div class="veh-badge">Tier 2</div>
           <h3>Sprinter Limo</h3>
-          <div class="veh-cap">👥 Up to 8 people</div>
+          <div class="veh-cap">👥 Up to 15 people</div>
           <div class="veh-colors">Available in: black, white</div>
         </div>
       </div>
@@ -353,7 +371,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="veh-body">
           <div class="veh-badge">Tier 3</div>
           <h3>Stretch Hummer Limo</h3>
-          <div class="veh-cap">👥 Up to 18 people</div>
+          <div class="veh-cap">👥 Up to 19 people</div>
           <div class="veh-colors">Available in: black, pink, white</div>
         </div>
       </div>
@@ -659,15 +677,127 @@ import Layout from '../layouts/Layout.astro';
       <span class="press-headline-text">As Featured In</span>
       <div class="press-line"></div>
     </div>
-    <div class="press-grid">
-      <div class="press-card"><img src="/images/Daily Mail U.K. Logo.png" alt="Daily Mail UK" class="press-img"/></div>
-      <div class="press-card"><img src="/images/ITV Logo.png" alt="ITV" class="press-img"/></div>
-      <div class="press-card"><img src="/images/TMZ Logo.png" alt="TMZ" class="press-img"/></div>
-      <div class="press-card"><img src="/images/Bold Journey Logo.png" alt="Bold Journey" class="press-img"/></div>
-      <div class="press-card"><img src="/images/Batch Logo.png" alt="Batch" class="press-img"/></div>
+    <div class="press-logos">
+      <div class="press-logo-item">
+        <img src="/images/Daily Mail U.K. Logo.png" alt="Daily Mail UK" class="press-img"/>
+        <span class="press-pub-name">Daily Mail UK</span>
+      </div>
+      <div class="press-divider"></div>
+      <div class="press-logo-item">
+        <img src="/images/ITV Logo.png" alt="ITV" class="press-img"/>
+        <span class="press-pub-name">ITV</span>
+      </div>
+      <div class="press-divider"></div>
+      <div class="press-logo-item">
+        <img src="/images/TMZ Logo.png" alt="TMZ" class="press-img"/>
+        <span class="press-pub-name">TMZ</span>
+      </div>
+      <div class="press-divider"></div>
+      <div class="press-logo-item">
+        <img src="/images/Bold Journey Logo.png" alt="Bold Journey" class="press-img"/>
+        <span class="press-pub-name">Bold Journey</span>
+      </div>
+      <div class="press-divider"></div>
+      <div class="press-logo-item">
+        <img src="/images/Batch Logo.png" alt="Batch" class="press-img"/>
+        <span class="press-pub-name">Batch</span>
+      </div>
     </div>
   </div>
 </section>
+
+<!-- YOUTUBE VIDEO GALLERY -->
+<section id="videos" class="section vg-section">
+  <div class="container">
+    <div class="slabel">Real Experiences</div>
+    <h2>See the <span class="grad">Night in Action</span></h2>
+    <p class="sdesc">Hundreds of thousands of views — real groups, real nights, real reactions. This is what you're booking.</p>
+    <div class="vg-layout">
+      <div class="vg-list" id="vgList">
+        <div class="vg-thumb active" data-vid="R22Xv5K2d2U">
+          <img src="https://img.youtube.com/vi/R22Xv5K2d2U/mqdefault.jpg" alt="Remi Cruz Vegas Birthday Bash"/>
+          <div class="vgt-info"><div class="vgt-title">Remi Cruz Vegas Birthday Bash — Covered by TMZ</div><div class="vgt-dur">0:31</div></div>
+        </div>
+        <div class="vg-thumb" data-vid="nyVq_lqwEAE">
+          <img src="https://img.youtube.com/vi/nyVq_lqwEAE/mqdefault.jpg" alt="Nightclub on Wheels Bachelorette Party"/>
+          <div class="vgt-info"><div class="vgt-title">Nightclub on Wheels — Bachelorette Party</div><div class="vgt-dur">0:30</div></div>
+        </div>
+        <div class="vg-thumb" data-vid="3JikvjcQCf8">
+          <img src="https://img.youtube.com/vi/3JikvjcQCf8/mqdefault.jpg" alt="Lauren Burch and Julia Burch Try Nightclub on Wheels"/>
+          <div class="vgt-info"><div class="vgt-title">Lauren Burch &amp; Julia Burch Try Nightclub on Wheels</div><div class="vgt-dur">0:38</div></div>
+        </div>
+        <div class="vg-thumb" data-vid="f7l2eocW4mE">
+          <img src="https://img.youtube.com/vi/f7l2eocW4mE/mqdefault.jpg" alt="Dutch Bros Coffee Nightclub on Wheels Las Vegas Party Bus"/>
+          <div class="vgt-info"><div class="vgt-title">Dutch Bros Coffee — Nightclub on Wheels Las Vegas</div><div class="vgt-dur">1:05</div></div>
+        </div>
+        <div class="vg-thumb" data-vid="7jSnjOByXV0">
+          <img src="https://img.youtube.com/vi/7jSnjOByXV0/mqdefault.jpg" alt="Las Vegas Wedding Nightclub on Wheels Party Bus"/>
+          <div class="vgt-info"><div class="vgt-title">Las Vegas Wedding — Nightclub on Wheels Party Bus</div><div class="vgt-dur">0:31</div></div>
+        </div>
+        <div class="vg-thumb" data-vid="Q6SKizHrsHs">
+          <img src="https://img.youtube.com/vi/Q6SKizHrsHs/mqdefault.jpg" alt="Nightclub on Wheels Bachelor Bachelorette Party"/>
+          <div class="vgt-info"><div class="vgt-title">Nightclub on Wheels — Bachelor + Bachelorette Party</div><div class="vgt-dur">1:07</div></div>
+        </div>
+        <div class="vg-thumb" data-vid="xoL-Kh86lTw">
+          <img src="https://img.youtube.com/vi/xoL-Kh86lTw/mqdefault.jpg" alt="Amigas Nightclub on Wheels Party Bus"/>
+          <div class="vgt-info"><div class="vgt-title">Amigas — Nightclub on Wheels Party Bus</div><div class="vgt-dur">0:45</div></div>
+        </div>
+        <div class="vg-thumb" data-vid="3d1sLqAO6to">
+          <img src="https://img.youtube.com/vi/3d1sLqAO6to/mqdefault.jpg" alt="Vegas Birthday Blowout Nightclub on Wheels"/>
+          <div class="vgt-info"><div class="vgt-title">Vegas Birthday Blowout — Nightclub on Wheels</div><div class="vgt-dur">0:37</div></div>
+        </div>
+        <div class="vg-thumb" data-vid="dXCYFBmTklY">
+          <img src="https://img.youtube.com/vi/dXCYFBmTklY/mqdefault.jpg" alt="Nightclub on Wheels Wedding Party"/>
+          <div class="vgt-info"><div class="vgt-title">Nightclub on Wheels — Wedding Party</div><div class="vgt-dur">0:32</div></div>
+        </div>
+        <div class="vg-thumb" data-vid="1u6uv72FMHc">
+          <img src="https://img.youtube.com/vi/1u6uv72FMHc/mqdefault.jpg" alt="Vegas Wedding After Party Nightclub on Wheels"/>
+          <div class="vgt-info"><div class="vgt-title">Vegas Wedding After Party — Nightclub on Wheels</div><div class="vgt-dur">1:06</div></div>
+        </div>
+        <div class="vg-thumb" data-vid="K7-h55rzzxs">
+          <img src="https://img.youtube.com/vi/K7-h55rzzxs/mqdefault.jpg" alt="Nightclub on Wheels Las Vegas Party Bus"/>
+          <div class="vgt-info"><div class="vgt-title">Nightclub on Wheels Las Vegas Party Bus</div><div class="vgt-dur">0:33</div></div>
+        </div>
+        <div class="vg-thumb" data-vid="Rkt3aSOD-o8">
+          <img src="https://img.youtube.com/vi/Rkt3aSOD-o8/mqdefault.jpg" alt="Nightclub on Wheels Party Bus Las Vegas Birthday"/>
+          <div class="vgt-info"><div class="vgt-title">Nightclub on Wheels — Las Vegas Birthday</div><div class="vgt-dur">0:36</div></div>
+        </div>
+        <div class="vg-thumb" data-vid="I4Yn9hl_yZM">
+          <img src="https://img.youtube.com/vi/I4Yn9hl_yZM/mqdefault.jpg" alt="A Night Out After Getting Married in Las Vegas"/>
+          <div class="vgt-info"><div class="vgt-title">A Night Out After Getting Married in Las Vegas</div><div class="vgt-dur">1:35</div></div>
+        </div>
+        <div class="vg-thumb" data-vid="2tbngsWa2yw">
+          <img src="https://img.youtube.com/vi/2tbngsWa2yw/mqdefault.jpg" alt="Dutch Bros Coffee Nightclub on Wheels Las Vegas"/>
+          <div class="vgt-info"><div class="vgt-title">Dutch Bros — Night Out on the Nightclub on Wheels</div><div class="vgt-dur">1:05</div></div>
+        </div>
+      </div>
+      <div class="vg-player">
+        <div class="vg-iframe-wrap">
+          <iframe id="vgIframe" src="https://www.youtube.com/embed/R22Xv5K2d2U?rel=0&modestbranding=1" title="Nightclub on Wheels Las Vegas — GXP Tours" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="vg-now-playing" id="vgNowPlaying">Remi Cruz Vegas Birthday Bash — Covered by TMZ</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function(){
+    const thumbs = document.querySelectorAll('.vg-thumb');
+    const iframe = document.getElementById('vgIframe');
+    const nowPlaying = document.getElementById('vgNowPlaying');
+    thumbs.forEach(t => {
+      t.addEventListener('click', () => {
+        thumbs.forEach(x => x.classList.remove('active'));
+        t.classList.add('active');
+        const vid = t.dataset.vid;
+        iframe.src = `https://www.youtube.com/embed/${vid}?rel=0&modestbranding=1&autoplay=1`;
+        nowPlaying.textContent = t.querySelector('.vgt-title').textContent;
+        t.scrollIntoView({behavior:'smooth', block:'nearest'});
+      });
+    });
+  })();
+</script>
 
 <!-- PERFECT FOR -->
 <section id="perfect-for" class="section pf-section">
@@ -902,7 +1032,7 @@ import Layout from '../layouts/Layout.astro';
 
     <!-- COL 1: Brand -->
     <div class="foot-brand">
-      <img src="/images/GXP Tours 3.png" alt="GXP Tours Las Vegas" class="foot-logo"/>
+      <img src="/images/GXP Tours Logo (Transparent Background).png" alt="GXP Tours Las Vegas" class="foot-logo"/>
       <p>GXP Tours is a Las Vegas owned and operated team specializing in all inclusive party packages, private party bus tours, and group experiences for any occasion. With over 17 years of event planning and hospitality experience in Las Vegas, we make birthdays, bachelor and bachelorette parties, and corporate outings easy, seamless, and unforgettable.</p>
       <div class="foot-socials">
         <a href="https://www.tiktok.com/@gxptours" target="_blank" class="foot-social" aria-label="TikTok">
@@ -1034,18 +1164,31 @@ h1{font-size:clamp(2.6rem,7.5vw,5.5rem);font-weight:900;color:var(--wh);margin-b
 .rh-btn:hover{opacity:.88;box-shadow:0 0 50px rgba(233,30,204,.6)}
 
 /* AS SEEN IN */
-.press-section{background:linear-gradient(180deg,var(--d3) 0%,var(--d2) 100%);padding:4.5rem 1.5rem;border-top:1px solid rgba(233,30,204,.25);border-bottom:1px solid rgba(233,30,204,.25);position:relative;overflow:hidden}
-.press-section::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(233,30,204,.07),transparent 65%);pointer-events:none}
-.press-headline{display:flex;align-items:center;justify-content:center;gap:1.5rem;margin-bottom:3rem}
-.press-line{flex:1;max-width:200px;height:1px;background:linear-gradient(90deg,transparent,rgba(233,30,204,.5),transparent)}
-.press-headline-text{font-size:.8rem;font-weight:800;letter-spacing:.3em;text-transform:uppercase;color:var(--pk);white-space:nowrap;text-shadow:0 0 20px rgba(233,30,204,.6)}
-.press-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.25rem;position:relative;z-index:1}
-.press-card{display:flex;align-items:center;justify-content:center;padding:2rem 1.5rem;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;transition:border-color .3s,box-shadow .3s,background .3s}
-.press-card:hover{background:rgba(233,30,204,.06);border-color:rgba(233,30,204,.35);box-shadow:0 0 40px rgba(233,30,204,.12)}
-.press-img{height:64px;width:100%;max-width:160px;object-fit:contain;filter:brightness(0) invert(1);opacity:.55;transition:opacity .3s,filter .3s}
-.press-card:hover .press-img{opacity:1;filter:brightness(0) invert(1) drop-shadow(0 0 12px rgba(255,255,255,.5))}
-@media(max-width:860px){.press-grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:500px){.press-grid{grid-template-columns:repeat(2,1fr)}.press-img{height:44px}}
+.press-section{background:var(--d2);padding:3.5rem 1.5rem;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
+.press-headline{display:flex;align-items:center;justify-content:center;gap:1.5rem;margin-bottom:2.5rem}
+.press-line{flex:1;max-width:200px;height:1px;background:linear-gradient(90deg,transparent,rgba(233,30,204,.4),transparent)}
+.press-headline-text{font-size:.72rem;font-weight:800;letter-spacing:.3em;text-transform:uppercase;color:var(--mt);white-space:nowrap}
+.press-logos{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap}
+.press-logo-item{display:flex;flex-direction:column;align-items:center;gap:.75rem;padding:1.25rem 2.5rem;flex:1;min-width:120px;max-width:200px}
+.press-divider{width:1px;height:60px;background:rgba(255,255,255,.1);flex-shrink:0;align-self:center}
+.press-img{height:52px;width:100%;max-width:140px;object-fit:contain;filter:brightness(0) invert(1);opacity:.75;transition:opacity .25s}
+.press-logo-item:hover .press-img{opacity:1}
+.press-pub-name{font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(237,232,248,.35)}
+@media(max-width:700px){.press-divider{display:none}.press-logo-item{min-width:70px;padding:.75rem .75rem}.press-img{height:34px}.press-pub-name{font-size:.58rem}}
+
+/* INCLUSIONS */
+.inc-featured{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:1.75rem}
+.inc-feat-card{display:flex;gap:1.25rem;align-items:flex-start;background:var(--d2);border:1px solid rgba(0,229,255,.2);border-radius:14px;padding:1.75rem}
+.ifc-icon{font-size:2rem;flex-shrink:0;filter:drop-shadow(0 0 8px rgba(0,229,255,.4))}
+.ifc-body h4{font-size:1rem;font-weight:700;color:var(--wh);margin-bottom:.5rem}
+.ifc-body p{font-size:.875rem;color:var(--tx);line-height:1.75}
+.inc-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:.5rem .75rem;background:var(--d2);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:1.5rem}
+.inc-item{display:flex;align-items:baseline;gap:.7rem;font-size:.875rem;color:var(--tx);padding:.35rem 0}
+.inc-check{color:#00e5ff;font-size:.8rem;font-weight:800;flex-shrink:0}
+.inc-item strong{color:var(--wh)}
+@media(max-width:680px){.inc-featured{grid-template-columns:1fr}.inc-list{grid-template-columns:1fr}}
+
+/* INCLUSION PHOTOS */
 
 /* PACKAGE ITINERARY */
 .itinerary{background:rgba(0,229,255,.05);border:1px solid rgba(0,229,255,.18);border-radius:8px;padding:.85rem 1rem;margin:.25rem 0}
@@ -1068,6 +1211,27 @@ h1{font-size:clamp(2.6rem,7.5vw,5.5rem);font-weight:900;color:var(--wh);margin-b
 .slabel{font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--pk);margin-bottom:.75rem;text-shadow:0 0 10px rgba(233,30,204,.45)}
 h2{font-size:clamp(1.8rem,4vw,2.75rem);color:var(--wh);margin-bottom:.85rem}
 .sdesc{color:var(--tx);font-size:1rem;max-width:640px;margin-bottom:3rem}
+
+/* VIDEO GALLERY */
+.vg-section{background:var(--d1)}
+.vg-layout{display:grid;grid-template-columns:320px 1fr;gap:1.5rem;align-items:start}
+.vg-list{display:flex;flex-direction:column;gap:.5rem;max-height:500px;overflow-y:auto;padding-right:.25rem}
+.vg-list::-webkit-scrollbar{width:4px}
+.vg-list::-webkit-scrollbar-track{background:rgba(255,255,255,.05);border-radius:999px}
+.vg-list::-webkit-scrollbar-thumb{background:rgba(0,229,255,.3);border-radius:999px}
+.vg-thumb{display:flex;gap:.75rem;align-items:center;padding:.6rem .75rem;border-radius:10px;border:1px solid rgba(255,255,255,.06);background:var(--d2);cursor:pointer;transition:border-color .2s,background .2s;flex-shrink:0}
+.vg-thumb:hover{border-color:rgba(0,229,255,.3);background:rgba(0,229,255,.05)}
+.vg-thumb.active{border-color:rgba(0,229,255,.6);background:rgba(0,229,255,.08)}
+.vg-thumb img{width:80px;height:45px;object-fit:cover;border-radius:6px;flex-shrink:0}
+.vgt-info{flex:1;min-width:0}
+.vgt-title{font-size:.78rem;font-weight:600;color:var(--wh);line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vg-thumb.active .vgt-title{color:#00e5ff}
+.vgt-dur{font-size:.68rem;color:var(--mt);margin-top:.2rem}
+.vg-player{position:sticky;top:80px}
+.vg-iframe-wrap{position:relative;padding-bottom:56.25%;border-radius:14px;overflow:hidden;background:#000;border:1px solid rgba(255,255,255,.1)}
+.vg-iframe-wrap iframe{position:absolute;inset:0;width:100%;height:100%}
+.vg-now-playing{font-size:.82rem;color:var(--mt);margin-top:.75rem;padding-left:.25rem;font-style:italic}
+@media(max-width:900px){.vg-layout{grid-template-columns:1fr}.vg-list{flex-direction:row;overflow-x:auto;overflow-y:hidden;max-height:none;padding-right:0;padding-bottom:.25rem}.vg-thumb{min-width:200px;flex-direction:column;align-items:flex-start}.vg-thumb img{width:100%;height:110px}.vg-player{position:static}}
 
 /* PERFECT FOR */
 .pf-section{background:var(--d1)}
@@ -1416,7 +1580,7 @@ footer{background:#06060C;border-top:1px solid rgba(233,30,204,.18);padding:4rem
 .veh-note a{color:var(--cy)}
 
 .foot-brand{display:flex;flex-direction:column;gap:1rem}
-.foot-logo{max-height:70px;width:auto;filter:brightness(0) invert(1);opacity:.9}
+.foot-logo{max-height:90px;width:auto;opacity:.95}
 .foot-brand p{font-size:.8rem;color:var(--mt);line-height:1.85}
 .foot-socials{display:flex;gap:.75rem;margin-top:.25rem}
 .foot-social{width:40px;height:40px;border-radius:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:var(--mt);transition:background .2s,color .2s,border-color .2s,box-shadow .2s}
