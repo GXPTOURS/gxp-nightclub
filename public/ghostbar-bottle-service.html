@@ -440,14 +440,14 @@
     @media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr;gap:2rem}}
     @media(max-width:540px){.foot-grid{grid-template-columns:1fr;gap:1.75rem}}
 
-    /* PAGE NAV / JUMP TO */
-    .page-nav{background:var(--d1);border-bottom:1px solid rgba(255,255,255,.06);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-    .page-nav::-webkit-scrollbar{display:none}
-    .page-nav-inner{display:flex;align-items:center;gap:0;min-width:max-content;padding:0 1rem}
-    .page-nav a{display:inline-flex;align-items:center;padding:.75rem 1.1rem;font-size:.8rem;font-weight:600;color:var(--mt);white-space:nowrap;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
-    .page-nav a:hover{color:var(--wh);border-bottom-color:rgba(0,229,255,.4)}
-    .page-nav-cta{background:var(--gold-grad)!important;color:#fff!important;font-weight:800!important;border-radius:6px;margin:0 .5rem;padding:.5rem 1rem!important;border-bottom:none!important}
-    .page-nav-cta:hover{opacity:.85}
+    /* JUMP TO SECTION */
+    .jump-section{background:var(--d1);padding:1.5rem 1.5rem 2rem;border-bottom:1px solid rgba(255,255,255,.06)}
+    .jump-label{font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--pk);margin-bottom:1rem}
+    .jump-grid{display:flex;flex-wrap:wrap;gap:.6rem}
+    .jump-btn{display:inline-flex;align-items:center;gap:.4rem;padding:.6rem 1.1rem;border-radius:999px;font-size:.82rem;font-weight:700;border:1.5px solid rgba(255,255,255,.15);color:var(--wh);background:rgba(255,255,255,.05);transition:background .2s,border-color .2s,color .2s;white-space:nowrap}
+    .jump-btn:hover{background:rgba(0,229,255,.1);border-color:var(--cy);color:var(--cy)}
+    .jump-reserve{background:var(--gold-grad)!important;border-color:transparent!important;color:#fff!important;box-shadow:0 0 18px rgba(233,30,204,.3)}
+    .jump-reserve:hover{opacity:.88;color:#fff!important}
 
     /* REVIEWS */
     .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
@@ -645,18 +645,21 @@
 </div>
 
 <!-- PAGE NAV / JUMP TO -->
-<nav class="page-nav" aria-label="Jump to section">
-  <div class="page-nav-inner">
-    <a href="#included">What's Included</a>
-    <a href="#compare">Compare Prices</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#bottles">Bottle Menu</a>
-    <a href="#tablemap">Table Map</a>
-    <a href="#itinerary">How It Works</a>
-    <a href="#faq">FAQ</a>
-    <a href="https://gxptours.rezdy.com/676321/ghostbar-vip-bottle-service" target="_blank" rel="noopener" class="page-nav-cta">Reserve Now →</a>
+<section class="jump-section">
+  <div class="container">
+    <p class="jump-label">⚡ Jump to a Section</p>
+    <div class="jump-grid">
+      <a href="#included" class="jump-btn">🛋️ What's Included</a>
+      <a href="#compare" class="jump-btn">💰 Compare Prices</a>
+      <a href="#reviews" class="jump-btn">⭐ Reviews</a>
+      <a href="#bottles" class="jump-btn">🍾 Bottle Menu</a>
+      <a href="#tablemap" class="jump-btn">🗺️ Table Map</a>
+      <a href="#itinerary" class="jump-btn">📋 How It Works</a>
+      <a href="#faq" class="jump-btn">❓ FAQ</a>
+      <a href="https://gxptours.rezdy.com/676321/ghostbar-vip-bottle-service" target="_blank" rel="noopener" class="jump-btn jump-reserve">🎉 Reserve — $99 Deposit</a>
+    </div>
   </div>
-</nav>
+</section>
 
 <!-- PHOTO GRID -->
 <div class="photo-strip">
