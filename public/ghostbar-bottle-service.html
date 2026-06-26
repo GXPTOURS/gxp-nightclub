@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="VIP bottle service at Ghostbar inside PALMS Resort & Casino Las Vegas. Reserved tables, fast-track VIP entry, all-inclusive pricing from $500/bottle. Reserve for only $99 deposit."/>
+  <title>Ghostbar VIP Bottle Service Las Vegas | GXP Tours — From $500/Bottle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --pk:#E91ECC;--pk2:#FF3DE8;--pu:#7B2FBE;--pu2:#9B4FDE;
+      --cy:#00E5FF;--bk:#060608;--d1:#0D0D14;--d2:#13131C;--d3:#1C1C28;
+      --tx:#EDE8F8;--mt:#C4BDE0;--wh:#fff;
+      --gold:#D4AF37;--gold2:#FFE566;
+      --grad:linear-gradient(135deg,var(--pk),var(--pu));
+      --gold-grad:linear-gradient(135deg,var(--gold),var(--gold2));
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',system-ui,sans-serif;background:var(--bk);color:var(--tx);line-height:1.65;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    h1,h2,h3,h4,h5{line-height:1.15;font-weight:800}
+    .grad{background:linear-gradient(90deg,var(--pk2),var(--pu2),var(--cy));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .gold{background:linear-gradient(90deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+    /* BUTTONS */
+    .btn-p{display:inline-flex;align-items:center;gap:.4rem;background:var(--grad);color:#fff;font-weight:700;font-size:.95rem;padding:.9rem 2rem;border-radius:8px;box-shadow:0 0 28px rgba(233,30,204,.4);transition:opacity .2s,transform .15s,box-shadow .2s;white-space:nowrap;border:none;cursor:pointer}
+    .btn-p:hover{opacity:.88;transform:translateY(-2px);box-shadow:0 0 44px rgba(233,30,204,.65)}
+    .btn-g{display:inline-flex;align-items:center;gap:.4rem;background:transparent;color:var(--wh);font-weight:600;font-size:.95rem;padding:.9rem 2rem;border-radius:8px;border:2px solid rgba(255,255,255,.2);transition:border-color .2s,color .2s;white-space:nowrap;cursor:pointer}
+    .btn-g:hover{border-color:var(--cy);color:var(--cy)}
+    .btn-gold{display:inline-flex;align-items:center;gap:.4rem;background:var(--gold-grad);color:#0a0a0a;font-weight:800;font-size:.95rem;padding:.9rem 2rem;border-radius:8px;box-shadow:0 0 28px rgba(212,175,55,.35);transition:opacity .2s,transform .15s;white-space:nowrap;border:none;cursor:pointer}
+    .btn-gold:hover{opacity:.9;transform:translateY(-2px)}
+    .btn-xl{padding:1.15rem 2.75rem;font-size:1.08rem}
+    .btn-block{width:100%;justify-content:center}
+
+    /* NAV */
+    #nav{position:sticky;top:0;z-index:300;background:rgba(6,6,8,.95);backdrop-filter:blur(18px);border-bottom:1px solid rgba(233,30,204,.15)}
+    .nav-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;height:70px;display:flex;align-items:center;gap:2rem}
+    .logo img{height:46px;width:auto;filter:drop-shadow(0 0 10px rgba(233,30,204,.4))}
+    .nav-links{display:flex;gap:1.5rem;flex:1}
+    .nav-links a{font-size:.875rem;color:var(--mt);font-weight:500;transition:color .2s}
+    .nav-links a:hover{color:var(--wh)}
+    .nav-right{display:flex;align-items:center;gap:1rem;margin-left:auto}
+    .nav-tel{font-size:.875rem;color:var(--cy);font-weight:700;white-space:nowrap}
+    .nav-book{background:var(--gold-grad);color:#0a0a0a;font-weight:800;padding:.55rem 1.35rem;border-radius:7px;font-size:.875rem;box-shadow:0 0 16px rgba(212,175,55,.3);transition:opacity .2s;white-space:nowrap}
+    .nav-book:hover{opacity:.85}
+    #burger{display:none;background:none;border:none;color:var(--wh);font-size:1.5rem;cursor:pointer;margin-left:auto;padding:.25rem}
+    #mob-nav{display:none;flex-direction:column;gap:.5rem;padding:1rem 1.5rem 1.5rem;border-top:1px solid rgba(255,255,255,.06)}
+    #mob-nav a{padding:.55rem 0;color:var(--mt);border-bottom:1px solid rgba(255,255,255,.05)}
+    .mob-book{background:var(--gold-grad)!important;color:#0a0a0a!important;font-weight:800;padding:.75rem!important;border-radius:8px;text-align:center;margin-top:.5rem;border:none!important;box-shadow:0 0 16px rgba(212,175,55,.3)}
+    #mob-nav.open{display:flex}
+    @media(max-width:900px){.nav-links,.nav-tel{display:none}#burger{display:block}.nav-book{display:none}}
+
+    /* HERO */
+    .hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .hero-bg{position:absolute;inset:0}
+    .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+    .hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,6,8,.35) 0%,rgba(6,6,8,.65) 50%,rgba(6,6,8,.97) 100%);z-index:1}
+    .blob{position:absolute;border-radius:50%;pointer-events:none;filter:blur(80px);z-index:1}
+    .blob-l{width:600px;height:600px;top:5%;left:-15%;background:radial-gradient(circle,rgba(212,175,55,.18),transparent 70%);opacity:.7}
+    .blob-r{width:500px;height:500px;bottom:5%;right:-12%;background:radial-gradient(circle,rgba(233,30,204,.14),transparent 70%);opacity:.7}
+    .hero-body{position:relative;z-index:2;text-align:center;padding:5rem 1.5rem 3rem;max-width:900px;width:100%}
+    .badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.35);color:var(--gold2);padding:.4rem 1.1rem;border-radius:999px;font-size:.78rem;font-weight:600;letter-spacing:.04em;margin-bottom:1.75rem}
+    .age-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(233,30,204,.1);border:1px solid rgba(233,30,204,.3);color:var(--pk2);padding:.35rem .9rem;border-radius:999px;font-size:.72rem;font-weight:600;letter-spacing:.04em;margin-bottom:.75rem}
+    h1{font-size:clamp(2.6rem,7.5vw,5.5rem);font-weight:900;color:var(--wh);margin-bottom:1.25rem}
+    .hero-sub{font-size:clamp(1rem,2.5vw,1.2rem);color:rgba(237,232,248,.78);max-width:640px;margin:0 auto 1rem}
+    .hero-sub strong{color:var(--wh)}
+    .hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:3rem}
+    .hero-nums{display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:1.25rem 2rem;max-width:600px;margin:0 auto}
+    .hn{display:flex;flex-direction:column;text-align:center}
+    .hn strong{font-size:1.9rem;font-weight:900;background:var(--gold-grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1}
+    .hn span{font-size:.68rem;color:var(--mt);text-transform:uppercase;letter-spacing:.08em;margin-top:.2rem}
+    .hdiv{width:1px;height:40px;background:rgba(255,255,255,.1)}
+
+    /* TICKER */
+    .ticker-wrap{background:var(--d2);border-top:1px solid rgba(212,175,55,.15);border-bottom:1px solid rgba(0,229,255,.1);padding:.9rem 0;overflow:hidden}
+    .ticker{display:flex;gap:0;width:max-content;animation:ticker 30s linear infinite}
+    .ticker span{padding:0 2.5rem;font-size:.8rem;font-weight:600;color:var(--tx);white-space:nowrap}
+    @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    .ticker:hover{animation-play-state:paused}
+
+    /* SECTIONS */
+    .section{padding:5.5rem 1.5rem}
+    .section-dark{background:var(--d2)}
+    .section-darker{background:var(--d1)}
+    .yt-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;border:1px solid rgba(255,255,255,.08);margin-top:2rem}
+    .yt-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+    .section-black{background:var(--bk)}
+    .container{max-width:1100px;margin:0 auto}
+    .slabel{font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--pk);margin-bottom:.75rem}
+    .slabel-gold{font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem}
+    h2{font-size:clamp(1.8rem,4vw,2.75rem);color:var(--wh);margin-bottom:.85rem}
+    .sdesc{color:var(--mt);font-size:1rem;max-width:620px;margin-bottom:3rem}
+
+    /* WHAT'S INCLUDED GRID */
+    .inc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;margin-bottom:2.5rem}
+    .inc{background:var(--d2);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:1.75rem;transition:border-color .25s,box-shadow .25s}
+    .inc:hover{border-color:rgba(212,175,55,.35);box-shadow:0 0 24px rgba(212,175,55,.08)}
+    .inc-i{font-size:2rem;margin-bottom:.875rem}
+    .inc h4{font-size:.95rem;font-weight:700;color:var(--wh);margin-bottom:.4rem}
+    .inc p{font-size:.85rem;color:var(--mt)}
+
+    /* PRICE CALLOUT */
+    .price-callout{background:linear-gradient(135deg,rgba(212,175,55,.08),rgba(212,175,55,.04));border:1px solid rgba(212,175,55,.25);border-radius:14px;padding:2.5rem 3rem;display:flex;align-items:center;gap:3rem;flex-wrap:wrap}
+    .pc-col{display:flex;flex-direction:column;gap:.2rem}
+    .pc-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--mt);font-weight:600}
+    .pc-price{font-size:3rem;font-weight:900;color:var(--wh);line-height:1}
+    .pc-deposit{font-size:3rem;font-weight:900;line-height:1;background:var(--gold-grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .pc-per{font-size:1rem;font-weight:500;color:var(--mt)}
+    .pc-note{font-size:.72rem;color:var(--mt)}
+    .pc-divider{width:1px;height:70px;background:rgba(255,255,255,.1);flex-shrink:0}
+    .price-callout .btn-gold{margin-left:auto}
+    @media(max-width:768px){.price-callout{flex-direction:column;align-items:flex-start;padding:2rem}.pc-divider{width:60px;height:1px}.price-callout .btn-gold{margin-left:0;width:100%;justify-content:center}}
+
+    /* SPOTLIGHT 2-COL */
+    .spotlight{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+    .spot-img-wrap{position:relative;border-radius:16px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.4)}
+    .spot-img{width:100%;height:480px;object-fit:cover}
+    .spot-border{position:absolute;inset:0;border:1px solid rgba(212,175,55,.3);border-radius:16px;pointer-events:none;box-shadow:inset 0 0 25px rgba(212,175,55,.12),0 0 25px rgba(212,175,55,.08)}
+    .spot-text{display:flex;flex-direction:column;gap:1.25rem}
+    .spot-text p{color:var(--mt);font-size:.95rem;line-height:1.7}
+    .spot-features{display:flex;flex-direction:column;gap:1.25rem}
+    .spot-feat{display:flex;gap:1rem;align-items:flex-start}
+    .spot-icon{width:42px;height:42px;background:rgba(212,175,55,.1);border:1px solid rgba(212,175,55,.2);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+    .spot-feat h4{font-size:.95rem;font-weight:700;color:var(--wh);margin-bottom:.2rem}
+    .spot-feat p{font-size:.82rem;color:var(--mt);margin:0}
+    @media(max-width:860px){.spotlight{grid-template-columns:1fr;gap:2.5rem}.spot-img{height:320px}}
+
+    /* STEPS */
+    .steps-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.25rem}
+    .step{background:var(--d2);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:1.75rem 1.25rem;text-align:center;transition:border-color .3s,transform .3s}
+    .step:hover{border-color:rgba(212,175,55,.25);transform:translateY(-4px)}
+    .step-num{font-size:3rem;font-weight:900;line-height:1;background:linear-gradient(135deg,rgba(212,175,55,.3),rgba(212,175,55,.1));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.5rem}
+    .step-icon{font-size:1.6rem;margin-bottom:.875rem}
+    .step h3{font-size:.95rem;font-weight:700;color:var(--wh);margin-bottom:.5rem}
+    .step p{font-size:.8rem;color:var(--mt);line-height:1.6}
+    .step-note{background:rgba(0,229,255,.04);border:1px solid rgba(0,229,255,.15);border-radius:10px;padding:1.1rem 1.5rem;display:flex;gap:.875rem;align-items:flex-start;margin-top:2rem}
+    .step-note-icon{color:var(--cy);flex-shrink:0;font-size:1rem;margin-top:.1rem}
+    .step-note p{font-size:.85rem;color:var(--mt);line-height:1.65;margin:0}
+    @media(max-width:1000px){.steps-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:600px){.steps-grid{grid-template-columns:1fr 1fr}}
+
+    /* PHOTO GRID */
+    .photo-strip{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,280px)}
+    .photo-item{overflow:hidden;position:relative}
+    .photo-item img.photo-main{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+    .photo-item:hover img.photo-main{transform:scale(1.06)}
+    .photo-item::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(6,6,8,.55) 0%,transparent 50%);transition:opacity .3s}
+    .photo-item:hover::after{opacity:.7}
+    .photo-gb-logo{position:absolute;bottom:.65rem;right:.75rem;height:36px;width:auto;object-fit:contain;z-index:2;opacity:.82;filter:drop-shadow(0 1px 6px rgba(0,0,0,.7))}
+    /* VIEW STRIP */
+    .view-strip{display:grid;grid-template-columns:1fr 1fr;height:320px}
+    .view-item{overflow:hidden;position:relative}
+    .view-item img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .6s}
+    .view-item:hover img{transform:scale(1.04)}
+    .view-label{position:absolute;bottom:0;left:0;right:0;padding:.75rem 1.1rem;background:linear-gradient(to top,rgba(6,6,8,.85),transparent);z-index:2;font-size:.78rem;font-weight:700;letter-spacing:.06em;color:rgba(237,232,248,.9);text-transform:uppercase}
+    @media(max-width:760px){.photo-strip{grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,220px)}.view-strip{grid-template-columns:1fr;height:auto}.view-item{height:240px}}
+    @media(max-width:480px){.photo-strip{grid-template-columns:1fr;grid-template-rows:none}.photo-item{height:220px}.photo-gb-logo{height:28px}}
+
+    /* BOTTLE MENU */
+    .bottles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+    .bottle-card{background:var(--d2);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:1.75rem;transition:border-color .25s,box-shadow .25s}
+    .bottle-card:hover{border-color:rgba(212,175,55,.25);box-shadow:0 0 24px rgba(212,175,55,.06)}
+    .bc-header{display:flex;align-items:center;gap:.875rem;margin-bottom:1.25rem;padding-bottom:1rem;border-bottom:1px solid rgba(255,255,255,.06)}
+    .bc-icon{width:42px;height:42px;background:rgba(212,175,55,.1);border:1px solid rgba(212,175,55,.2);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0}
+    .bc-header h3{font-size:1rem;font-weight:800;color:var(--wh);margin-bottom:.15rem}
+    .bc-size{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);background:rgba(212,175,55,.1);padding:.15rem .6rem;border-radius:999px}
+    .bc-list{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+    .bc-list li{font-size:.875rem;color:var(--tx);display:flex;align-items:center;gap:.6rem}
+    .bc-list li::before{content:"✓";color:var(--gold2);font-weight:700;font-size:.8rem;flex-shrink:0}
+    .bc-mixers{margin-top:1.25rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.06);font-size:.78rem;color:var(--mt);line-height:1.6}
+    .bc-mixers strong{color:rgba(237,232,248,.85);display:block;margin-bottom:.2rem}
+    @media(max-width:860px){.bottles-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:540px){.bottles-grid{grid-template-columns:1fr}}
+
+    /* ESTIMATOR */
+    .calc-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:2.5rem}
+    .calc-card{background:var(--d2);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:2.5rem}
+    .calc-card h3{font-size:1.4rem;font-weight:800;color:var(--wh);margin-bottom:1.5rem;padding-bottom:.75rem;border-bottom:1px solid rgba(255,255,255,.08)}
+    .form-group{margin-bottom:1.75rem}
+    .form-group label{display:block;font-size:.83rem;font-weight:600;color:rgba(237,232,248,.95);margin-bottom:.6rem}
+    .label-row{display:flex;justify-content:space-between;align-items:center}
+    .field-glow{color:var(--cy);font-weight:700;font-size:.88rem;text-shadow:0 0 10px rgba(0,229,255,.4)}
+    .range-slider{width:100%;background:var(--d3);height:5px;border-radius:3px;outline:none;margin:.6rem 0;appearance:none}
+    .range-slider::-webkit-slider-thumb{appearance:none;width:18px;height:18px;border-radius:50%;background:var(--cy);cursor:pointer;box-shadow:0 0 10px rgba(0,229,255,.8);transition:transform .1s}
+    .range-slider::-webkit-slider-thumb:hover{transform:scale(1.2)}
+    .range-hint{display:flex;justify-content:space-between;font-size:.7rem;color:var(--mt)}
+    .form-control{width:100%;background:var(--d3);border:1px solid rgba(255,255,255,.1);color:var(--wh);padding:.9rem 1.25rem;border-radius:8px;font-family:'Inter',sans-serif;font-size:.9rem;outline:none;appearance:none;transition:border-color .2s}
+    .form-control:focus{border-color:var(--cy)}
+    .fine-print{font-size:.72rem;color:var(--mt);text-align:center;margin-top:.75rem;line-height:1.5}
+    .summary-rows{display:flex;flex-direction:column;gap:1.1rem}
+    .srow{display:flex;justify-content:space-between;font-size:.88rem;color:var(--mt)}
+    .sval{color:var(--wh);font-weight:600}
+    .sdivider{border:none;border-top:1px solid rgba(255,255,255,.08);margin:.25rem 0}
+    .total-block{text-align:center;padding:.75rem 0}
+    .total-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--mt);margin-bottom:.2rem}
+    .total-price{font-size:3.25rem;font-weight:900;color:var(--cy);text-shadow:0 0 20px rgba(0,229,255,.3);line-height:1.1}
+    .price-note{font-size:.7rem;color:var(--mt);margin-top:.35rem}
+    .deposit-box{background:rgba(212,175,55,.05);border:1px solid rgba(212,175,55,.15);border-radius:10px;padding:1.1rem}
+    .dep-row{display:flex;justify-content:space-between;align-items:center;font-size:.85rem;color:rgba(237,232,248,.85);padding:.35rem 0}
+    .dep-note{font-size:.7rem;color:var(--mt);margin-top:.6rem;padding-top:.6rem;border-top:1px solid rgba(255,255,255,.06);line-height:1.5}
+    .check-list{list-style:none;display:flex;flex-direction:column;gap:.45rem;margin-top:.875rem}
+    .check-list li{font-size:.8rem;color:rgba(237,232,248,.8);display:flex;align-items:center;gap:.5rem}
+    .check-list li::before{content:"✓";color:var(--gold2);font-weight:700;font-size:.75rem;flex-shrink:0}
+    .inclusions-box{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:1.1rem;margin-top:.875rem}
+    .inclusions-box h4{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--wh);margin-bottom:.25rem}
+    @media(max-width:768px){.calc-grid{grid-template-columns:1fr;gap:2rem}}
+
+    /* BOOKING DETAILS */
+    .booking-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+    .booking-card{background:var(--d2);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:2rem;transition:border-color .25s}
+    .booking-card:hover{border-color:rgba(233,30,204,.15)}
+    .booking-icon{width:46px;height:46px;background:rgba(233,30,204,.08);border:1px solid rgba(233,30,204,.18);border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:1.1rem}
+    .booking-card h4{font-size:1rem;font-weight:700;color:var(--wh);margin-bottom:.875rem;padding-bottom:.75rem;border-bottom:1px solid rgba(255,255,255,.06)}
+    .booking-list{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+    .booking-list li{font-size:.83rem;color:var(--mt);line-height:1.55;padding-left:.875rem;position:relative}
+    .booking-list li::before{content:"—";position:absolute;left:0;color:rgba(212,175,55,.5)}
+    .booking-list strong{color:rgba(237,232,248,.9)}
+    @media(max-width:860px){.booking-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:540px){.booking-grid{grid-template-columns:1fr}}
+
+    /* FAQ */
+    .faq-list{max-width:720px;display:flex;flex-direction:column;gap:.4rem}
+    .faq-list details{background:var(--d3);border:1px solid rgba(255,255,255,.06);border-radius:8px;overflow:hidden}
+    .faq-list summary{padding:1.1rem 1.25rem;font-weight:600;font-size:.95rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:var(--wh)}
+    .faq-list summary:after{content:"+";color:var(--pk);font-size:1.25rem;font-weight:300;flex-shrink:0}
+    .faq-list details[open] summary:after{content:"−"}
+    .faq-list details[open] summary{color:var(--pk)}
+    .faq-list div{padding:0 1.25rem 1.1rem;font-size:.9rem;color:var(--mt);line-height:1.75}
+
+    /* FINAL CTA */
+    .fcta{position:relative;padding:8rem 1.5rem;text-align:center;overflow:hidden}
+    .fcta-bg{position:absolute;inset:0}
+    .fcta-bg img{width:100%;height:100%;object-fit:cover}
+    .fcta-shade{position:absolute;inset:0;background:rgba(6,6,8,.85)}
+    .blob-gold{position:absolute;border-radius:50%;pointer-events:none;filter:blur(80px)}
+    .fcta .blob-l{background:radial-gradient(circle,rgba(212,175,55,.2),transparent 70%)}
+    .fcta .blob-r{background:radial-gradient(circle,rgba(233,30,204,.15),transparent 70%)}
+    .fcta-body{position:relative;z-index:2}
+    .fcta-logo{height:70px;width:auto;margin:0 auto 2rem;filter:drop-shadow(0 0 16px rgba(212,175,55,.4))}
+    .fcta-badge{display:inline-block;background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.3);color:var(--gold2);padding:.35rem 1.1rem;border-radius:999px;font-size:.78rem;font-weight:600;letter-spacing:.04em;margin-bottom:1.5rem}
+    .fcta h2{font-size:clamp(2rem,5vw,3.25rem);color:var(--wh);margin-bottom:.75rem}
+    .fcta>div>p{color:var(--mt);font-size:1.05rem;margin-bottom:2rem}
+    .fcta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.25rem}
+    .fcta-note{font-size:.78rem;color:var(--mt)}
+
+    /* FOOTER */
+    footer{background:#040406;border-top:1px solid rgba(255,255,255,.05);padding:3.5rem 1.5rem 0}
+    .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:3rem}
+    .foot-brand{display:flex;flex-direction:column;gap:.75rem}
+    .foot-logo{height:52px;width:auto;max-width:160px;object-fit:contain}
+    .foot-brand p{font-size:.8rem;color:var(--mt);line-height:1.8}
+    .foot-socials{display:flex;gap:.75rem;margin-top:.25rem}
+    .foot-social{width:36px;height:36px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--mt);transition:all .2s}
+    .foot-social:hover{background:rgba(233,30,204,.12);border-color:rgba(233,30,204,.35);color:var(--pk2)}
+    .foot-col{display:flex;flex-direction:column;gap:.65rem}
+    footer h5{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--mt);font-weight:700;margin-bottom:.25rem}
+    footer a{font-size:.85rem;color:rgba(237,232,248,.45);transition:color .2s}
+    footer a:hover{color:var(--pk)}
+    .foot-col p{font-size:.83rem;color:var(--mt);line-height:1.75}
+    .foot-contact-rows{display:flex;flex-direction:column;gap:.4rem}
+    .fcr-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(120,112,160,.6);font-weight:600;margin-top:.4rem}
+    .fcr-val{font-size:.85rem;color:rgba(237,232,248,.7)}
+    .foot-map iframe{border:0;border-radius:8px;filter:invert(90%) hue-rotate(180deg);width:100%;height:160px}
+    .foot-bottom{border-top:1px solid rgba(255,255,255,.05);padding:1.25rem 0;font-size:.75rem;color:var(--mt);text-align:center}
+    .foot-bottom a{color:var(--mt)}
+    .foot-bottom a:hover{color:var(--pk)}
+    @media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr;gap:2rem}}
+    @media(max-width:540px){.foot-grid{grid-template-columns:1fr;gap:1.75rem}}
+
+    /* MODAL */
+    .modal-overlay{position:fixed;inset:0;background:rgba(3,3,5,.88);backdrop-filter:blur(10px);z-index:2000;display:flex;align-items:center;justify-content:center;padding:1.5rem;opacity:0;pointer-events:none;transition:opacity .3s}
+    .modal-overlay.open{opacity:1;pointer-events:auto}
+    .modal-card{background:var(--d2);border:1px solid rgba(212,175,55,.25);border-radius:18px;width:100%;max-width:480px;padding:2.5rem;position:relative;box-shadow:0 25px 60px rgba(0,0,0,.5),0 0 40px rgba(212,175,55,.08);transform:translateY(30px);transition:transform .3s cubic-bezier(.34,1.56,.64,1);text-align:center}
+    .modal-overlay.open .modal-card{transform:translateY(0)}
+    .modal-close{position:absolute;top:1.25rem;right:1.25rem;background:none;border:none;font-size:1.75rem;color:var(--mt);cursor:pointer;line-height:1;transition:color .2s}
+    .modal-close:hover{color:var(--wh)}
+    .modal-icon{width:68px;height:68px;background:rgba(212,175,55,.1);border:1px solid rgba(212,175,55,.25);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.2rem;margin:0 auto 1.5rem}
+    .modal-card h2{font-size:1.75rem;margin-bottom:.75rem}
+    .modal-card>p{font-size:.88rem;color:var(--mt);margin-bottom:1.75rem;line-height:1.6}
+    .modal-summary{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:1.25rem;margin-bottom:2rem;text-align:left}
+    .modal-summary h4{font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:var(--mt);margin-bottom:.65rem}
+    .modal-row{display:flex;justify-content:space-between;font-size:.88rem;padding:.45rem 0;border-bottom:1px solid rgba(255,255,255,.04)}
+    .modal-row:last-child{border-bottom:none;font-weight:700}
+    .text-gold{color:var(--gold2)}
+    .text-white{color:var(--wh)}
+
+    /* VIDEO GALLERY */
+    .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+    .gallery-card{background:var(--d2);border:1px solid rgba(255,255,255,.06);border-radius:16px;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s}
+    .gallery-card:hover{transform:translateY(-6px);border-color:rgba(212,175,55,.3);box-shadow:0 12px 30px rgba(212,175,55,.12)}
+    .gallery-video-wrap{position:relative;padding-bottom:177.77%;height:0;overflow:hidden;background:#000}
+    .gallery-iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+    .gallery-card-body{padding:1.25rem;text-align:left}
+    .gallery-card-body h4{font-size:1rem;font-weight:700;color:var(--wh);margin-bottom:.4rem}
+    .gallery-card-body p{font-size:.82rem;color:var(--mt);line-height:1.55;margin:0}
+    @media(max-width:900px){.gallery-grid{grid-template-columns:repeat(2,1fr);gap:1.25rem}}
+    @media(max-width:600px){.gallery-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<header id="nav">
+  <div class="nav-inner">
+    <a href="https://gxptours.com" class="logo">
+      <img src="./assets/Cropped TRansparent Logo.png" alt="GXP Tours Las Vegas" height="46"/>
+    </a>
+    <nav class="nav-links">
+      <a href="#included">What's Included</a>
+      <a href="#itinerary">How It Works</a>
+      <a href="#bottles">Bottle Menu</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <a href="https://gxptours.rezdy.com/676321/ghostbar-vip-bottle-service" target="_blank" rel="noopener" class="nav-book">Reserve — $99 Deposit</a>
+    </div>
+    <button id="burger" aria-label="Menu">☰</button>
+  </div>
+  <div id="mob-nav">
+    <a href="#included">What's Included</a>
+    <a href="#itinerary">How It Works</a>
+    <a href="#bottles">Bottle Menu</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a href="https://gxptours.rezdy.com/676321/ghostbar-vip-bottle-service" target="_blank" rel="noopener" class="mob-book">Reserve — $99 Deposit</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="./assets/Ghostbar Terrace View.jpg" alt="Ghostbar 55th floor Las Vegas" class="hero-img" fetchpriority="high"/>
+    <div class="hero-shade"></div>
+    <div class="blob blob-l"></div>
+    <div class="blob blob-r"></div>
+    <img src="./assets/Ghostbar Logo.png" alt="Ghostbar" style="position:absolute;bottom:2rem;right:2rem;height:90px;width:auto;object-fit:contain;z-index:2;opacity:.8;filter:drop-shadow(0 2px 12px rgba(0,0,0,.7))"/>
+  </div>
+  <div class="hero-body">
+    <div class="age-badge">🪪 Ages 21+ Only &nbsp;·&nbsp; Valid Government-Issued ID Required</div>
+    <div class="badge">👑 Ghostbar at PALMS Resort &amp; Casino — 55th Floor, Las Vegas</div>
+    <h1>VIP Bottle Service<br/><span class="gold">Above the Strip.</span></h1>
+    <p class="hero-sub">Reserved table · Fast-track VIP entry · All-inclusive bottles with mixers · Breathtaking skyline views.<br/><strong>$500/bottle — tax &amp; gratuity already included.</strong></p>
+    <div class="hero-btns">
+      <a href="https://gxptours.rezdy.com/676321/ghostbar-vip-bottle-service" target="_blank" rel="noopener" class="btn-gold btn-xl">Reserve Now — $99 Deposit →</a>
+      <a href="#included" class="btn-g btn-xl">See What's Included</a>
+    </div>
+    <div class="hero-nums">
+      <div class="hn"><strong>$500</strong><span>per bottle</span></div>
+      <div class="hdiv"></div>
+      <div class="hn"><strong>$99</strong><span>deposit to reserve</span></div>
+      <div class="hdiv"></div>
+      <div class="hn"><strong>2–60</strong><span>group size</span></div>
+      <div class="hdiv"></div>
+      <div class="hn"><strong>55th</strong><span>floor</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span>🥂 All Tax &amp; Gratuity Included</span>
+    <span>⚡ Fast-Track VIP Entry</span>
+    <span>🏙️ 55th Floor Vegas Skyline Views</span>
+    <span>🍾 Bottle Presentation by Waitresses</span>
+    <span>🛋️ Reserved Premium Table</span>
+    <span>🍹 Mixers Included at Your Table</span>
+    <span>💳 Only $99 to Reserve</span>
+    <span>👥 Groups of 2–60 People</span>
+    <span>🏨 Inside PALMS Resort &amp; Casino</span>
+    <span>✅ No Bill at the End of the Night</span>
+    <span>🥂 All Tax &amp; Gratuity Included</span>
+    <span>⚡ Fast-Track VIP Entry</span>
+    <span>🏙️ 55th Floor Vegas Skyline Views</span>
+    <span>🍾 Bottle Presentation by Waitresses</span>
+    <span>🛋️ Reserved Premium Table</span>
+    <span>🍹 Mixers Included at Your Table</span>
+    <span>💳 Only $99 to Reserve</span>
+    <span>👥 Groups of 2–60 People</span>
+    <span>🏨 Inside PALMS Resort &amp; Casino</span>
+    <span>✅ No Bill at the End of the Night</span>
+  </div>
+</div>
+
+<!-- WHAT'S INCLUDED -->
+<section id="included" class="section section-dark">
+  <div class="container">
+    <div class="slabel-gold">All-Inclusive Package</div>
+    <h2>Everything in Your Reservation</h2>
+    <p class="sdesc">Every booking includes all of the following — no hidden fees, no surprises at the door.</p>
+    <div class="inc-grid">
+      <div class="inc">
+        <div class="inc-i">🛋️</div>
+        <h4>Premium Table Location</h4>
+        <p>Your own reserved table section inside Ghostbar on the famous 55th floor, accommodating groups of 2 to 60 people.</p>
+      </div>
+      <div class="inc">
+        <div class="inc-i">⚡</div>
+        <h4>Fast-Track VIP Entry</h4>
+        <p>Skip the general admission line. Bottle service guests enjoy expedited priority access directly into the venue.</p>
+      </div>
+      <div class="inc">
+        <div class="inc-i">🍾</div>
+        <h4>Your Choice of Bottle(s)</h4>
+        <p>Select from premium vodka, tequila, whiskey, rum, gin, or champagne. One full liter (or 750ml for tequila &amp; champagne) per bottle.</p>
+      </div>
+      <div class="inc">
+        <div class="inc-i">🍹</div>
+        <h4>Mixers at Your Table</h4>
+        <p>Tonic, club soda, lemon-lime soda, OJ, pineapple juice, and cranberry juice — all included for tableside cocktails.</p>
+      </div>
+      <div class="inc">
+        <div class="inc-i">🌟</div>
+        <h4>Bottle Presentation</h4>
+        <p>Waitresses bring your bottles out with flashing celebratory lights and dancing — turning heads across the entire venue.</p>
+      </div>
+      <div class="inc">
+        <div class="inc-i">✅</div>
+        <h4>No Bill at the End</h4>
+        <p>Your entire bill — all tax, fees, and gratuity — is paid in full before you arrive. Nothing to sign, nothing to calculate. Just party.</p>
+      </div>
+    </div>
+    <div class="price-callout">
+      <div class="pc-col">
+        <span class="pc-label">All-Inclusive Price</span>
+        <span class="pc-price">$500 <span class="pc-per">/ bottle</span></span>
+        <span class="pc-note">Tax &amp; gratuity already included</span>
+      </div>
+      <div class="pc-divider"></div>
+      <div class="pc-col">
+        <span class="pc-label">Reserve Today For Only</span>
+        <span class="pc-deposit">$99 <span class="pc-per">deposit</span></span>
+        <span class="pc-note">Applied toward your balance</span>
+      </div>
+      <a href="https://gxptours.rezdy.com/676321/ghostbar-vip-bottle-service" target="_blank" rel="noopener" class="btn-gold">Secure Your Table →</a>
+    </div>
+  </div>
+</section>
+
+<!-- VENUE SPOTLIGHT -->
+<section class="section section-black">
+  <div class="container">
+    <div class="spotlight">
+      <div class="spot-img-wrap">
+        <div class="spot-border"></div>
+        <img src="./assets/Ghostbar Main Room.jpg" alt="Ghostbar main lounge PALMS Las Vegas" class="spot-img"/>
+      </div>
+      <div class="spot-text">
+        <div class="slabel-gold">PALMS Resort &amp; Casino · Las Vegas</div>
+        <h2>Indoor &amp; Outdoor<br/><span class="gold">55th Floor</span> Seating</h2>
+        <p>Ghostbar sits high above the Las Vegas Strip, offering sweeping panoramic views you won't find anywhere else in the city. Choose between sleek indoor seating with a vibrant nightclub atmosphere or the stunning outdoor sky patio overlooking the entire Strip.</p>
+        <p>Your table arrives already set with ice, cups, and mixers before you walk in — you're there to party, not to prep.</p>
+        <div class="spot-features">
+          <div class="spot-feat">
+            <div class="spot-icon">🏙️</div>
+            <div>
+              <h4>360° Las Vegas Skyline</h4>
+              <p>One of the most scenic lounge settings in the world — from your reserved table on the 55th floor.</p>
+            </div>
+          </div>
+          <div class="spot-feat">
+            <div class="spot-icon">🕐</div>
+            <div>
+              <h4>3–5 Hour Experience</h4>
+              <p>We recommend arriving 9:00–10:30 PM to maximize your time. Venue typically closes around 2–3 AM.</p>
+            </div>
+          </div>
+          <div class="spot-feat">
+            <div class="spot-icon">♿</div>
+            <div>
+              <h4>ADA Accessible</h4>
+              <p>The venue is accessible by ADA-compliant elevator from the main PALMS casino floor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIEW STRIP -->
+<div class="view-strip">
+  <div class="view-item">
+    <img src="./assets/Palms Tower View.jpg" alt="PALMS Resort & Casino Las Vegas exterior"/>
+    <div class="view-label">PALMS Resort &amp; Casino · Las Vegas</div>
+  </div>
+  <div class="view-item">
+    <img src="./assets/Northern View of Strip.jpg" alt="Northern Las Vegas Strip view from Ghostbar 55th floor" loading="lazy"/>
+    <div class="view-label">The View from 55 Floors Up</div>
+  </div>
+</div>
+
+<!-- EXPERIENCE GALLERY (VIDEOS) -->
+<section id="gallery" class="section section-darker">
+  <div class="container">
+    <div class="slabel-gold">Ghostbar in Action</div>
+    <h2>Live From the 55th Floor</h2>
+    <p class="sdesc">See our venue walkthrough, legendary bottle presentations, and stunning views directly from our guests' perspectives.</p>
+    
+    <div class="gallery-grid">
+      <!-- Card 1: Inside Ghostbar -->
+      <div class="gallery-card">
+        <div class="gallery-video-wrap">
+          <div class="spot-border"></div>
+          <iframe
+            src="https://www.youtube.com/embed/0wI5U2xNNxs"
+            title="Inside Ghostbar Las Vegas — 55th Floor"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+            class="gallery-iframe">
+          </iframe>
+        </div>
+        <div class="gallery-card-body">
+          <h4>Inside Ghostbar — 55th Floor</h4>
+          <p>Step inside one of Las Vegas's most iconic venues and see the stunning atmosphere, skyline views, and VIP energy firsthand.</p>
+        </div>
+      </div>
+
+      <!-- Card 2: Presentation -->
+      <div class="gallery-card">
+        <div class="gallery-video-wrap">
+          <div class="spot-border"></div>
+          <iframe
+            src="https://www.youtube.com/embed/0ehtUZjAA20"
+            title="Ghostbar VIP Bottle Service Presentation"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+            class="gallery-iframe">
+          </iframe>
+        </div>
+        <div class="gallery-card-body">
+          <h4>VIP Bottle Presentation</h4>
+          <p>Watch our high-energy hostesses deliver premium bottles with flashing lights, sparklers, and celebratory music.</p>
+        </div>
+      </div>
+
+      <!-- Card 3: Fireworks -->
+      <div class="gallery-card">
+        <div class="gallery-video-wrap">
+          <div class="spot-border"></div>
+          <iframe
+            src="https://www.youtube.com/embed/bvS_dRObWZ0"
+            title="Ghostbar Rooftop 4th of July Fireworks"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+            class="gallery-iframe">
+          </iframe>
+        </div>
+        <div class="gallery-card-body">
+          <h4>Rooftop Fireworks View</h4>
+          <p>Enjoy spectacular holiday and weekend fireworks displays from the ultimate outdoor vantage point on the 55th floor.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="itinerary" class="section section-dark">
+  <div class="container">
+    <div class="slabel">Night of Your Reservation</div>
+    <h2>How Your Night Unfolds</h2>
+    <p class="sdesc">Your bill is fully paid before you arrive. Here's all you need to do when you get there.</p>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-icon">📋</div>
+        <h3>Check In at the Podium</h3>
+        <p>Upon arriving at PALMS, check in under your reservation name. Bring your group and valid IDs.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-icon">🛗</div>
+        <h3>Escorted to Your Table</h3>
+        <p>Staff takes you up to the 55th floor and to your reserved section — already set with ice, cups, and mixers.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-icon">🌟</div>
+        <h3>Bottle Presentation</h3>
+        <p>Waitresses bring your bottles out with flashing lights and dancing — the signal that the real party begins.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-icon">🥂</div>
+        <h3>First Round Poured</h3>
+        <p>The waitress pours everyone's first drinks right at your table. Enjoy cocktails at your own pace from here.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">05</div>
+        <div class="step-icon">🎉</div>
+        <h3>PARTY TIME</h3>
+        <p>Nothing to sign. No bill to pay. Put on your dancing shoes and enjoy one of the best views in Las Vegas.</p>
+      </div>
+    </div>
+    <div class="step-note">
+      <span class="step-note-icon">ℹ️</span>
+      <p>If you'd like to order additional menu items during your visit, you can do so directly with your waitress — the bottle service bill has already been paid and closed, so additional items require separate payment at the venue.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GETTING THERE VIDEO -->
+<section class="section section-darker">
+  <div class="container" style="max-width:860px;text-align:center">
+    <div class="slabel">Finding Ghostbar</div>
+    <h2>Easy to Find, Once You Know the Way</h2>
+    <p class="sdesc">Follow this quick walkthrough from the PALMS main entrance straight to Ghostbar on the 55th floor — so your group arrives confident and on time.</p>
+    <div class="yt-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/r4sJREUiFoU"
+        title="How to get to Ghostbar from PALMS Casino main entrance"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO GRID -->
+<div class="photo-strip">
+  <div class="photo-item"><img src="./assets/Ghostbar Main Room.jpg" alt="Ghostbar main lounge interior" class="photo-main" loading="lazy"/></div>
+  <div class="photo-item"><img src="./assets/Bachelor Party at Ghostbar.jpeg" alt="Bachelor party VIP bottle service at Ghostbar" class="photo-main" loading="lazy"/></div>
+  <div class="photo-item"><img src="./assets/Ghostbar Terrace View.jpg" alt="Ghostbar 55th floor terrace Las Vegas" class="photo-main" loading="lazy"/></div>
+  <div class="photo-item"><img src="./assets/Ghostbar Wedding Group.jpg" alt="Wedding group celebration at Ghostbar" class="photo-main" loading="lazy"/></div>
+  <div class="photo-item"><img src="./assets/Couple on Ghostbar.jpg" alt="Couple enjoying Ghostbar Las Vegas" class="photo-main" loading="lazy"/></div>
+  <div class="photo-item"><img src="./assets/Friends at Ghost Bar" alt="Friends at Ghostbar Las Vegas" class="photo-main" loading="lazy"/></div>
+</div>
+
+<!-- BOTTLE MENU -->
+<section id="bottles" class="section section-black">
+  <div class="container">
+    <div class="slabel-gold">Spirit Menu</div>
+    <h2>Choose Your Bottle(s)</h2>
+    <p class="sdesc">All bottles are $500 each (1 liter). Tequila and champagne come in 750ml. Choose your spirits when you complete your booking.</p>
+    <div class="bottles-grid">
+      <div class="bottle-card">
+        <div class="bc-header">
+          <div class="bc-icon">💧</div>
+          <div>
+            <h3>Vodka</h3>
+            <span class="bc-size">1 Liter</span>
+          </div>
+        </div>
+        <ul class="bc-list">
+          <li>Ketel One</li>
+          <li>Cîroc</li>
+          <li>Stoli</li>
+        </ul>
+      </div>
+      <div class="bottle-card">
+        <div class="bc-header">
+          <div class="bc-icon">🥃</div>
+          <div>
+            <h3>Bourbon / Whiskey</h3>
+            <span class="bc-size">1 Liter</span>
+          </div>
+        </div>
+        <ul class="bc-list">
+          <li>Jameson</li>
+          <li>Jack Daniel's</li>
+          <li>Blackened</li>
+          <li>Fireball</li>
+        </ul>
+      </div>
+      <div class="bottle-card">
+        <div class="bc-header">
+          <div class="bc-icon">⚓</div>
+          <div>
+            <h3>Rum</h3>
+            <span class="bc-size">1 Liter</span>
+          </div>
+        </div>
+        <ul class="bc-list">
+          <li>Bacardi</li>
+          <li>Captain Morgan</li>
+          <li>Malibu</li>
+        </ul>
+      </div>
+      <div class="bottle-card">
+        <div class="bc-header">
+          <div class="bc-icon">🌿</div>
+          <div>
+            <h3>Gin</h3>
+            <span class="bc-size">1 Liter</span>
+          </div>
+        </div>
+        <ul class="bc-list">
+          <li>Aviation</li>
+          <li>Beefeater</li>
+        </ul>
+      </div>
+      <div class="bottle-card">
+        <div class="bc-header">
+          <div class="bc-icon">🌵</div>
+          <div>
+            <h3>Tequila</h3>
+            <span class="bc-size">750 ml</span>
+          </div>
+        </div>
+        <ul class="bc-list">
+          <li>DeLeon Blanco</li>
+          <li>DeLeon Reposado</li>
+          <li>Patrón Silver</li>
+        </ul>
+      </div>
+      <div class="bottle-card">
+        <div class="bc-header">
+          <div class="bc-icon">🍾</div>
+          <div>
+            <h3>Champagne</h3>
+            <span class="bc-size">750 ml</span>
+          </div>
+        </div>
+        <ul class="bc-list">
+          <li>Selection Varies</li>
+        </ul>
+        <div class="bc-mixers">
+          <strong>Mixers Included:</strong>
+          Tonic · Club Soda · Lemon-Lime Soda · OJ · Pineapple Juice · Cranberry Juice
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE ESTIMATOR -->
+<section id="pricing" class="section section-dark">
+  <div class="container">
+    <div class="slabel">Cost Calculator</div>
+    <h2>Estimate Your Package</h2>
+    <p class="sdesc">Choose your group size and number of bottles to see a quick cost breakdown.</p>
+    <div class="calc-grid">
+      <div class="calc-card">
+        <h3>Configure Your Reservation</h3>
+        <form id="estimator-form">
+          <div class="form-group">
+            <div class="label-row">
+              <label for="calc-guests">Group Size</label>
+              <span id="guests-val" class="field-glow">10 Guests</span>
+            </div>
+            <input type="range" id="calc-guests" min="2" max="60" value="10" class="range-slider"/>
+            <div class="range-hint"><span>2</span><span>60</span></div>
+          </div>
+          <div class="form-group">
+            <div class="label-row">
+              <label for="calc-bottles">Number of Bottles</label>
+              <span id="bottles-val" class="field-glow">2 Bottles</span>
+            </div>
+            <input type="range" id="calc-bottles" min="1" max="20" value="2" class="range-slider"/>
+            <div class="range-hint"><span>1</span><span>20</span></div>
+          </div>
+          <div class="form-group">
+            <label for="calc-date">Preferred Date</label>
+            <input type="date" id="calc-date" class="form-control"/>
+          </div>
+          <button type="button" id="btn-estimate" class="btn-gold btn-block">Secure My Table — $99 Deposit →</button>
+          <p class="fine-print">Deposit non-refundable unless Trip Insurance purchased. Remaining balance due 7 days prior.</p>
+        </form>
+      </div>
+      <div class="calc-card">
+        <h3>Price Breakdown</h3>
+        <div class="summary-rows">
+          <div class="srow"><span>Group Size</span><span id="s-guests" class="sval">10 Guests</span></div>
+          <div class="srow"><span>Bottles Selected</span><span id="s-bottles" class="sval">2 Bottles</span></div>
+          <div class="srow"><span>Price per Bottle</span><span class="sval">$500</span></div>
+          <hr class="sdivider"/>
+          <div class="total-block">
+            <div class="total-label">Total Package Cost</div>
+            <div class="total-price" id="calc-total">$1,000</div>
+            <p class="price-note">Tax &amp; gratuity already included above.</p>
+          </div>
+          <div class="deposit-box">
+            <div class="dep-row"><span>💳 Due Today (Deposit)</span><span class="text-gold">$99</span></div>
+            <div class="dep-row"><span>📅 Remaining Balance</span><span id="balance-due" class="text-white">$901</span></div>
+            <p class="dep-note">Remaining balance due 7 days before your reservation via credit card or Zelle.</p>
+          </div>
+          <div class="inclusions-box">
+            <h4>What's Included:</h4>
+            <ul class="check-list">
+              <li>Reserved Table at Ghostbar</li>
+              <li>Fast-Track VIP Entry</li>
+              <li>Your Choice of Bottles</li>
+              <li>Bottle Presentation</li>
+              <li>All Mixers Included</li>
+              <li>Tax &amp; Gratuity Included</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING DETAILS -->
+<section class="section section-black">
+  <div class="container">
+    <div class="slabel">Reservation Policy</div>
+    <h2>Booking Details</h2>
+    <p class="sdesc">Everything you need to know before completing your reservation.</p>
+    <div class="booking-grid">
+      <div class="booking-card">
+        <div class="booking-icon">💳</div>
+        <h4>Deposit &amp; Payment</h4>
+        <ul class="booking-list">
+          <li>Reserve now for only a <strong>$99 non-refundable deposit</strong> (applied to your balance).</li>
+          <li>Remaining balance is due <strong>7 days before your reservation</strong>.</li>
+          <li>Pay by <strong>credit card</strong> (emailed link 10 days prior) or <strong>Zelle</strong> (a rep will contact you).</li>
+          <li>If booking less than 7 days out, <strong>full balance required at checkout</strong>.</li>
+        </ul>
+      </div>
+      <div class="booking-card">
+        <div class="booking-icon">📊</div>
+        <h4>Fees &amp; Timing</h4>
+        <ul class="booking-list">
+          <li>A <strong>booking fee of 1.9%</strong> is added to every reservation.</li>
+          <li>A <strong>processing fee of 3.4%</strong> is added to credit card payments (Zelle has no processing fee).</li>
+          <li>Packages must be purchased <strong>at least 24 hours</strong> before the reservation date/time.</li>
+        </ul>
+      </div>
+      <div class="booking-card">
+        <div class="booking-icon">🪪</div>
+        <h4>ID Verification</h4>
+        <ul class="booking-list">
+          <li>This reservation is for <strong>ages 21+</strong> only.</li>
+          <li>You'll be emailed to submit a <strong>photo of your ID</strong> during the booking process.</li>
+          <li>You may cover your license number, ID number, and address — we need your <strong>photo, birthdate, and expiration date</strong>.</li>
+          <li>Clubs do <strong>not</strong> accept temporary/paper IDs or photos of IDs at the door.</li>
+        </ul>
+      </div>
+      <div class="booking-card">
+        <div class="booking-icon">☂️</div>
+        <h4>Trip Insurance</h4>
+        <ul class="booking-list">
+          <li>The $99 deposit is <strong>non-refundable</strong> unless you purchase Trip Insurance at checkout.</li>
+          <li>Trip Insurance provides coverage if you need to cancel or reschedule your reservation.</li>
+        </ul>
+      </div>
+      <div class="booking-card">
+        <div class="booking-icon">📍</div>
+        <h4>Venue Location</h4>
+        <ul class="booking-list">
+          <li><strong>Ghostbar</strong> is on the <strong>55th floor</strong> of PALMS Resort &amp; Casino.</li>
+          <li>4321 W Flamingo Rd, Las Vegas, NV 89103.</li>
+          <li>Escalators and an ADA elevator off the main casino floor bring you up.</li>
+        </ul>
+      </div>
+      <div class="booking-card">
+        <div class="booking-icon">👔</div>
+        <h4>Dress Code</h4>
+        <ul class="booking-list">
+          <li><strong>Upscale, fashionable attire</strong> — dresses, heels, collared shirts, dress shoes, clean on-trend sneakers.</li>
+          <li><strong>Not permitted:</strong> athletic wear, shorts, flip-flops, swimwear, Jordans, or offensive clothing.</li>
+          <li>Max bag size 12″ × 12″ × 6″. No backpacks, outside food/drinks, or selfie sticks.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section section-dark">
+  <div class="container">
+    <div class="slabel">Common Questions</div>
+    <h2>Frequently Asked Questions</h2>
+    <p class="sdesc" style="margin-bottom:2rem">Have more questions? Call or email us anytime.</p>
+    <div class="faq-list">
+      <details>
+        <summary>What is bottle service / table service?</summary>
+        <div>Bottle service means you reserve a table at the nightclub rather than buying individual drinks at the bar. The price you pay is primarily for the reserved "real estate" — the table, seating, service, and VIP treatment — along with the bottle(s) of your choice.</div>
+      </details>
+      <details>
+        <summary>What is a bottle presentation?</summary>
+        <div>Waitresses bring your bottles to the table while carrying flashing celebratory lights and (on occasion) a celebration sign. They'll dance to the music before setting your bottles up. It's a high-energy moment that announces your arrival.</div>
+      </details>
+      <details>
+        <summary>How long will my reservation last?</summary>
+        <div>Around 3–5 hours depending on your arrival time. We recommend arriving 9:00–10:30 PM to maximize your time. Ghostbar typically closes around 2–3 AM depending on the night.</div>
+      </details>
+      <details>
+        <summary>What if my group doesn't drink alcohol?</summary>
+        <div>The price is about the table "real estate" you're reserving for the night, not just the bottles. You don't have to drink the alcohol, but the price remains the same because you're still getting the table area, service, the DJ, and the atmosphere for the evening.</div>
+      </details>
+      <details>
+        <summary>What forms of ID are accepted at the door?</summary>
+        <div>A non-expired, valid government-issued ID — driver's license, passport, or State ID. Clubs do not accept temporary or paper IDs, or photos of IDs on your phone. Every guest must bring a physical, valid ID.</div>
+      </details>
+      <details>
+        <summary>What if someone in my group turns 21 at midnight that night?</summary>
+        <div>That group member will need to wait until midnight before being allowed into the venue. We also recommend they bring a backup ID if their current ID expires that same day — which is common on 21st birthdays.</div>
+      </details>
+      <details>
+        <summary>What if I have more than 60 people?</summary>
+        <div>We can still help! Contact us directly at info@gxptours.com or call (702) 483-0463 and a GXP host will work with you on accommodating your larger group.</div>
+      </details>
+      <details>
+        <summary>Can I order additional items at my table?</summary>
+        <div>Yes. You may order additional menu items while at your table, but you'll need to pay the waitress directly since your bottle service bill has already been paid and closed before you arrive.</div>
+      </details>
+      <details>
+        <summary>Does Ghostbar have food?</summary>
+        <div>No, Ghostbar does not have a food menu. Please make sure to have dinner before arriving at the venue.</div>
+      </details>
+      <details>
+        <summary>Is Ghostbar wheelchair accessible?</summary>
+        <div>Yes. The venue is only accessible by elevator, which is ADA compliant. There are escalators and an elevator just off the main PALMS casino floor that take you up to the 55th floor.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA / RESERVE -->
+<section id="reserve" class="fcta">
+  <div class="fcta-bg">
+    <img src="./assets/Ghostbar Wedding Group.jpg" alt="Group celebration at Ghostbar Las Vegas" loading="lazy"/>
+    <div class="fcta-shade"></div>
+    <div class="blob blob-l"></div>
+    <div class="blob blob-r"></div>
+  </div>
+  <div class="container fcta-body">
+    <img src="./assets/Cropped TRansparent Logo.png" alt="GXP Tours" class="fcta-logo"/>
+    <div class="fcta-badge">🏙️ 55th Floor · PALMS Resort &amp; Casino · Las Vegas</div>
+    <h2>Ready to Reserve Your<br/><span class="gold">Ghostbar Table?</span></h2>
+    <p>Premium table · All-inclusive bottles · Fast-track VIP entry · $500/bottle · Only $99 to reserve</p>
+    <div class="fcta-btns">
+      <a href="https://gxptours.rezdy.com/676321/ghostbar-vip-bottle-service" class="btn-gold btn-xl" target="_blank" rel="noopener">Reserve Now — $99 Deposit →</a>
+    </div>
+    <p class="fcta-note">Ages 21+ Only · Valid ID Required · Questions? <a href="mailto:info@gxptours.com" style="color:inherit;text-decoration:underline;opacity:.7">info@gxptours.com</a></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container foot-grid">
+
+    <div class="foot-brand">
+      <img src="./assets/Cropped TRansparent Logo.png" alt="GXP Tours Las Vegas" class="foot-logo"/>
+      <p>GXP Tours is a Las Vegas owned and operated team specializing in all-inclusive VIP experiences, private party packages, and group nightlife for any occasion. With over 17 years of hospitality experience in Las Vegas, we make your night easy, seamless, and unforgettable.</p>
+      <div class="foot-socials">
+        <a href="https://www.tiktok.com/@gxptours" target="_blank" class="foot-social" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/gxptours" target="_blank" class="foot-social" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@gxptours" target="_blank" class="foot-social" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="foot-col">
+      <h5>Service Area</h5>
+      <p>Las Vegas &amp; Surrounding Areas<br/>(Henderson, Summerlin, South West, North Las Vegas)</p>
+      <p>Ghostbar is located on the 55th floor of PALMS Resort &amp; Casino, just minutes from the Las Vegas Strip at 4321 W Flamingo Rd, Las Vegas, NV 89103.</p>
+    </div>
+
+    <div class="foot-col">
+      <h5>Have a Question?</h5>
+      <p style="font-size:.8rem;color:var(--mt);margin-bottom:.75rem">Booking is done entirely online — fast, easy, and secure. If you have a specific question before reserving, reach out and we'll get back to you.</p>
+      <div class="foot-contact-rows">
+        <div class="fcr-label">For Questions Only</div>
+        <a href="mailto:info@gxptours.com" class="fcr-val">✉️ info@gxptours.com</a>
+        <div class="fcr-label">Website</div>
+        <a href="https://gxptours.com" class="fcr-val">🌐 gxptours.com</a>
+      </div>
+    </div>
+
+    <div class="foot-col">
+      <h5>Address</h5>
+      <p>GXP Tours<br/>3651 S Lindell Rd Suite D154<br/>Las Vegas, NV 89103</p>
+      <div class="foot-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.3!2d-115.1977!3d36.1068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c3a3a3a3a3a3%3A0x1!2s3651+S+Lindell+Rd+Suite+D154%2C+Las+Vegas%2C+NV+89103!5e0!3m2!1sen!2sus!4v1"
+          allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+  <div class="foot-bottom">
+    <div class="container">© 2026 GXP Tours Las Vegas. All rights reserved. · <a href="https://gxptours.com">gxptours.com</a> · Ghostbar and PALMS Resort &amp; Casino are trademarks of their respective owners.</div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav
+  const burger = document.getElementById('burger');
+  const mobNav = document.getElementById('mob-nav');
+  burger?.addEventListener('click', () => mobNav?.classList.toggle('open'));
+  mobNav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobNav?.classList.remove('open')));
+
+  // Estimator
+  const gSlider = document.getElementById('calc-guests');
+  const bSlider = document.getElementById('calc-bottles');
+  const gVal    = document.getElementById('guests-val');
+  const bVal    = document.getElementById('bottles-val');
+  const sGuests = document.getElementById('s-guests');
+  const sBots   = document.getElementById('s-bottles');
+  const total   = document.getElementById('calc-total');
+  const balance = document.getElementById('balance-due');
+
+  function fmt(n){ return '$' + n.toLocaleString('en-US'); }
+
+  function update(){
+    const g = parseInt(gSlider?.value || 10);
+    const b = parseInt(bSlider?.value || 2);
+    const t = b * 500;
+    if(gVal)    gVal.textContent    = g + ' Guests';
+    if(bVal)    bVal.textContent    = b + (b===1 ? ' Bottle' : ' Bottles');
+    if(sGuests) sGuests.textContent = g + ' Guests';
+    if(sBots)   sBots.textContent   = b + (b===1 ? ' Bottle' : ' Bottles');
+    if(total)   total.textContent   = fmt(t);
+    if(balance) balance.textContent = fmt(t - 99);
+  }
+
+  gSlider?.addEventListener('input', update);
+  bSlider?.addEventListener('input', update);
+  update();
+
+  // Set min date
+  const dateEl = document.getElementById('calc-date');
+  if(dateEl) dateEl.min = new Date().toISOString().split('T')[0];
+
+  // Estimator CTA scrolls to reserve
+  document.getElementById('btn-estimate')?.addEventListener('click', () => {
+    document.getElementById('reserve')?.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
