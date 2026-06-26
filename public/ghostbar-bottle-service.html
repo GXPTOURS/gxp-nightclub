@@ -277,6 +277,36 @@
         radial-gradient(ellipse at 95% 50%, rgba(0,229,255,.04) 0%, transparent 45%),
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='.025'/%3E%3C/svg%3E");
     }
+    /* LIGHT SECTION — contrast break panels */
+    .section-light{
+      background:#F6F3FD;
+      background-image:
+        radial-gradient(ellipse at 12% 18%, rgba(233,30,204,.09) 0%, transparent 48%),
+        radial-gradient(ellipse at 88% 82%, rgba(123,47,190,.07) 0%, transparent 48%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+    }
+    .section-light h2{color:#0D0D1A}
+    .section-light .sdesc{color:#4E4A6A}
+    .section-light .slabel{color:var(--pk)}
+    .section-light .slabel-gold{color:var(--pu)}
+    /* compare table on light */
+    .section-light .compare-table tbody td{color:#1a1730}
+    .section-light .compare-table th:first-child,.section-light .compare-table td:first-child{color:#6a6585}
+    .section-light .compare-table thead th{border-bottom-color:rgba(0,0,0,.1)}
+    .section-light .compare-table tbody tr{border-bottom-color:rgba(0,0,0,.08)}
+    .section-light .compare-total td{border-top-color:rgba(0,0,0,.15)!important}
+    .section-light .compare-note{color:#6a6585}
+    /* occasion cards on light */
+    .section-light .occ-card{background:#fff;border-color:rgba(0,0,0,.08);box-shadow:0 4px 18px rgba(0,0,0,.06)}
+    .section-light .occ-card:hover{border-color:rgba(233,30,204,.3);box-shadow:0 8px 28px rgba(233,30,204,.1)}
+    .section-light .occ-card h3{color:#0D0D1A}
+    .section-light .occ-card p{color:#4E4A6A}
+    /* FAQ on light */
+    .section-light .faq-list details{background:#fff;border-color:rgba(0,0,0,.08)}
+    .section-light .faq-list summary{color:#0D0D1A}
+    .section-light .faq-list details[open] summary{color:var(--pk)}
+    .section-light .faq-list div{color:#4E4A6A}
+
     .container{max-width:1100px;margin:0 auto}
     .slabel{font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--pk);margin-bottom:.75rem}
     .slabel-gold{font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem}
@@ -504,11 +534,11 @@
     }
     /* Body padding so sticky bar doesn't hide footer content */
     @media(max-width:900px){body{padding-bottom:68px}}
-    /* Jump-to: horizontal scroll strip on mobile (no wrapping) */
+    /* Jump-to: 2-column grid on mobile — all buttons visible, no scrolling */
     @media(max-width:700px){
-      .jump-grid{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:.25rem}
-      .jump-grid::-webkit-scrollbar{display:none}
-      .jump-btn{flex-shrink:0}
+      .jump-grid{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+      .jump-btn{justify-content:center;font-size:.78rem;padding:.6rem .75rem;white-space:normal;text-align:center;line-height:1.3}
+      .jump-reserve{grid-column:1/-1}
     }
     /* Range slider: bigger thumb for touch */
     input[type=range]{-webkit-appearance:none;appearance:none;height:6px;border-radius:4px;background:rgba(255,255,255,.12);outline:none;cursor:pointer}
@@ -769,7 +799,7 @@
 </section>
 
 <!-- PRICE COMPARISON -->
-<section id="compare" class="section section-black">
+<section id="compare" class="section section-light">
   <div class="container" style="max-width:780px;text-align:center">
     <div class="slabel-gold">The GXP Difference</div>
     <h2>Our $500 Is Actually <span class="gold">Lower Than $500</span> Elsewhere</h2>
@@ -1060,7 +1090,7 @@
 </section>
 
 <!-- OCCASIONS -->
-<section class="section section-darker">
+<section class="section section-light">
   <div class="container">
     <div class="slabel">Perfect For Every Occasion</div>
     <h2>Las Vegas <span class="grad">Ghostbar Experiences</span> for 2026</h2>
@@ -1367,7 +1397,7 @@
 </section>
 
 <!-- FAQ -->
-<section id="faq" class="section section-dark">
+<section id="faq" class="section section-light">
   <div class="container">
     <div class="slabel">Common Questions</div>
     <h2>Frequently Asked Questions</h2>
