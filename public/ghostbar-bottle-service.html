@@ -440,6 +440,15 @@
     @media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr;gap:2rem}}
     @media(max-width:540px){.foot-grid{grid-template-columns:1fr;gap:1.75rem}}
 
+    /* PAGE NAV / JUMP TO */
+    .page-nav{background:var(--d1);border-bottom:1px solid rgba(255,255,255,.06);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+    .page-nav::-webkit-scrollbar{display:none}
+    .page-nav-inner{display:flex;align-items:center;gap:0;min-width:max-content;padding:0 1rem}
+    .page-nav a{display:inline-flex;align-items:center;padding:.75rem 1.1rem;font-size:.8rem;font-weight:600;color:var(--mt);white-space:nowrap;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+    .page-nav a:hover{color:var(--wh);border-bottom-color:rgba(212,175,55,.4)}
+    .page-nav-cta{background:var(--gold-grad)!important;color:#0a0a0a!important;font-weight:800!important;border-radius:6px;margin:0 .5rem;padding:.5rem 1rem!important;border-bottom:none!important}
+    .page-nav-cta:hover{opacity:.85}
+
     /* REVIEWS */
     .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
     .review-card{background:var(--d2);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:1.75rem;display:flex;flex-direction:column;gap:1rem}
@@ -635,6 +644,20 @@
   </div>
 </div>
 
+<!-- PAGE NAV / JUMP TO -->
+<nav class="page-nav" aria-label="Jump to section">
+  <div class="page-nav-inner">
+    <a href="#included">What's Included</a>
+    <a href="#compare">Compare Prices</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#bottles">Bottle Menu</a>
+    <a href="#tablemap">Table Map</a>
+    <a href="#itinerary">How It Works</a>
+    <a href="#faq">FAQ</a>
+    <a href="https://gxptours.rezdy.com/676321/ghostbar-vip-bottle-service" target="_blank" rel="noopener" class="page-nav-cta">Reserve Now →</a>
+  </div>
+</nav>
+
 <!-- PHOTO GRID -->
 <div class="photo-strip">
   <div class="photo-item"><img src="./assets/main-room.webp" alt="Ghostbar main lounge interior Las Vegas" class="photo-main" loading="lazy"/></div>
@@ -703,7 +726,7 @@
 </section>
 
 <!-- PRICE COMPARISON -->
-<section class="section section-black">
+<section id="compare" class="section section-black">
   <div class="container" style="max-width:780px;text-align:center">
     <div class="slabel-gold">The GXP Difference</div>
     <h2>Our $500 Is Actually <span class="gold">Lower Than $500</span> Elsewhere</h2>
@@ -754,7 +777,7 @@
 </section>
 
 <!-- REVIEWS -->
-<section class="section section-black">
+<section id="reviews" class="section section-black">
   <div class="container" style="max-width:1000px">
     <div class="slabel-gold">Real Guest Experiences</div>
     <h2>What Our Guests Say About <span class="gold">Ghostbar</span></h2>
@@ -1038,7 +1061,7 @@
 </section>
 
 <!-- TABLE MAP -->
-<section class="section section-darker">
+<section id="tablemap" class="section section-darker">
   <div class="container" style="max-width:900px;text-align:center">
     <div class="slabel-gold">Venue Layout</div>
     <h2>Ghostbar Table Map — <span class="gold">55th Floor</span></h2>
