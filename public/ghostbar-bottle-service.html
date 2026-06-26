@@ -312,7 +312,7 @@
     @media(max-width:600px){.steps-grid{grid-template-columns:1fr 1fr}}
 
     /* PHOTO GRID */
-    .photo-strip{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,280px)}
+    .photo-strip{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,260px)}
     .photo-item{overflow:hidden;position:relative}
     .photo-item img.photo-main{width:100%;height:100%;object-fit:cover;transition:transform .5s}
     .photo-item:hover img.photo-main{transform:scale(1.06)}
@@ -325,8 +325,9 @@
     .view-item img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .6s}
     .view-item:hover img{transform:scale(1.04)}
     .view-label{position:absolute;bottom:0;left:0;right:0;padding:.75rem 1.1rem;background:linear-gradient(to top,rgba(6,6,8,.85),transparent);z-index:2;font-size:.78rem;font-weight:700;letter-spacing:.06em;color:rgba(237,232,248,.9);text-transform:uppercase}
-    @media(max-width:760px){.photo-strip{grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,220px)}.view-strip{grid-template-columns:1fr;height:auto}.view-item{height:240px}}
-    @media(max-width:480px){.photo-strip{grid-template-columns:1fr;grid-template-rows:none}.photo-item{height:220px}.photo-gb-logo{height:28px}}
+    @media(max-width:900px){.photo-strip{grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(4,220px)}}
+    @media(max-width:760px){.view-strip{grid-template-columns:1fr;height:auto}.view-item{height:240px}}
+    @media(max-width:480px){.photo-strip{grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(4,180px)}.photo-item{height:auto}.photo-gb-logo{height:28px}}
 
     /* BOTTLE MENU */
     .bottles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
@@ -439,6 +440,32 @@
     @media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr;gap:2rem}}
     @media(max-width:540px){.foot-grid{grid-template-columns:1fr;gap:1.75rem}}
 
+    /* REVIEWS */
+    .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+    .review-card{background:var(--d2);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:1.75rem;display:flex;flex-direction:column;gap:1rem}
+    .review-stars{color:var(--gold2);font-size:1.1rem;letter-spacing:.1em}
+    .review-text{font-size:.88rem;color:var(--mt);line-height:1.7;font-style:italic;flex:1}
+    .review-author{display:flex;align-items:center;gap:.75rem}
+    .review-avatar{width:42px;height:42px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:800;color:#fff;flex-shrink:0}
+    .review-img-wrap{width:42px;height:42px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid rgba(212,175,55,.3)}
+    .review-photo-img{width:100%;height:100%;object-fit:cover}
+    .review-name{font-size:.88rem;font-weight:700;color:var(--wh)}
+    .review-detail{font-size:.72rem;color:rgba(196,189,224,.5);margin-top:.15rem}
+    @media(max-width:900px){.reviews-grid{grid-template-columns:1fr}}
+    @media(max-width:600px){.review-card{padding:1.25rem}}
+
+    /* MOBILE: better spacing and touch targets */
+    @media(max-width:480px){
+      .hero-nums{gap:1rem;padding:1rem}
+      .hn strong{font-size:1.5rem}
+      .price-callout{padding:1.5rem}
+      .pc-price,.pc-deposit{font-size:2.25rem}
+      .section{padding:3.5rem 1.25rem}
+      h2{font-size:clamp(1.5rem,6vw,2.75rem)}
+      .btn-xl{padding:1rem 1.5rem;font-size:1rem}
+      .nav-links{display:none}
+    }
+
     /* STICKY MOBILE CTA */
     #sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:500;background:linear-gradient(135deg,rgba(13,13,20,.97),rgba(13,13,20,.99));border-top:1px solid rgba(212,175,55,.25);padding:.75rem 1.25rem;align-items:center;justify-content:space-between;gap:.75rem;backdrop-filter:blur(12px)}
     #sticky-cta .scta-text{font-size:.8rem;color:var(--mt);line-height:1.3}
@@ -525,11 +552,14 @@
       <img src="./assets/logo.webp" alt="GXP Tours Las Vegas" height="46"/>
     </a>
     <nav class="nav-links">
-      <a href="#included">What's Included</a>
-      <a href="#itinerary">How It Works</a>
-      <a href="#bottles">Bottle Menu</a>
-      <a href="#pricing">Pricing</a>
+      <a href="https://gxptours.com/">Home</a>
+      <a href="https://gxptours.com/packages/nightclub-on-wheels/">Nightclub on Wheels</a>
+      <a href="https://gxptours.com/las-vegas-party-bus-limo-rentals/">Hourly Rentals</a>
+      <a href="https://gxptours.com/experiences/">Experiences</a>
+      <a href="https://gxptours.com/las-vegas-nightclub-pool-party-dress-code/">Dress Code</a>
+      <a href="https://gxptours.com/hotels/">Hotels</a>
       <a href="#faq">FAQ</a>
+      <a href="https://gxptours.com/contact/">Contact</a>
     </nav>
     <div class="nav-right">
       <a href="tel:+17024830463" class="nav-tel">📞 (702) 483-0463</a>
@@ -538,11 +568,14 @@
     <button id="burger" aria-label="Menu">☰</button>
   </div>
   <div id="mob-nav">
-    <a href="#included">What's Included</a>
-    <a href="#itinerary">How It Works</a>
-    <a href="#bottles">Bottle Menu</a>
-    <a href="#pricing">Pricing</a>
+    <a href="https://gxptours.com/">Home</a>
+    <a href="https://gxptours.com/packages/nightclub-on-wheels/">Nightclub on Wheels</a>
+    <a href="https://gxptours.com/las-vegas-party-bus-limo-rentals/">Hourly Rentals</a>
+    <a href="https://gxptours.com/experiences/">Experiences</a>
+    <a href="https://gxptours.com/las-vegas-nightclub-pool-party-dress-code/">Dress Code</a>
+    <a href="https://gxptours.com/hotels/">Hotels</a>
     <a href="#faq">FAQ</a>
+    <a href="https://gxptours.com/contact/">Contact</a>
     <a href="https://gxptours.rezdy.com/676321/ghostbar-vip-bottle-service" target="_blank" rel="noopener" class="mob-book">Reserve — $99 Deposit</a>
   </div>
 </header>
@@ -554,7 +587,6 @@
     <div class="hero-shade"></div>
     <div class="blob blob-l"></div>
     <div class="blob blob-r"></div>
-    <img src="./assets/Ghostbar Logo.png" alt="Ghostbar" style="position:absolute;bottom:2rem;right:2rem;height:90px;width:auto;object-fit:contain;z-index:2;opacity:.8;filter:drop-shadow(0 2px 12px rgba(0,0,0,.7))"/>
   </div>
   <div class="hero-body">
     <div class="age-badge">🪪 Ages 21+ Only &nbsp;·&nbsp; Valid Government-Issued ID Required</div>
@@ -601,6 +633,18 @@
     <span>🏨 Inside PALMS Resort &amp; Casino</span>
     <span>✅ No Bill at the End of the Night</span>
   </div>
+</div>
+
+<!-- PHOTO GRID -->
+<div class="photo-strip">
+  <div class="photo-item"><img src="./assets/main-room.webp" alt="Ghostbar main lounge interior Las Vegas" class="photo-main" loading="lazy"/></div>
+  <div class="photo-item"><img src="./assets/birthday-21st.webp" alt="21st birthday celebration at Ghostbar Las Vegas" class="photo-main" loading="lazy"/></div>
+  <div class="photo-item"><img src="./assets/scenic-terrace.webp" alt="Ghostbar 55th floor terrace panoramic view Las Vegas" class="photo-main" loading="lazy"/></div>
+  <div class="photo-item"><img src="./assets/bachelor-party.webp" alt="Bachelor party VIP bottle service at Ghostbar" class="photo-main" loading="lazy"/></div>
+  <div class="photo-item"><img src="./assets/wedding-group.webp" alt="Wedding group celebration at Ghostbar" class="photo-main" loading="lazy"/></div>
+  <div class="photo-item"><img src="./assets/couple.webp" alt="Couple enjoying Ghostbar Las Vegas" class="photo-main" loading="lazy"/></div>
+  <div class="photo-item"><img src="./assets/view-luxor.webp" alt="View of Las Vegas Strip and Luxor from Ghostbar 55th floor terrace" class="photo-main" loading="lazy"/></div>
+  <div class="photo-item"><img src="./assets/friends.webp" alt="Friends at Ghostbar Las Vegas" class="photo-main" loading="lazy"/></div>
 </div>
 
 <!-- WHAT'S INCLUDED -->
@@ -709,6 +753,54 @@
   </div>
 </section>
 
+<!-- REVIEWS -->
+<section class="section section-black">
+  <div class="container" style="max-width:1000px">
+    <div class="slabel-gold">Real Guest Experiences</div>
+    <h2>What Our Guests Say About <span class="gold">Ghostbar</span></h2>
+    <p class="sdesc">4.9 stars across 279+ Google reviews. Here's what real guests experienced.</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"The party bus to Ghost Bar was one of the highlights of the group. Aaron and his team made sure everything was seamless from setting everything up, payment, and the nights of the events. We had an amazing time."</p>
+        <div class="review-author">
+          <div class="review-avatar">AB</div>
+          <div>
+            <div class="review-name">Alit Braswell</div>
+            <div class="review-detail">Large group birthday celebration · Verified Google Review</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Aaron is the BEST in Vegas! He's quick to respond, super reliable, and makes everything completely stress-free. If you want elite access and unforgettable Vegas vibes, Aaron is your guy!"</p>
+        <div class="review-author">
+          <div class="review-img-wrap">
+            <img src="./assets/review-photo.webp" alt="Guest photo at GXP Tours event" class="review-photo-img" loading="lazy"/>
+          </div>
+          <div>
+            <div class="review-name">Jenny Young</div>
+            <div class="review-detail">VIP nightclub access · Verified Google Review</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"So fun and easy to plan with these guys, great service! If you're going to Vegas for a bach, birthday or any celebration, this is a great package. You get a limo tour, promoters, and VIP nightclub entry. Had the best time!"</p>
+        <div class="review-author">
+          <div class="review-avatar">BS</div>
+          <div>
+            <div class="review-name">Breana S.</div>
+            <div class="review-detail">Bachelorette party · Verified Google Review</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2rem">
+      <a href="https://maps.app.goo.gl/wLJ8KW4BPHaVNqEH6" target="_blank" rel="noopener" class="btn-g">Read All 279+ Reviews on Google →</a>
+    </div>
+  </div>
+</section>
 <!-- VENUE SPOTLIGHT -->
 <section class="section section-black">
   <div class="container">
@@ -945,6 +1037,19 @@
   </div>
 </section>
 
+<!-- TABLE MAP -->
+<section class="section section-darker">
+  <div class="container" style="max-width:900px;text-align:center">
+    <div class="slabel-gold">Venue Layout</div>
+    <h2>Ghostbar Table Map — <span class="gold">55th Floor</span></h2>
+    <p class="sdesc" style="margin:0 auto 0">Ghostbar offers both indoor lounge seating and an outdoor sky patio. Your GXP Tours reservation secures a premium table in your preferred section.</p>
+    <div class="table-map-wrap">
+      <img src="./assets/Ghostbar Table Map Compressed.png" alt="Ghostbar 55th floor table map and seating layout — PALMS Resort Las Vegas" width="1600" height="1000" loading="lazy"/>
+    </div>
+    <p style="font-size:.8rem;color:var(--mt);margin-top:1rem">Table locations are assigned based on group size and availability. Contact us if you have a section preference.</p>
+  </div>
+</section>
+
 <!-- GETTING THERE VIDEO -->
 <section class="section section-darker">
   <div class="container" style="max-width:860px;text-align:center">
@@ -961,29 +1066,6 @@
         loading="lazy">
       </iframe>
     </div>
-  </div>
-</section>
-
-<!-- PHOTO GRID -->
-<div class="photo-strip">
-  <div class="photo-item"><img src="./assets/main-room.webp" alt="Ghostbar main lounge interior" class="photo-main" loading="lazy"/></div>
-  <div class="photo-item"><img src="./assets/bachelor-party.webp" alt="Bachelor party VIP bottle service at Ghostbar" class="photo-main" loading="lazy"/></div>
-  <div class="photo-item"><img src="./assets/hero.webp" alt="Ghostbar 55th floor terrace Las Vegas" class="photo-main" loading="lazy"/></div>
-  <div class="photo-item"><img src="./assets/wedding-group.webp" alt="Wedding group celebration at Ghostbar" class="photo-main" loading="lazy"/></div>
-  <div class="photo-item"><img src="./assets/couple.webp" alt="Couple enjoying Ghostbar Las Vegas" class="photo-main" loading="lazy"/></div>
-  <div class="photo-item"><img src="./assets/friends.webp" alt="Friends at Ghostbar Las Vegas" class="photo-main" loading="lazy"/></div>
-</div>
-
-<!-- TABLE MAP -->
-<section class="section section-darker">
-  <div class="container" style="max-width:900px;text-align:center">
-    <div class="slabel-gold">Venue Layout</div>
-    <h2>Ghostbar Table Map — <span class="gold">55th Floor</span></h2>
-    <p class="sdesc" style="margin:0 auto 0">Ghostbar offers both indoor lounge seating and an outdoor sky patio. Your GXP Tours reservation secures a premium table in your preferred section.</p>
-    <div class="table-map-wrap">
-      <img src="./assets/Ghostbar Table Map Compressed.png" alt="Ghostbar 55th floor table map and seating layout — PALMS Resort Las Vegas" width="1600" height="1000" loading="lazy"/>
-    </div>
-    <p style="font-size:.8rem;color:var(--mt);margin-top:1rem">Table locations are assigned based on group size and availability. Contact us if you have a section preference.</p>
   </div>
 </section>
 
