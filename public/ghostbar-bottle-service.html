@@ -465,15 +465,35 @@
 
     /* MOBILE: better spacing and touch targets */
     @media(max-width:480px){
-      .hero-nums{gap:1rem;padding:1rem}
-      .hn strong{font-size:1.5rem}
+      .hero-nums{gap:.75rem;padding:.9rem 1rem}
+      .hn strong{font-size:1.4rem}
+      .hdiv{height:28px}
       .price-callout{padding:1.5rem}
       .pc-price,.pc-deposit{font-size:2.25rem}
-      .section{padding:3.5rem 1.25rem}
+      .section{padding:3rem 1.1rem}
       h2{font-size:clamp(1.5rem,6vw,2.75rem)}
       .btn-xl{padding:1rem 1.5rem;font-size:1rem}
       .nav-links{display:none}
+      /* Steps: 1-col on small phones */
+      .steps-grid{grid-template-columns:1fr!important}
+      /* FAQ: bigger tap targets */
+      details summary{padding:1.1rem .25rem;font-size:.95rem}
+      /* Comparison table: scroll hint */
+      .compare-wrap{position:relative}
+      .compare-wrap::after{content:"← Scroll →";display:block;text-align:center;font-size:.7rem;color:rgba(196,189,224,.45);margin-top:.5rem}
     }
+    /* Body padding so sticky bar doesn't hide footer content */
+    @media(max-width:900px){body{padding-bottom:68px}}
+    /* Jump-to: horizontal scroll strip on mobile (no wrapping) */
+    @media(max-width:700px){
+      .jump-grid{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:.25rem}
+      .jump-grid::-webkit-scrollbar{display:none}
+      .jump-btn{flex-shrink:0}
+    }
+    /* Range slider: bigger thumb for touch */
+    input[type=range]{-webkit-appearance:none;appearance:none;height:6px;border-radius:4px;background:rgba(255,255,255,.12);outline:none;cursor:pointer}
+    input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;border-radius:50%;background:var(--gold-grad);cursor:pointer;box-shadow:0 0 8px rgba(233,30,204,.4)}
+    input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;background:var(--gold-grad);cursor:pointer;border:none}
 
     /* STICKY MOBILE CTA */
     #sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:500;background:linear-gradient(135deg,rgba(13,13,20,.97),rgba(13,13,20,.99));border-top:1px solid rgba(0,229,255,.25);padding:.75rem 1.25rem;align-items:center;justify-content:space-between;gap:.75rem;backdrop-filter:blur(12px)}
