@@ -244,7 +244,7 @@
     .hdiv{width:1px;height:40px;background:rgba(255,255,255,.1)}
 
     /* TICKER */
-    .ticker-wrap{background:var(--d2);border-top:1px solid rgba(0,229,255,.15);border-bottom:1px solid rgba(0,229,255,.1);padding:.9rem 0;overflow:hidden}
+    .ticker-wrap{background:var(--d2);background-image:radial-gradient(circle,rgba(255,255,255,.055) 1px,transparent 1px);background-size:22px 22px;border-top:1px solid rgba(233,30,204,.2);border-bottom:1px solid rgba(0,229,255,.15);padding:.9rem 0;overflow:hidden}
     .ticker{display:flex;gap:0;width:max-content;animation:ticker 30s linear infinite}
     .ticker span{padding:0 2.5rem;font-size:.8rem;font-weight:600;color:var(--tx);white-space:nowrap}
     @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
@@ -252,11 +252,31 @@
 
     /* SECTIONS */
     .section{padding:5.5rem 1.5rem}
-    .section-dark{background:var(--d2)}
-    .section-darker{background:var(--d1)}
+    /* TEXTURED SECTION BACKGROUNDS */
+    .section-dark{
+      background:var(--d2);
+      background-image:
+        radial-gradient(ellipse at 10% 20%, rgba(233,30,204,.06) 0%, transparent 55%),
+        radial-gradient(ellipse at 90% 80%, rgba(0,229,255,.05) 0%, transparent 55%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='.035'/%3E%3C/svg%3E");
+    }
+    .section-darker{
+      background:var(--d1);
+      background-image:
+        radial-gradient(ellipse at 80% 15%, rgba(123,47,190,.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 20% 85%, rgba(233,30,204,.05) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(0,229,255,.02) 0%, transparent 70%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='.028'/%3E%3C/svg%3E");
+    }
     .yt-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;border:1px solid rgba(255,255,255,.08);margin-top:2rem}
     .yt-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%}
-    .section-black{background:var(--bk)}
+    .section-black{
+      background:var(--bk);
+      background-image:
+        radial-gradient(ellipse at 5% 50%, rgba(233,30,204,.04) 0%, transparent 45%),
+        radial-gradient(ellipse at 95% 50%, rgba(0,229,255,.04) 0%, transparent 45%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='.025'/%3E%3C/svg%3E");
+    }
     .container{max-width:1100px;margin:0 auto}
     .slabel{font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--pk);margin-bottom:.75rem}
     .slabel-gold{font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem}
@@ -265,7 +285,7 @@
 
     /* WHAT'S INCLUDED GRID */
     .inc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;margin-bottom:2.5rem}
-    .inc{background:var(--d2);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:1.75rem;transition:border-color .25s,box-shadow .25s}
+    .inc{background:linear-gradient(135deg,rgba(255,255,255,.04) 0%,var(--d2) 100%);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:1.75rem;transition:border-color .25s,box-shadow .25s}
     .inc:hover{border-color:rgba(0,229,255,.35);box-shadow:0 0 24px rgba(0,229,255,.08)}
     .inc-i{font-size:2rem;margin-bottom:.875rem}
     .inc h4{font-size:.95rem;font-weight:700;color:var(--wh);margin-bottom:.4rem}
@@ -380,7 +400,7 @@
 
     /* BOOKING DETAILS */
     .booking-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-    .booking-card{background:var(--d2);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:2rem;transition:border-color .25s}
+    .booking-card{background:linear-gradient(135deg,rgba(255,255,255,.035) 0%,var(--d2) 100%);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:2rem;transition:border-color .25s,box-shadow .25s}
     .booking-card:hover{border-color:rgba(233,30,204,.15)}
     .booking-icon{width:46px;height:46px;background:rgba(233,30,204,.08);border:1px solid rgba(233,30,204,.18);border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:1.1rem}
     .booking-card h4{font-size:1rem;font-weight:700;color:var(--wh);margin-bottom:.875rem;padding-bottom:.75rem;border-bottom:1px solid rgba(255,255,255,.06)}
@@ -451,7 +471,7 @@
 
     /* REVIEWS */
     .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
-    .review-card{background:var(--d2);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:1.75rem;display:flex;flex-direction:column;gap:1rem}
+    .review-card{background:linear-gradient(145deg,rgba(233,30,204,.04) 0%,var(--d2) 100%);border:1px solid rgba(233,30,204,.12);border-radius:14px;padding:1.75rem;display:flex;flex-direction:column;gap:1rem}
     .review-stars{color:var(--pk2);font-size:1.1rem;letter-spacing:.1em}
     .review-text{font-size:.88rem;color:var(--mt);line-height:1.7;font-style:italic;flex:1}
     .review-author{display:flex;align-items:center;gap:.75rem}
@@ -538,7 +558,7 @@
 
     /* BACHELOR / BACHELORETTE */
     .occ-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
-    .occ-card{background:var(--d2);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:2rem;transition:border-color .25s,box-shadow .25s;text-align:center}
+    .occ-card{background:linear-gradient(145deg,rgba(255,255,255,.04) 0%,var(--d2) 100%);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:2rem;transition:border-color .25s,box-shadow .25s;text-align:center}
     .occ-card:hover{border-color:rgba(233,30,204,.25);box-shadow:0 0 28px rgba(233,30,204,.08)}
     .occ-icon{font-size:2.5rem;margin-bottom:1rem}
     .occ-card h3{font-size:1.1rem;font-weight:800;color:var(--wh);margin-bottom:.6rem}
